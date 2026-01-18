@@ -1,6 +1,4 @@
 Arika Khor, 113551048
-
-Ephraim Johanan Wong, 113595787
 # Introduction
 Traditionally, SPAKE2 instances require both sides to agree on two key items: a *shared password*, and *what roles both will play* (either as the original client or server). 
 The protocol requires atleast one message exchange to establish the one time unique session key (a second round is optional to check key-confirmation). Once both users obtain the given session key, and an encryption method of the server's choice, they can then proceed to send messages over a given websocket that the server setups. (Hence the session key acts as the generator for the shared secret key used to encrypt messages). Each message is then encrypted by the session key, and will last for the lifetime of the conversation. Our design was inspired by [magic wormhole project](https://meejah.ca/blog/what-is-magic-wormhole). 
