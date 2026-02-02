@@ -3,6 +3,7 @@ Type:
   - quiz
   - class
 class: Applied Stats MATH-4753 FA25
+sch_sem: fa_25
 ---
 ```
 ppois(8,3) - ppois(3,5)

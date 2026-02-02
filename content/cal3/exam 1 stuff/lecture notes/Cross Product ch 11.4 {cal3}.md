@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 ## Cross Product
 https://www.youtube.com/watch?v=hLhnj_ju_Vo&t=464s
 - Denoted by $\vec{a} \vec{\times}b$

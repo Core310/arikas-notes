@@ -2,6 +2,7 @@
 class: Applied Stats MATH-4753 FA25
 Type:
   - class
+sch_sem: fa_25
 ---
 # 1.) MTBE
 $$P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{98}{201} = \sim 0.48756$$

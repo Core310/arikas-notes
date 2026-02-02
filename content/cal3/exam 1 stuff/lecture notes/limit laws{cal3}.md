@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Limit Laws:
 - $f(x,y)$
 - $=x$, y is cont.

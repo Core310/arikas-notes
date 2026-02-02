@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: stats
+---
 [sylLink](https://canvas.ou.edu/courses/409964/assignments/syllabus)<br>
 [[Stats Textbook.pdf]]
 

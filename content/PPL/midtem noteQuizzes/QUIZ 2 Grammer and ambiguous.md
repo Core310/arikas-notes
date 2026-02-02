@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 ![[Pasted image 20250226205949.png]]
 
 - **Terminals**: Stuff on right hand side not in left hand side (eg. id num + % /...)

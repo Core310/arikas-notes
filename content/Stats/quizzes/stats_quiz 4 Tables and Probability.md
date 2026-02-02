@@ -1,6 +1,7 @@
 ---
 class: Applied Stats MATH-4753 FA25
 Type: quiz
+sch_sem: fa_25
 ---
 [In class Quiz: Tables and Probability](https://canvas.ou.edu/courses/409964/assignments/3253743?display=full_width_with_nav)
 # 1) $P(Private||Detect)$

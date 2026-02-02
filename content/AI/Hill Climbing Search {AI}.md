@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: AI
+---
 
 [gfg](https://www.geeksforgeeks.org/artificial-intelligence/introduction-hill-climbing-artificial-intelligence/)
 

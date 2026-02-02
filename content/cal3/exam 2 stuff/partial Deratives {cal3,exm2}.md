@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Partial deratives
 - $f(x,y)=4-2x-2y$
 - P= (1,2) 

@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: stats
+---
 - [[Stats Textbook.pdf]]
 - [[Stats Syl]]
 # Programming

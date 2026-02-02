@@ -1,6 +1,7 @@
 ---
 class: Applied Stats MATH-4753 FA25
 Type: quiz
+sch_sem: fa_25
 ---
 ```r
     vector1 <- c(1, 2, 3, 4, 5)

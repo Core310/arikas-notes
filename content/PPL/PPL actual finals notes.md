@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 # Racket keywords + docs to know
 True given by `#t`, false = `#f` so `if #f (.. ..)` eval second `..`
 ### Eval 

@@ -1,6 +1,7 @@
 ---
 class: TOC CS3823
 Type: class
+sch_sem: fa_25
 ---
 # Slide notes:
 - [[TOC ch1 slides notes toc]]

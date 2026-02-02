@@ -1,3 +1,6 @@
+---
+sch_sem: sp_25
+---
 - Prof: Dr. Shangqing Zhao
 - Prof Email: shangqing@ou.edu
 - OH: T&R 4:15 PM to 5:15 PM in DEH 210D

@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 Arika Khor
 <br>Spring_CS 3323
 <br>Dr Cheng

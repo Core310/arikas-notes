@@ -1,3 +1,6 @@
+---
+sch_sem: sp_25
+---
 Arika Khor, 113551048
 # Introduction
 Traditionally, SPAKE2 instances require both sides to agree on two key items: a *shared password*, and *what roles both will play* (either as the original client or server). 

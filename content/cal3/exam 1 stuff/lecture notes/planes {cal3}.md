@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 
 Planes: 
 - Vector eq of plane? 

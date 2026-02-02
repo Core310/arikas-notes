@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: AI
+---
 # Notes:
 - Working on dataset given CC.csv data
 	- row = applicant 

@@ -2,6 +2,7 @@
 class: TOC CS3823
 Type:
   - class
+sch_sem: fa_25
 ---
 a
 [[ToC_chapter_3_slides.pdf]]

@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: AI
+---
 %% Begin Waypoint %%
 - [[AI Hw1]]
 - [[AI Syl]]

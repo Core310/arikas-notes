@@ -1,6 +1,7 @@
 ---
 class: TOC CS3823
 Type: class
+sch_sem: fa_25
 ---
 Review of some stuff u may hv forgotten (omitted commonly known things)
 

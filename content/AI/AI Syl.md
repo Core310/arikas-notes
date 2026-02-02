@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: AI
+---
 [canvas](https://canvas.ou.edu/courses/444410/assignments)
 [course Page](https://ai-fall2023.ai2es.org/)
 [sylPage](https://canvas.ou.edu/courses/444410/files?preview=126946613)

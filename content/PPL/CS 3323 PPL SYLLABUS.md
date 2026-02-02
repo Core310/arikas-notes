@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 [Programming Language Pragmatics 4th Edition.pdf - Google Drive](https://drive.google.com/file/d/1uFkF_ZpQP18odTWhksm1F0bgeEGkFLKQ/view)
 - Prof Email:  qcheng@ou.edu
 - OH: TW 3-4:30, zoom/inPerson DEH254

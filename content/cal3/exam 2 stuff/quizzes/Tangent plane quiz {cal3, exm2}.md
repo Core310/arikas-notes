@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Quiz! 
 - $f(x,y) = e^{-x^2-y^2}$
 - Find plane tangent to $f(x,y)_{x}$

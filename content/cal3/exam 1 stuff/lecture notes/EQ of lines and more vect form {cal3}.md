@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 ![[Pasted image 20250211233013.png]]
 
 ## Three main EQ:  

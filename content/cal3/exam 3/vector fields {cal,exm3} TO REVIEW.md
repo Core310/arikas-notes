@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Why do we care about conserative vect fields? 
 FUndamental therom of line $\int$
 - Vect Line $\int$: $\int_C v \cdot ds$ = $\int^b_b v \cdot r'(t) dt$

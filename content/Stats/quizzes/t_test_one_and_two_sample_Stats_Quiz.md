@@ -3,6 +3,7 @@ Type:
   - quiz
   - class
 class: Applied Stats MATH-4753 FA25
+sch_sem: fa_25
 ---
 There were 2 quizzes for this section but they js had differernt values for them, but one should suffice..
 

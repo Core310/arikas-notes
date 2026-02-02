@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 https://tutorial.math.lamar.edu/Solutions/CalcIII/IteratedIntegrals/Prob1.aspx
 
 

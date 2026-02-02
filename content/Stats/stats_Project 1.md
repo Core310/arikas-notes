@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: stats
+---
 Make a function called ntickets(N,gamma,p) that does the following:
 
 - calculates the number of tickets to be sold when the number of seats in the flight is N and the probability of a "show" is p and gamma is the probability a plane will be truly overbooked (more people show than there are seats). 

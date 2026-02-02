@@ -2,6 +2,7 @@
 class: TOC CS3823
 Type:
   - class
+sch_sem: fa_25
 ---
 [[ToC_chapter_2_slides.pdf]]
 - See [[ToC Syl CS3823]] site, most important is class 21 nov 6th. 

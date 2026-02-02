@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Question: 
 - Paramaterize 5 different lines (only one can be linear) that pass thru the point (4,3) but cannot be the origion of the point. 
 

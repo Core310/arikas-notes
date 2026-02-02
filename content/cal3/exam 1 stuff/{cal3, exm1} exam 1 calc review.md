@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 [[{cal3, exm1} Exam_Actual.pdf]]
 
 [[{cal3 exm1} review pkt.pdf]]

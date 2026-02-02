@@ -2,6 +2,7 @@
 class: Applied Stats MATH-4753 FA25
 Type:
   - class
+sch_sem: fa_25
 ---
 - see [here](https://canvas.ou.edu/courses/409964/assignments/3066988) for canvas stuff 
 - see [here](https://discord.com/channels/@me/1299127847356465164/1424794179946676344) for Calvins notes (this should be transcried w/ OCR later..)

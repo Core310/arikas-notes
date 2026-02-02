@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 # CFG and the attribute grammar
 - FT with end tail = end product parent
 - Use the cheat sheet for fig 4,3 to parse thru the tree? 

@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 # Semantics (attributes)
 
 - Has grammer of its own (can convert from LL to attribute grammer)

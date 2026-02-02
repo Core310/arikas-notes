@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Know: 
 1) Intersection (w/ @param): $r_1(t)=r_2(s)$
 2) Collision btwn 2 @params $r_1(t)=r_2(t)$

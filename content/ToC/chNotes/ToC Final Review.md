@@ -2,6 +2,7 @@
 class: TOC CS3823
 Type:
   - class
+sch_sem: fa_25
 ---
 # Actual qns to ask;
 Answer for hw2, q4.1? (isnt it correct? Saying any number of even, and an optinal odd)

@@ -2,6 +2,7 @@
 class: TOC CS3823
 Type:
   - class
+sch_sem: fa_25
 ---
 # Big vs small O? 
 Small o is when denomiator 

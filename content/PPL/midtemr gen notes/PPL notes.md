@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 # Quizzes: 
 - [[Quiz 5 Abastract Syntax Tree]]
 - [[Quiz 4 Static vs Dymanic Scopes]]

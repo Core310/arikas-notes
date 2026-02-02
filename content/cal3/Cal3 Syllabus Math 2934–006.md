@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Grade calcs
 To get a C, need to get 80%, mayb 77% needed? 
 

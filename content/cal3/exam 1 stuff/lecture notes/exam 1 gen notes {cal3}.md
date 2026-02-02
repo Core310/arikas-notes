@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 ## Vocab
 - perpendicular vs parallel
 	- perpendicular: intersect at a 90-degree angle

@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 
 1) Plot R: (filled triangle)
 2) Plot $\partial R$: (empty triangle like $\nabla$)

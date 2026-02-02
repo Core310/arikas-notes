@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 How to paramaterize a cruve? 
 - L(T) = <$x_{0}+xt,y_{0}+yt+\dots$>
 

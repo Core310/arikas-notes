@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 
 
 We literally just follow the rules in this chart,

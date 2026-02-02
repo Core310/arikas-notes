@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 # Ch 3 
 - When does binding happens dependent on langauge 
 	- We can't know the type of a binding (saying let b) at runtime

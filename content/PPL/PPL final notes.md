@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: PPL
+---
 [tail-recursion](https://docs.racket-lang.org/guide/Lists__Iteration__and_Recursion.html#%28part._tail-recursion%29)
 "_tail recursion_" means that the last statement in a function, is a recursive call to the same function. [SO link](https://stackoverflow.com/questions/33923/what-is-tail-recursion)
 

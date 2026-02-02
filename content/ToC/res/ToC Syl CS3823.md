@@ -3,6 +3,7 @@ Type:
   - class
   - syl
 class: TOC CS3823
+sch_sem: fa_25
 ---
 
 - [class webpsge](https://www.diochnos.com/teaching/CS3823/2025F/index.php)

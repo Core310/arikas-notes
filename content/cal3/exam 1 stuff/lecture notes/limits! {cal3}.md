@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 - [[limit laws{cal3}]] (for formal EQs)
 # Q1: 
 - exactly 1 of the following limits must exist: (by finding limits along both cruves which disagree w/ e/o (discont)

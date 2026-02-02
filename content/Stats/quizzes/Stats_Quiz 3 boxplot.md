@@ -1,6 +1,7 @@
 ---
 class: Applied Stats MATH-4753 FA25
 Type: quiz
+sch_sem: fa_25
 ---
 # 1) As you know an outlier can be determined using the boxplot method. `b <- boxplot(x, range = ...)` Find all DDT outliers and submit the total number of them below!
 ```r

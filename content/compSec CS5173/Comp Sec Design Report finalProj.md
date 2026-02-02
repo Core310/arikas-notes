@@ -1,3 +1,6 @@
+---
+sch_sem: sp_25
+---
 # Design Influence
 We chose to build a platform similar to the [magic-wormhole protocal](https://magic-wormhole.readthedocs.io/en/latest/), a python tool which was built with the sole purpose to send a message from one computer to another in the most secure way possible over the internet. In this manner, we chose to use SPAKE2, in paticular a well supported python version of it, [python-spake2](https://github.com/warner/python-spake2) which was a library that implemented the password-authenticated key exchange (PAKE) algorithm that allowed two parties to share some weak password (generally through some verbal or physical means) to derive a strong shared secret key between them. 
 

@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: stats
+---
 To review:
 - Reviewing tables and their creation and interpretation AND,OR,GIVEN and MARGINAL (practice in R using MTBE 
 - Read through all worked examples in chapter 3

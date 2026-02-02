@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # ONCS Steps
 - Normalize vector
 - Normalize perpendicular vector

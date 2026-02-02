@@ -2,6 +2,7 @@
 class: SWE
 Type:
   - class
+sch_sem: fa_25
 ---
 
 

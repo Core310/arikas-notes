@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 We are given some upper half of a unit circle, tasked to find 
 - carteasian cords? 
 	- 

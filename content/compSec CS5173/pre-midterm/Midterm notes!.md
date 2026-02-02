@@ -1,3 +1,6 @@
+---
+sch_sem: sp_25
+---
 # Basic Concepts 
 - Confidentiality 
 	-  Protect information access, only being exposed to users who should have access.

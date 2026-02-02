@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 [[{cal3 exm3} review pkt.pdf]]
 # Integration 
 ## Transformations

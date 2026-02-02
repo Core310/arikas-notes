@@ -1,3 +1,6 @@
+---
+sch_sem: sp_25
+---
 # Assignment 1
 1. 
 - **Availability**: Information can be reached at all times with the right keys. Eg. information queried is always available (no DDOS attacks preventing queries from reaching the server). 

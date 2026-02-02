@@ -3,6 +3,7 @@ Type:
   - quiz
   - class
 class: Applied Stats MATH-4753 FA25
+sch_sem: fa_25
 ---
 # P(Y > 8)
 0.5 since the mean is 8 (1/2 on either side of the mean)

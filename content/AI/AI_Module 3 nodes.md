@@ -1,3 +1,7 @@
+---
+sch_sem: fa_25
+class: AI
+---
 # Hill Climbing!
 - Returns a local max (for the algo below), but if we wan min js flip the signs
 - Start at random state, look at neighbours, better value? Move to it!

@@ -2,6 +2,7 @@
 class: SWE
 Type:
   - class
+sch_sem: fa_25
 ---
 %% Begin Waypoint %%
 - [[CS 4213 SDP syl]]

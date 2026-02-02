@@ -1,3 +1,7 @@
+---
+sch_sem: sp_25
+class: compSec
+---
 # Steps for a line $\int$  wrt. x or y on line segment
 1) @ param some $f(x,y)=f(x(t))$
 2) Find $r(t)$ like in previous step

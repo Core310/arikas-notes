@@ -1,3 +1,6 @@
+---
+sch_sem: sp_25
+---
 #  symmetric/asymmetric
 public easier 2 nego key, symm is decentralized
 - symmetric: Dependent on one key to encrypt/decrypt (one time pad)
