@@ -26,3 +26,8 @@
 * The ZED SDK is required to interface with the ZED2i camera
 * It provides depth sensing capabilities that help filter out distant faces
 * The SDK also offers object detection features used in later iterations
+
+## See Also
+- [[index|Project Overview]]
+- [[setup|Setup Guide]]
+- [[iterations|Development Iterations]]

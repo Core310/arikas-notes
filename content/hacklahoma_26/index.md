@@ -1,3 +1,7 @@
+# FNR - Facial Net Recognizer
+
+[[setup|Setup Guide]] | [[iterations|Development Iterations]] | [[imports|Key Imports and Technologies]]
+
 ## Inspiration
 
 Facial recognition feels like future tech reserved for governments or massive corporations yet most people don't realize just how accessible it is to link a real world face to an online identity. We built FNR (Facial Net Recognizer) to raise awareness about internet privacy and demonstrate why our personal data policies need to catch up with technology.
