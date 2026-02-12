@@ -13,17 +13,19 @@ Abstract instantiation, makes system independent its objects. Hide the complexit
 | [Abstract Factory](https://www.digitalocean.com/community/tutorials/abstract-factory-design-pattern-in-java)        | - **factory of factories**.<br>-  Creates _families of related or dependent objects_ without specifying their concrete classes.                                                                                                              |
 | [Builder](https://www.digitalocean.com/community/tutorials/builder-design-pattern-in-java)                          | - Objects with many optional parameters.<br>- Separates construction from representation. <br>- Object that can add on parameters during creation not as arguments                                                                           |
 | [Prototype](https://www.digitalocean.com/community/tutorials/prototype-design-pattern-in-java)                      | Creates new objects via copying existing object. Used in complex object creation.                                                                                                                                                            |
+
 ## Pattern relations
 - Abstract Factories, Builders and Prototypes can all be **implemented as Singletons.**
+
 ## Code examples
 ```java
 
 
 //Builder
 Computer comp = new Computer.ComputerBuilder(
-	"500 GB", "2 GB").setBluetoothEnabled(true)
-	.setGraphicsCardEnabled(true).build();
-	)
+    "500 GB", "2 GB").setBluetoothEnabled(true)
+    .setGraphicsCardEnabled(true).build();
+    )
 ```
 
 # Structural
@@ -69,13 +71,13 @@ codeFolder.getSize()
 
 ```java
 //starategy example
-		ShoppingCart cart = new ShoppingCart();
-		Item item2 = new Item("5678",40);
-		cart.addItem(item2);
-		//pay by paypal
-		cart.pay(new PaypalStrategy(...));
-		//pay by credit card
-		cart.pay(new CreditCardStrategy("...));
+    	ShoppingCart cart = new ShoppingCart();
+    	Item item2 = new Item("5678",40);
+    	cart.addItem(item2);
+    	//pay by paypal
+    	cart.pay(new PaypalStrategy(...));
+    	//pay by credit card
+    	cart.pay(new CreditCardStrategy("...));
 ```
 
 
@@ -105,10 +107,10 @@ Acts as characters in a text editor. Used for large numbers of fine-grained obje
 ## Example of designing without pattern led to duplicated code, what pattern can fix?
 
 - Tempalte method: 
-	- Without the design pattern; must hardcode each case into parent object, results in large file and increased refactoring complexity.
-	- For example, two DnD classes. To equip each character, create parent object to define all base character stats, then specalized class for skill tree for each class.
-	- If we didn't use template, then we would need to reuse code per each class to generate each character
-	
+    - Without the design pattern; must hardcode each case into parent object, results in large file and increased refactoring complexity.
+    - For example, two DnD classes. To equip each character, create parent object to define all base character stats, then specalized class for skill tree for each class.
+    - If we didn't use template, then we would need to reuse code per each class to generate each character
+    
 ## Template vs Strategy?
 
 - Template: Class level, uses Inheritance

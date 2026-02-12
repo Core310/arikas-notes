@@ -44,7 +44,7 @@ $$
 This is quite an intuitive problem if one were to think about it. Basically, if a cypher character is 0 and the key is 0, then the plaintext would result in a 0 or 1 (with a 50/50 chance). Say we took the example input string of: 001101. Then taking M ^ K: 00110^101110=001100 reavling the first 2 bits and thus compromising the cipher. 
  This could be explained with a probability formula like so:
 ```
-	P( C=1 | M=0 ) = P( K AND M = 1 | M=0 )
+    P( C=1 | M=0 ) = P( K AND M = 1 | M=0 )
                = P( K AND 0 = 1 | M=0)
                = P( 0=1 | M=0 )
                = 0 ≠ 2^-1
@@ -57,7 +57,7 @@ This is quite an intuitive problem if one were to think about it. Basically, if 
    3) XOR both cypher texts
    4) XOR hex string from (2) at each XOR position of both cyphers from (3)
    5) When (4) is readable, guess the English word and expand the crib search. If not readable, try XOR of crib word at the next position
-	```
+    ```
    - Source for attack steps: https://travisdazell.blogspot.com/2012/11/many-time-pad-attack-crib-drag.html
 
 The proof in pointing to the original proof from problem 5, we would have the two cyphers, $C_{1}C_{2}$, where would be some variation of $C_{i}=M_{i}\oplus K$, then knowing `i` cyphers (where i > 1), they could compute the XOR of both ciphertexts like so: $M_{1}\oplus M_{2}=C_{1}\oplus C_{2}$, hence if the attackers knows the structure of the plain text (assuming it's English), then can be able to observe patterns in both keys and result in a few of the values being compromised. This problem is quite similar to no.6 in the sense that perfect security is lost from giving the end user a few key parts of unencrypted data in order to figure out the last bit of data. Thus the reuse of one-time pad keys will result in an insecure system.

@@ -19,7 +19,7 @@ When *false* Welch $t$-Test. safer choice unless there is strong evidence for eq
 
 # NULL $H_0$ and Alternate hypotheses $H_a$
 - $H_0$: Represents a statement of "no effect," "no difference," or "no relationship"
-	- always includes an equality sign ($=$, $\le$, or $\ge$).
+    - always includes an equality sign ($=$, $\le$, or $\ge$).
 - $H_a$ what you're trying to find. 
 ```r
 t.test(Group\_A, Group\_B, alternative = "\text{less}")
@@ -27,17 +27,19 @@ t.test(Group\_A, Group\_B, alternative = "\text{less}")
 
 
 # Using data in R to create tests
+
 # Predictions
 - 
+
 # SLR:
 $$\hat{E}(Y|x_p) = \hat{Y}_p = \hat{\beta}_0 + \hat{\beta}_1 x_p$$ 
-	- *expected value* of the *response variable* $Y$ for a specific value *p* of the *predictor variable* $x$
-	- **mean response** of the population when the predictor variable is fixed at $x_p$
-	- 
+    - *expected value* of the *response variable* $Y$ for a specific value *p* of the *predictor variable* $x$
+    - **mean response** of the population when the predictor variable is fixed at $x_p$
+    - 
 
 
 * Least Squares estimates
-	* Find values for the slope ($\hat{\beta}_1$) and the intercept ($\hat{\beta}_0$) that minimize Sum of Squared Errors (SSE) use
+    * Find values for the slope ($\hat{\beta}_1$) and the intercept ($\hat{\beta}_0$) that minimize Sum of Squared Errors (SSE) use
 ```r
 a = lm(y_data ~ x_data)
 summary(a)
@@ -49,6 +51,7 @@ confint(my_model, level = 0.95)
 ```
 
 # Use s20x package
+
 # MGF
 Packages all raw moments of random variable $X$ into an expr. 2 ways to find $\sigma^2$ (vaience) and $\mu$ (mean).
 To find $r$-th raw moment, $E[X^r]$  take derative a@ 0
@@ -77,6 +80,7 @@ power_result <- power.t.test(
   alternative = "two.sided" # Hypothesis direction
 )
 ```
+
 # Calculate probabilities in R
 
 # LSE and varience
@@ -84,10 +88,10 @@ power_result <- power.t.test(
 make predictions using the estimated regression line
 
 -  $\hat{\beta}_{1}=\frac{SS_{xy}}{SS_{xx}}$ LSE for slope
-	- Sample estimate of the slope, calculated by dividing the sample covariance of $X$ and $Y$ (scaled by $n-1$) by the sample variance of $X$ (scaled by $n-1$). 
-	- defines the steepness of the estimated regression line
+    - Sample estimate of the slope, calculated by dividing the sample covariance of $X$ and $Y$ (scaled by $n-1$) by the sample variance of $X$ (scaled by $n-1$). 
+    - defines the steepness of the estimated regression line
 -  $V(\hat{\beta}_{0})=\sigma^{2}(\frac{\sum_{i=1}^{n}{x_{i}}^{2}}{nSS_{XX}})$ Varience of LSE for intercept $B_0$ 
-	- calculate the Standard Error of $\hat{\beta}_0$, which is then used in the $t$-test for $H_0: \beta_0 = 0$ and the CI for $\beta_0$.
+    - calculate the Standard Error of $\hat{\beta}_0$, which is then used in the $t$-test for $H_0: \beta_0 = 0$ and the CI for $\beta_0$.
 
 ```r
  my_model <- lm(y_data ~ x_data)
@@ -96,9 +100,12 @@ coefficients(my_model)
 beta_0_hat <- coefficients(my_model)[1] # The Intercept
 beta_1_hat <- coefficients(my_model)[2] # The Slope (x_data)
 ```
+
 # Show the estimators $\hat{\theta}$ are unbiased
 **unbiased** if its expected value is equal to the true population parameter $\theta$ being estimated:
+
 # Find their variances etc
+
 # t-tests:
 * Can you derive results by hand (P-values, t values, cis)
 
@@ -113,7 +120,7 @@ H_a: \mu \neq 50
 \end{gather}
 $$
 - Confidence interval: 
-	- **Reject $H_0$** if the null value ($\mu_0$) **is not** in CI
+    - **Reject $H_0$** if the null value ($\mu_0$) **is not** in CI
 
 To get bounds:
 ```r
@@ -126,9 +133,9 @@ upper_bound <- estimate + t_critical * std_error
 ```
 
 - P-value: 
-	- **Fail to Reject $H_0$** if the P-value **$\ge \alpha$** from t.test
+    - **Fail to Reject $H_0$** if the P-value **$\ge \alpha$** from t.test
 - Rejection/Acceptance Region (RAR):  
-	- **Fail to Reject $H_0$** if the calculated test statistic ($t_{\text{calc}}$) **falls into the acceptance region** (i.e., $|t_{\text{calc}}| \le t_{\text{crit}}$).
+    - **Fail to Reject $H_0$** if the calculated test statistic ($t_{\text{calc}}$) **falls into the acceptance region** (i.e., $|t_{\text{calc}}| \le t_{\text{crit}}$).
 ```r
 # RAR example
 alpha <- 0.05 df <- 28 # From the SLR summary example in the file 
@@ -139,7 +146,7 @@ t_critical <- qt(1 - alpha/2, df)
 $$t_{\text{calc}} = \frac{(\text{Estimate}) - (\text{Null Value})}{\text{Standard Error of the Estimate}}$$
 
 * When use a $var.test$?
-	* conduct two-sample independent $t$-test
+    * conduct two-sample independent $t$-test
 
 # Estimation:
 
@@ -172,6 +179,7 @@ quantile(results, c(0.025, 0.975))
 - **Distribution**:
     - By the Central Limit Theorem, if $n$ is large, $L$ will be approximately Normal11.
     - $L \sim N(\frac{n}{\lambda}, \frac{n}{\lambda^2})$
+
 # Regression:
 ```r
 #use
@@ -185,14 +193,17 @@ summary(a)
 - Residual Standard Error ($\hat{\sigma}$): 11.71
 - Multiple R-squared: 97.3% of the variation in $Y$ is explained by the linear relationship with $X$
 - F-statistic: p-value is very small, we reject the null hypothesis
-	- considered small if it is less than or equal to $\alpha$
+    - considered small if it is less than or equal to $\alpha$
 - verify t-vales:
-	- dividing the Estimate by the Std. Error in `x` row. 
+    - dividing the Estimate by the Std. Error in `x` row. 
 - Find *t_crit*:
 
 ```r
 t_crit <- qt(0.975, 28)# 28 = dfm 0.975  for 95% conf interval
 ```
+
 # Bootstrap and other R functions are shown in the labs
+
 # Be able to recognize options, default values and ellipses
+
 # All relevant Labs -- especially tests, Max lik (lab 10) and labs 14-16 on regression

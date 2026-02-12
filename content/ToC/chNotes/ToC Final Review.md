@@ -6,7 +6,9 @@ sch_sem: fa_25
 ---
 # Actual qns to ask;
 Answer for hw2, q4.1? (isnt it correct? Saying any number of even, and an optinal odd)
+
 ## Hw2: Q3.3:
+
 ## Hw2: Q3.4:
 
 ## Hw2: 2.2 
@@ -14,30 +16,35 @@ Answer for hw2, q4.1? (isnt it correct? Saying any number of even, and an optina
 ## Hw2: 2.3
 
 # Homework qns:
+
 ## MCQ (done)
 - $\{ \emptyset,\{ \emptyset \} \}$ set of all subsets of an empty set
 - $A \times B$ vs $A \circ B$ 
-	- $\times$ produces a set of pairs, eg. $\{ (A_{1}B_{1}), (A_{1}B_{2},\dots) \}$
-	- $\circ$ Produces a set of strings eg. $\{ A_{1}B_{1},A_{1}B_{2} \}$ (note they aren't in a set tgt). 
+    - $\times$ produces a set of pairs, eg. $\{ (A_{1}B_{1}), (A_{1}B_{2},\dots) \}$
+    - $\circ$ Produces a set of strings eg. $\{ A_{1}B_{1},A_{1}B_{2} \}$ (note they aren't in a set tgt). 
 - If A has $\Sigma$ then $\Sigma \in A^*$ 
 - inventor of latex: Donald Knuth
 - subset of regular langauge isn't guarentee to be regular (expand with all types of operations..)
 - ambiguous def: CFG may be *ambiguous*  if its possible to get a different parse tree but same result string 
 
 ## Hw1 (Easy)
+
 ### Set theory: (done)
 - $B\setminus A$, all elements in $B$ not in $A$
 - $A \times B$ : multiply all elements tgt (skippable)
 - $P(A)$ (Powerset): All subsets of $A$ including empty set. Always $2^k$, $k=$ $|A|$ 
+
 ### Build DFA
 - L3 = {w | w starts with an 1 or ends with a 0}, Σ = {0, 1}.
 - L2 = {w | w has at most two occurrences of the symbol b}, Σ = {a, b}.
+
 ### Proof via Induction (done)
 - Base Case (minimum $i$ value)
 - induction step $i+1$ step
 - then if true for $i$ must be true for $i+1$ 
 
 ## Hw2 (hard)
+
 ### Pumping Lemma Hw2 q6 (DONE)
 [[TOC ch1 slides notes toc#Pumping Lemma | pumping lemma]]  for other example
 
@@ -46,9 +53,9 @@ Esentially we want to prove that p +l > p and thus breaks our original propertie
 Assume regular language *A* , there must be some length *p* s/t
 - *s* is any string in A of **at least** *p* length
 - *s* can be divided into 3 pieces: xyz:
-	- for i>0,$xy^iz,z \in A$ , i++
-	- $|y| > 0$ 
-	- $|xy| \leq p$ 
+    - for i>0,$xy^iz,z \in A$ , i++
+    - $|y| > 0$ 
+    - $|xy| \leq p$ 
 
 L1={w∈{0,1}∗∣ every prefix of w has at least as many zeroes as ones}
 
@@ -61,6 +68,7 @@ $$
 x=0^a, \ y=0^i , z=0^{p-a-b} 1^p
 $$
 Consider if we pumped i=0, we would see an uneven amount of 0's compared to ones which thus disproves the langauge can be regular. 
+
 ### NFA build
 Let Σ = {0, 1}. Give state diagrams for NFAs that recognize the following languages.  
 
@@ -91,6 +99,7 @@ $$
 aka any number of chars  then a 0, or any number of 0's or 1's then a 0 
 
 ## Hw3
+
 ### PDAs (done)
 Defined via 
 $$
@@ -135,7 +144,7 @@ $$
 1) Add a new start state pointing to original start state
 2) remove all $\lambda$ states (go upward one level to replace using `|`)
 3) Tidy all leftover forms that don't match the given eg. $A \rightarrow 0X$ becomes $Z \rightarrow 0$ and $A \rightarrow ZX$ 
-	 $$
+     $$
 
 $$
 
@@ -147,16 +156,19 @@ L = \{w \mid w \in \Sigma^* \text{ such that } w \text{ has at most two } 0\text
 $$
 1) Generate DFA from L 
 2) Replace all nodes with $R_i \rightarrow 1\{ \text{node} \} | \dots$ 
-	1) eg. $R_{0} \rightarrow 1 R_0 \ | \  0 R_1$ 
-	2) Then continue for ONLY accepting states
+    1) eg. $R_{0} \rightarrow 1 R_0 \ | \  0 R_1$ 
+    2) Then continue for ONLY accepting states
 ![[Pasted image 20251211174232.png]]
+
 ## Hw4
+
 ### PDA construction
 
 ## Hw5
 
 ### Decidability
 hw5 q2
+
 ### Closure in P (DONE)
 For all but $A \times B$, we generate 2 TM's which run in polynomial time. With an input m, split non-deterministically into a,b. Then feed a,b into both tape TA TB. 
 - $A \setminus B$ -> A ^ ! B -> (A=T,B=F) -> T ^ ! F -> T ^ T -> T
@@ -164,6 +176,7 @@ For all but $A \times B$, we generate 2 TM's which run in polynomial time. With 
 - $A \cup B$ -> A v B
 
 If $A \times B$ -> A ^ B, then we have 2 inputs, a,b. We cannot split unlike above non-det and instead only take the inputs
+
 ### Decidable languages
 
 ### Config & description of TM
@@ -184,15 +197,18 @@ We take the same approach we did with [[ToC Final Review#Closure | closure prope
     - If both $A$ and $B$ accept, accept
     - Otherwise try another split.
 - If all $(n+1)$ splits have been considered and in none of them both $M_A$ and $M_B$ accepted, then reject.E
+
 # From announcement
+
 ## Post Correspondence Problem(Done)
 $$\text{PCP} = \{ \langle P \rangle \mid P \text{ is an instance of the Post correspondence problem with a match} \}$$
 is **undecidable**. We're given a set of fractions, want to find where the string of the concatanated numerators is the same as concat denom.
+
 ## asymptotic complexity: Big-Oh, little-Oh, Big-Omega, little-Omega, Theta.  (Done)
 - $O(g(n))$ Worst case complexity, slower/= to  g(n)
-	- $o(g(n))$ must be slower than g(n)
+    - $o(g(n))$ must be slower than g(n)
 - $\Omega(g(n))$ Best case complexity ($\geq$ g(n))
-	- $\omega(g(n))$ must be faster than g(n)
+    - $\omega(g(n))$ must be faster than g(n)
 - $\Theta(g(n))$ exact complexity (in all cases)
 
 - $2n = O(n)$. **TRUE** (drop constants)
@@ -201,12 +217,15 @@ is **undecidable**. We're given a set of fractions, want to find where the strin
 - $n = o(2n)$. **FALSE** (take limit for n/2n -> 1/2 $\neq$ 0)
 - $2^n = o(3^n)$. **TRUE** (lim again -> 2^n / 3^n -> 0)
 - The formula $\phi = (x \vee y) \wedge (x \vee \overline{y}) \wedge (\overline{x} \vee y) \wedge (\overline{x} \vee \overline{y})$ is satisfiable. **FALSE** (truth table or skill issue..)
+
 ## classes P and NP are? (Done)
 - P: polynomial time O(n^k) (solvable problems)
 - NP non-deterministic P (unsolavable)
 - P vs NP means if problem takes P on a non-deterministic TM, then one can build a deterministic TM which would solve the same problem also in polynomial time. 
+
 ## Turing Machines (Done)
 Decider if will ! infinite loop for finite string. 
+
 #### Formal Defition (DONE)
 7 tuple, augmented FA:
 - Q: set of states
@@ -226,5 +245,5 @@ Decider if will ! infinite loop for finite string.
 
 # Small items (Done)
 -  A Hamiltonian path goes through every node exactly once
-	- No one knows whether HAMPATH is solvable in polynomial time.
+    - No one knows whether HAMPATH is solvable in polynomial time.
 - 

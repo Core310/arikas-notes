@@ -14,25 +14,27 @@ C S-4213-001 - Fall 2025,
 
 M8-Composite
 ___
+
 # Table of contents
 1. [Table of contents](#table-of-contents)
 1. [Part 0, methodology](#part-0-methodology)
 1. [Task a](#task-a)
-	1. [Task b](#task-b)
-		1. [Component role](#component-role)
-		1. [Leaf role](#leaf-role)
-		1. [Composite role](#composite-role)
-		1. [Supporting creation pattern](#supporting-creation-pattern)
-	1. [Task c — Decision Logic Overview](#task-c--decision-logic-overview)
-		1. [Decision focus](#decision-focus)
-		1. [Interpreter overview](#interpreter-overview)
-		1. [High level example](#high-level-example)
-	1. [Task d — One Page Article](#task-d--one-page-article)
-		1. [Composite pattern rationale](#composite-pattern-rationale)
-		1. [Creation pattern advantage](#creation-pattern-advantage)
-		1. [Improving maintainability with pattern based logic models](#improving-maintainability-with-pattern-based-logic-models)
+    1. [Task b](#task-b)
+    	1. [Component role](#component-role)
+    	1. [Leaf role](#leaf-role)
+    	1. [Composite role](#composite-role)
+    	1. [Supporting creation pattern](#supporting-creation-pattern)
+    1. [Task c — Decision Logic Overview](#task-c--decision-logic-overview)
+    	1. [Decision focus](#decision-focus)
+    	1. [Interpreter overview](#interpreter-overview)
+    	1. [High level example](#high-level-example)
+    1. [Task d — One Page Article](#task-d--one-page-article)
+    	1. [Composite pattern rationale](#composite-pattern-rationale)
+    	1. [Creation pattern advantage](#creation-pattern-advantage)
+    	1. [Improving maintainability with pattern based logic models](#improving-maintainability-with-pattern-based-logic-models)
 
 ___
+
 # Part 0, methodology
 The author used planetUML for UML diagrams due to ease of readability and creation. Code was created with javascript due to it being a frontend project, and its widely known use. Obsidan (markdown) with pandoc was used to knit the entire document. 
 
@@ -43,7 +45,8 @@ Additional sources confronted:
 - https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns
 - https://refactoring.guru/design-patterns
 - [Retrieval Augmented Generation (RAG) | Prompt Engineering Guide](https://www.promptingguide.ai/techniques/rag)
-	- Heavy use of this source was used to generate any text/diagrams with GPT. 
+    - Heavy use of this source was used to generate any text/diagrams with GPT. 
+
 # Task a
 Description of hierarchical system context
 A simple web shop UI composed of nested panels where each panel may contain child panels or content widgets. Examples of levels include top level application frame, a navigation panel, a content panel that hosts product list panels and a shopping cart panel, and a checkout panel that nests payment form widgets. Uniform operations applied across levels include draw(), count(), and evaluate().
@@ -51,6 +54,7 @@ A simple web shop UI composed of nested panels where each panel may contain chil
 Shopping webapp:
 
 [![](https://img.plantuml.biz/plantuml/svg/lLLHQuCm47uN_0z7NzOn_0DZZ6uhPSBO2gFq-OpNLceIIQBTsFRVbsXjhJhOYpw9zrtoVNUvBvbfWyhaFFMzAtXEIA5Ykq_OI0Ll1IdG2SzIWWD5e7SoWrNeUncoFMu99ckAtctm8SicyELx08amf3R82CAvmWD6Tca90Dn0R2FJw_gFoLoOwJNSkaLra0fCSpGqPTBkz64S74cP4WgNykDxxiDIr1eiwq8X7uBWLE0gX2KAIlMaPi586uNC74MKA9GzuYICxjRT5lQ7j7-8gv8mZYtECoaiNsDFHLmMr86E5TLDUyMYaZo0kXRLaqiJPYowfP9npinBeiUcd9F191sjhTQket7jYErbFYXVrtJh9DwIELlkejcX8Jv2vO-vCLACGBIGYYyIIkEXstkwBeFWlhgsNBGwsRll83XT3QrmqyOjg6svVhXXZ_RMzIYtuysngzHtt2tF16ua6ZbDE_PadVtJ1ruCl4iudKy_NCs9xzacpqZ4vJlw2m00)](https://editor.plantuml.com/uml/lLLHQuCm47uN_0z7NzOn_0DZZ6uhPSBO2gFq-OpNLceIIQBTsFRVbsXjhJhOYpw9zrtoVNUvBvbfWyhaFFMzAtXEIA5Ykq_OI0Ll1IdG2SzIWWD5e7SoWrNeUncoFMu99ckAtctm8SicyELx08amf3R82CAvmWD6Tca90Dn0R2FJw_gFoLoOwJNSkaLra0fCSpGqPTBkz64S74cP4WgNykDxxiDIr1eiwq8X7uBWLE0gX2KAIlMaPi586uNC74MKA9GzuYICxjRT5lQ7j7-8gv8mZYtECoaiNsDFHLmMr86E5TLDUyMYaZo0kXRLaqiJPYowfP9npinBeiUcd9F191sjhTQket7jYErbFYXVrtJh9DwIELlkejcX8Jv2vO-vCLACGBIGYYyIIkEXstkwBeFWlhgsNBGwsRll83XT3QrmqyOjg6svVhXXZ_RMzIYtuysngzHtt2tF16ua6ZbDE_PadVtJ1ruCl4iudKy_NCs9xzacpqZ4vJlw2m00)
+
 ## Task b
 Composite Pattern class based design description
 

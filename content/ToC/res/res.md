@@ -5,7 +5,7 @@ sch_sem: fa_25
 ---
 %% Begin Waypoint %%
 - **[[img]]**
-	- [[img]]
+    - [[img]]
 - [[res]]
 - [[Set theory basics]]
 - [[ToC Syl CS3823]]

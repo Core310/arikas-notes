@@ -16,12 +16,13 @@ X \sim N(\mu=2,\sigma=5)
 $$
 
 > [!Important] Expected and varience
-    > - E(X) = expected value. Always = to $\mu=2$
-    > - V(X) = Varience. Always = to $\sigma^2=5^2=25$
-    > - Directly plugin these values
+> - E(X) = expected value. Always = to $\mu=2$
+> - V(X) = Varience. Always = to $\sigma^2=5^2=25$
+> - Directly plugin these values
 
 E(X) is always mu and varience is always sigma^2?
 - `z-score`: How far a data pt is frm mean [[stats_ch2 notes zscore chebvy chev#z-score (standard score) aka z-transformation]]
+
 # read/filter/table
 Read in csv, filter some cols, generate table, find probility
 ```r
@@ -64,6 +65,7 @@ $P(Detect)$
 ```r
 70/223
 ```
+
 ## Filtering qns
 Sources:
 - [[stats_quiz 1.5 filtering]]
@@ -89,6 +91,7 @@ setdiff(b2$out, b1$out) # Only mild outliers
 [1] 28 31 33
 ```
 [[Stats_Quiz 3 boxplot]]
+
 #### Outliers using z-score method
 We use the keyword `scale()` on an array to generate the z-score of the array. We then use the 
 ```r
@@ -107,8 +110,8 @@ sum(abs(df$z) > 3) #why 3? TODO./.
 
 ##  Formal defition (not too impt)
 - `d`ensity: 
-	- binom/poisson = prob getting certain value
-	- norm = prob over certain range (*probability of getting a value between* 0.9 and 1.1?)
+    - binom/poisson = prob getting certain value
+    - norm = prob over certain range (*probability of getting a value between* 0.9 and 1.1?)
 - `p`robability: total *probability* of getting a value $\leq$ *certain point* (aka AUC up till x-value)
 - `q`uantile: inverse of `p`, xth % gives y value. *What x-value has 97.5% of the data below it*
 - `r`andom: generates random sample, 
@@ -207,6 +210,7 @@ rtrain <- function(n){
 ```
 
 ## dpqr code examples
+
 ### 1) Y ~ Bin(n = 10, p = 0.4). $P(Y \geq 8)$ 
 ```r
 1- pbinom(8-1,10,.4)
@@ -281,6 +285,7 @@ birthday <- function(k){
 # w-F theory: Wright-Fisher model
 
 # MGF & MOM
+
 ## Moment Generating Functions
 Estimating unknown parameters of a probability distribution using sample data. Given $$X \sim \text{Bern}(p)$$ 
 We use the general formula:
@@ -299,12 +304,13 @@ mean $\mu_X$ is $p$ which is Parameter (Probability of Success)
 
 # Z-score + emnpirical
 [[stats_ch2 notes zscore chebvy chev#z-score (standard score) aka z-transformation]] 
+
 # T.test Samples
 ```r
 t.test(x,y, 
-	   var.equal = TRUE, #equal variances ? (default false)
-	   conf.level = 0.80 #confidence interval
-	   )
+       var.equal = TRUE, #equal variances ? (default false)
+       conf.level = 0.80 #confidence interval
+       )
 ...
 ```
 -  Take line below 95% conf interval, L = Left most value OPA
@@ -325,5 +331,5 @@ mean(y)+mp*t*sd(y)/sqrt(n) #final conf interval
 # Linear Combinations in Expected and Varience
 - Finding E(#) plug mu in 
 - V(#) drop +b square entire thing (we always have to square all terms in V(#))!
-	- if iid directly plug $\sigma^2$ into entire expr ^2, 
+    - if iid directly plug $\sigma^2$ into entire expr ^2, 
 [[stats_linear_combo p2 Y=aX+b,L$]]

@@ -6,9 +6,9 @@ class: Applied Stats MATH-4753 FA25
 sch_sem: fa_25
 ---
 - **N** is the number of tickets sold
-	- False
+    - False
 - gamma is the pain factor or the probability of overbooking eg. $\gamma = P(s>N)$
-	- True
+    - True
 
 
 Rearrange following: 

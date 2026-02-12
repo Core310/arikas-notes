@@ -8,7 +8,7 @@ class: PPL
 
 # LR Grammer:  
 - Given expr, draw absstract tree! No context trees!
-	- Example: Draw tree like: OK + TX * (CO-MI)
+    - Example: Draw tree like: OK + TX * (CO-MI)
 - ![[Drawing 2025-02-13 14.11.36.excalidraw]]
 - What about 3-4+5\*CA?
 - ![[Drawing 2025-02-13 14.12.58.excalidraw]]

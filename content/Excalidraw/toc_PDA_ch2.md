@@ -69,6 +69,7 @@ b/c 1 of 2 branches will accept, eventualyl will accept.  ^sIQ1YdJ8
 aef61d782dfacc9b9f27ed72c7fc4626b62ddff3: [[Pasted Image 20251028124838_831.png]]
 
 %%
+
 ## Drawing
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAFYEmjoghH0EDihmbgBtcDBQMBKIEm4IUg4AQQBmADk2HgB1AGFiADMeBE0ADgB5IUlWgC0AVVSSyFhECsJ9aKR+Usxu

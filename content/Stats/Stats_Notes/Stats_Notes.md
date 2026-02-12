@@ -15,6 +15,7 @@ To review:
 - [[Stat_ch10 Notes (lab3) MSS TSS RSS]]
 - [[stats_ch5_notes dStem]]
 - [[stats_ch6_notes]]
+
 # Other
 - [[dplyr]]
 - [[Boxplot in r_stats]]
@@ -26,12 +27,12 @@ To review:
 - **res**
 
 - **reviews**
-	- **res**
+    - **res**
 
-	- [[Stats_cheat_sheet_fina]]
-	- [[Stats_final_review]]
-	- [[stats_Midterm_review code]]
-	- [[stats_Midterm_review]]
+    - [[Stats_cheat_sheet_fina]]
+    - [[Stats_final_review]]
+    - [[stats_Midterm_review code]]
+    - [[stats_Midterm_review]]
 - [[Stat_ch10 Notes (lab3) MSS TSS RSS]]
 - [[stats_calvin's_midterm]]
 - [[stats_ch2 notes zscore chebvy chev]]

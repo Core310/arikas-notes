@@ -6,6 +6,7 @@ sch_sem: fa_25
 ---
 
 [[stats_chapter5.pdf]]
+
 # Overview:
 - Density plot
 - Density functions
@@ -44,10 +45,10 @@ $$
 ```r
 curve(
 dbinom(x,
-	  mean=10
-	  sd=5
-	  ),
-	  xlim=c(10-3n*5,10+3m*5)
+      mean=10
+      sd=5
+      ),
+      xlim=c(10-3n*5,10+3m*5)
 )
 ```
 $$
@@ -58,6 +59,7 @@ P (2 \leq x \leq 12)\dots
 \end{gather}
 
 $$
+
 ## Takeaaways:
 $$
 \begin{gather}
@@ -68,13 +70,16 @@ Y=aX+b
 \end{gather}
 $$
 **Using integrate function does not (show your work) sohuld be done by hand**
+
 #### Example Problem (slide 15)
 
 ## Uniform distributions (dpqr-norm)
 - dnorm: Height of normal
 - lower tail area of the Normal up to given y
 - 
+
 # Central Limit Therom
+
 # New keywords
 ```r
 polygon #
@@ -100,17 +105,18 @@ polygon #
 - Find dpqr!
 - plot density
 - calculate probility {wait isnt this dpqr? Check..} (**it must use a p function!**)
+
 # Exam
 - Ch 1-6
 - Work out `z`
 - `boxplot` for outliers general `plots` 
 - `wrangle`
-	- Have the `[]` and `dylyr`
+    - Have the `[]` and `dylyr`
 - `tables`
-	- `and/or/given/marginal`
+    - `and/or/given/marginal`
 - `outliers`
 - Random variables `dpqr` eg. $P(x,y,z$ )
-	- Will have paragraph problem, 
+    - Will have paragraph problem, 
 - `barplots` out of `table` know options + how 2 play around w/ it.. 
 - YOU MAY NOT USE PACKAGE IN EXAM
 - exam designed to be busy, will be time constraint! !time looking for things 

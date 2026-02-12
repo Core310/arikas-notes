@@ -8,7 +8,7 @@ class: stats
 - Prof: wayne stewart
 - Prof Email:wayne.s.stewart@ou.edu
 - OH: 9.30-10.20AM MWF
-	- https://oklahoma.zoom.us/j/97979208683?pwd=8x0mNS9T2auPdT2c4vaPobBHM8dBi4.1
+    - https://oklahoma.zoom.us/j/97979208683?pwd=8x0mNS9T2auPdT2c4vaPobBHM8dBi4.1
 
 
 

@@ -4,13 +4,14 @@ class: compSec
 ---
 We are given some upper half of a unit circle, tasked to find 
 - carteasian cords? 
-	- 
+    - 
 - polar cords? 
 
 
 
 
 ____
+
 # Q1) Write the plane $x+y+z=2$ as level curve of some function f. What is f and C? 
 
 Level curve is defined by some z=k, where we can easily set z equal to the rest of the equastion. So we simply let f(x) = z, hence $z=2-x-y$ 

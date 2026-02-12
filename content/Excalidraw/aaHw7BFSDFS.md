@@ -127,6 +127,7 @@ a->b->d->...->p = 6 steps
 a->c->f->...->p = 6 steps ^3YIeORD7
 
 %%
+
 ## Drawing
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGADYEmjoghH0EDihmbgBtcDBQMBLoeHF0QOwojmVg1JLIRhZ2LjQAVgB2flLm1k4AOU4xbgAWAA5EgGZExJ5E9p7IQmYA

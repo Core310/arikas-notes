@@ -7,10 +7,11 @@ class: SDP
 - Prof: Dr Mansoor
 - Prof Email:m.hak@ou.edu
 - OH: MWF 0955-1055 DEH 234 / zoom
-	- https://oklahoma.zoom.us/j/99517144189
+    - https://oklahoma.zoom.us/j/99517144189
 TAs:
 - Name: Ajisegiri SJ
 - Email: oluwasijibomi.ajisegiri@ou.edu
+
 # Grades
 - Assignmen (4) 60%
 - Project 10%

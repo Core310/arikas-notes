@@ -5,6 +5,7 @@ I worked a lot on these notes! If you're taking these course have a look!
 
 - cal3, split between 4 exams a lot of the notes are based off [lamr edu](https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx). You can dive in here [[{cal3, exm1} exam 1 calc review]] for some material
 - [[ToC]], awesome course! Lots of nice notes found in the [[chNotes | chapter notes folder]]. 
+
 # Just some reviews
 Not so great notes, mostly last minute reviews the day before exam type of stuff. Could be helpful when making those exam reviews.
 

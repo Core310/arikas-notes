@@ -3,27 +3,28 @@ sch_sem: sp_25
 ---
 # Basic Concepts 
 - Confidentiality 
-	-  Protect information access, only being exposed to users who should have access.
+    -  Protect information access, only being exposed to users who should have access.
 - Integrity
-	-  Assurance that information hasn't been modified, or if it has, an audit is kept with what is changed
+    -  Assurance that information hasn't been modified, or if it has, an audit is kept with what is changed
 - Availability:
-	- Information can be reached at all times with the right keys. Eg. information queried is always available (no DDOS attacks preventing queries from reaching the server).
+    - Information can be reached at all times with the right keys. Eg. information queried is always available (no DDOS attacks preventing queries from reaching the server).
 
 - Difference between cryptography/steganography
-	- Cryptography conceals contents, Steganography concerns existence  
-	- symmetric: Dependent on one key to encrypt/decrypt (one time pad)
-	- asymmetric: Private/public key TLS handshake, slower
+    - Cryptography conceals contents, Steganography concerns existence  
+    - symmetric: Dependent on one key to encrypt/decrypt (one time pad)
+    - asymmetric: Private/public key TLS handshake, slower
 
 - DoS attacks? 
-		- Rating/flow limiting Attack identification and elimination
+    	- Rating/flow limiting Attack identification and elimination
+
 # Symmetric Crypto
 - Block ciphers 
 - DES (Data Encryption Standard) 
-	- 56 bit key, not fit for modern security (every 8th bit parity bit) 
-	- Can be brute forced 
-	- Double/Triple-DES: Apply DES multiple times  
+    - 56 bit key, not fit for modern security (every 8th bit parity bit) 
+    - Can be brute forced 
+    - Double/Triple-DES: Apply DES multiple times  
 - AES (Advanced Encryption Standard)
-	- Longer key sizes + safer + faster than DES 
+    - Longer key sizes + safer + faster than DES 
 
 | Step                  | Description                                          |
 | --------------------- | ---------------------------------------------------- |
@@ -37,24 +38,29 @@ sch_sem: sp_25
 
 # Modes of Operations? 
 SALT: Random piece of data that's added to a password before it's hashed
+
 ## ECB (Electronic Code Book)
 - **Rarely recommended**. Can be used for encrypting very short, random data where patterns don't matter (e.g., one-time authentication tokens).
 - **Weakness** against replay and frequency analysis attacks. Use: Pattern (repeating patterns)/Dictionary (set of possible plaintext known?)
 - Splits plaintext into fixed-size blocks and encrypts each block independently using the same key.
 - No chaining between blocks.
+
 ## CBC (Cipher Block Chaining)
 - Good for **encrypting large files and data transmissions** (e.g., disk encryption, databases). Avoid in real-time or performance-critical applications due to lack of parallelism.
 - **Weakness** Bit Flip: attacker can flip specific bits in a ciphertext block to manipulate the decrypted plaintext
 - Each plaintext block is XOR’d with the previous ciphertext block before encryption.
+
 ## CFB (Cipher Feedback)
 - Used for encrypting **streaming data** (e.g., network traffic, real-time audio/video encryption).
 - Uses a shift register and encrypts an IV first, then XORs it with the plaintext to generate ciphertext.
 - **Weakness** Bit Flip again 
+
 ## CTR (Counter)
 - Best for **high-speed applications** like VPNs, disk encryption, and performance-sensitive environments.
 - Uses a counter value that is encrypted, then XOR’d with the plaintext to produce ciphertext.
 - Counter is incremented for each block.
 - **Weakness** Bit Flip again
+
 # Hash Func? 
 - Properties (See assignment 2)
 
@@ -70,10 +76,10 @@ SALT: Random piece of data that's added to a password before it's hashed
 
 
 - Apps of hash func?
-	- Message authentication: HMAC vs CBC-MAC
-	- Message integrity check 
-	- Password with salt (what is salt?) 
-	- Commitment protocols
+    - Message authentication: HMAC vs CBC-MAC
+    - Message integrity check 
+    - Password with salt (what is salt?) 
+    - Commitment protocols
 
 
 # Meet-in-the-middle attack?

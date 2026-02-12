@@ -6,6 +6,7 @@ sch_sem: fa_25
 ---
 # Maximum Likelyhood distro
 Esentially trying to derive the function from several argument inputs. (What maxamizes the likelyhood function). Using data to come up with a model & its params (whr original model is unknown). 
+
 ## Intro: 
 Coin flip? Four times in a row pops up heads? Likelyhood this could happen? 
 

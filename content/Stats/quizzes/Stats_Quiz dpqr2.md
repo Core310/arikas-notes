@@ -8,6 +8,7 @@ sch_sem: fa_25
 ```
 ppois(8,3) - ppois(3,5)
 ```
+
 # 1) Y ~ Bin(n = 10, p = 0.4). $P(Y \geq 8)$ 
 ```r
 #P(Y>=8) = 1 - P(Y<=7)
@@ -30,6 +31,7 @@ ppois(8,5) - ppois(3,5)
 1 - pgeom(10,0.6)
 4.194304e-05
 ```
+
 # 4) Suppose Z ~ Bin(n = 20, p = 0.5). Find z s/t $P(Z \leq z)$ = 0.2517223)
 ```r
 qbinom(0.2517223, 20, 0.5)

@@ -24,7 +24,9 @@ What I should be able to do given table below":
 | 1             | .03 | .07 | .10 | .05 |
 | 2             | .05 | .10 | .05 |  0  |
 | 3             |  0  | .10 | .05 |  0  |
+
 ## Joint Prob 
+
 #### Joint Marginal prob aka $p_1(x)$ 
 - slide 9/10
 
@@ -34,10 +36,11 @@ What I should be able to do given table below":
 Suppose the joint density function for two continuous random variables, $X$ and $Y$, is given by
 $$f(x, y) = \begin{cases} cx & \text{if } 0 \le x \le 1; 0 \le y \le 1 \\ 0 & \text{elsewhere} \end{cases}$$
 Determine the value of the constant $c$.
+
 ##### Solution:
 1) We note the inequalities btwn 0&1
 2) Using our given function, we can generate a graph with it, where 
-	1) only cx generates some output, and all other places generate a 0 (via area, so generate some triangle $f(x,y) = cx$ with 2 lines)
+    1) only cx generates some output, and all other places generate a 0 (via area, so generate some triangle $f(x,y) = cx$ with 2 lines)
 3) Now that we have the shape, we can integrate the triangle, where we know that the area must equal 1 (since it rep total prob space)
 4) Hence, we can just integrate the double integral easily.. (recall triangles)
 

@@ -11,12 +11,13 @@ C S-4213-001 - Fall 2025, <br>
 Assignment 3: Command
 
 ___
+
 # StudentID_Assignment3_CS4213Fall2025
 
 1. [Methodology](#methodology)
 1. [Reflection](#reflection)
-	1. [Controller and Model Decoupling:](#controller-and-model-decoupling)
-	1. [Lombok Usage:](#lombok-usage)
+    1. [Controller and Model Decoupling:](#controller-and-model-decoupling)
+    1. [Lombok Usage:](#lombok-usage)
 1. [Core code](#core-code)
 1. [MVC View](#mvc-view)
 
@@ -27,6 +28,7 @@ For code, we used java given its ease of reading and being a strongly typed lanu
 - Flexibility: The- Flexibility: The problem is that the GUI code, which acts as the sender, can become awkwardly dependent on the volatile code of the business logic. The necessary refactoring is Extract Interface. This involves implementing the Command interface with a single execution method, ensuring that the sender communicates only via this abstraction, thereby letting you use various commands with the same request sender.
 - Reuse: The problem occurs when operations, such as copying text, need to be invoked from multiple places (e.g., toolbar buttons and shortcuts), which forces the duplication of the operation’s code. The refactoring needed is Extract Class. This is achieved by extracting all request details into a separate command class, which allows multiple GUI elements related to the same operation to be linked to the same command, preventing any code duplication.
 - Testability/Decoupling: The problem is that the GUI object directly calls a method of a business logic object, indicating tight coupling where one class knows more than it should about the way in which the other was implemented. The refactoring step specific to the Command pattern is to change the senders (Controller) so they execute the command instead of sending a request to the receiver directly. This requires the Client to create and configure concrete command objects with request parameters and the Receiver (Model) before execution, thereby reducing coupling between the UI and business logic layers.
+
 ## Controller and Model Decoupling: 
 The TodoListController (Sender/Invoker) does not need to know the specific business logic method names (addTask or completeTask) or the arguments required. It only knows how to call command.execute(). This means if the Model's methods change (e.g., addTask becomes createNewTodoItem), the Controller remains unaffected, provided the Command implementation is updated. This improves the testability and flexibility of the application.
 
@@ -199,6 +201,7 @@ public class MainApplication {
 }
 
 ```
+
 # MVC View
 
 ![[Pasted image 20251121164735.png]]
@@ -209,6 +212,7 @@ C S-4213-001 - Fall 2025, <br>
 assignment name
 
 ___
+
 # STUB 
 
 

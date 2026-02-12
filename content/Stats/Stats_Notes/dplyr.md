@@ -11,6 +11,7 @@ Based off of: [canvas page](https://canvas.ou.edu/courses/409964/pages/dplyr-ver
 possible fish w/ outliers wrt LENGTH 
 fish length > 1600x`
 fish either SUM or LIM? 
+
 # Manipulating Rows
 Use pipe filters like so `%>% `: 
 ```r

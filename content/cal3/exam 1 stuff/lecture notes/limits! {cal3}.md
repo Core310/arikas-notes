@@ -3,6 +3,7 @@ sch_sem: sp_25
 class: compSec
 ---
 - [[limit laws{cal3}]] (for formal EQs)
+
 # Q1: 
 - exactly 1 of the following limits must exist: (by finding limits along both cruves which disagree w/ e/o (discont)
 1) $\lim_{ (x,y) \to (0,0) }{\frac{x^2y}{x-y}}$
@@ -26,11 +27,12 @@ for 2)
 
 Find 2 @params, if they disagree 
 ___
+
 # Questions
 - You said that 3d calc boils down to taking 1 d methods, what about nth dimensional calc? Would the same tech apply? (to generalize or are the unique n tricks at n dimensions) 
 - is partial derative shortcut applactiable to nth dimensions? 
 - What about limits of multiple functions of a matrix? (even without multiple functions)
-	- something markov chains? Or some predictive algo? 
+    - something markov chains? Or some predictive algo? 
 
 Vector projection 
 = $\frac{dot}{mag}$

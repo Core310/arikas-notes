@@ -13,6 +13,7 @@ There were 2 quizzes for this section but they js had differernt values for them
 x <-c(15, 6.52, 17.31, 24.35, 17.97, 18.86, 7.78, 18.15, 10.36, 22.61, 11.75, 1.63, 7.69, 13.85, 0.27, 12.47, 5.84, 6.46, 5.21, 20.36)
 y <-c(16, 2.47, 13.31, -2.33, 2.75, 6.99, 2.9, 16.94, 1.72, 8.33, 2.57, 7.79, -2.17, -3, 5.38, 8.42, 17.46, -3.74, 13.89, 8.86, 15.34, 17.63, 14.57, -0.89, -2.73, -6.03, 7.74, 6.82, 11.11, 5.16)
 ```
+
 ## q1: Submit the point estimate for the variance of the first population from which x was taken.
 ```r
 var(x)
@@ -59,7 +60,7 @@ mean of x mean of y
 ## q4: Find the 95% confidence interval (L,U) for $\mu_{y}-\mu_{x}$ assuming **non** equal population variances and submit L to 4 decimal places
 ```r
 t.test(y,x)
-	Welch Two Sample t-test
+    Welch Two Sample t-test
 # Output below
 data:  y and x
 t = -2.853, df = 41.307, p-value = 0.006738

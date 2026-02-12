@@ -11,9 +11,11 @@ class: AI
 TAs:
 - Guanchong Huang guanchong.huang@ou.edu
 - TA Kepeng Zhou Kepeng.Zhou-1@ou.edu
+
 # Grades
 - 90% assignment
 - 10% paper review
+
 # Paper review
 Each student needs to select and review a research paper published between 2020-2025 at one of the following conferences (must be main conference, not workshops)  
 - AAAI, UAI, ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, KDD, ICRA, SODA  

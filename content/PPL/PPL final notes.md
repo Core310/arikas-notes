@@ -7,6 +7,7 @@ class: PPL
 
 [lazy vs short circut eval](https://stackoverflow.com/questions/14908548/any-difference-between-lazy-evaluation-and-short-circuit-evaluation)
 Lazy only eval when needed, vs short-circut stil lsees 
+
 # Thursday quiz mats
 define 
 let
@@ -19,10 +20,10 @@ ___
 In scheme, cannot use for loop, must b recurisve 2 prevent side effect. Example factorial program:
 ```
 (define (fact n))
-	(if(=n 0))
-		1
-		(* (fac (-n 1)) n)
-	)
+    (if(=n 0))
+    	1
+    	(* (fac (-n 1)) n)
+    )
 )
 ```
 ___

@@ -25,18 +25,21 @@ x_{i }\text{=data point @ i}
 \\ \text{n-1: Bessel's correction -> makes variation unbaised}
 \end{gather}
 $$
+
 ### Bessel’s correction
 When computing `sd()` or `var()` our denominator can be represented in 2 ways:
 - if we have all our data: `n`
 - subset: `n-1`
 
 ## z-score (standard score) aka z-transformation
+
 ### *Code*
 ```r
 z=(mpg-mean(mpg))/sd(mpg)
 #assuming mpg is some 1d array
 ```
 To find possible and defined outliers, where z=s-score formula
+
 #### Possible&Defined outliers
 ```r
 mpg[abs(z)>=2 & abs(z)<=3]# Find the values of z that are possible woutliers
@@ -49,6 +52,7 @@ mycol = ifelse(abs(z)>3, "Red",
 dotplot(mpg,col=mycol)
 
 ```
+
 ## Standard Deviation Formula
 Measures how many standard deviations above/below the mean a data point is in relation to the full dataset:
 $$z_{i}=\frac{x_{i}-\bar{x}}{s_{x}}$$
@@ -65,11 +69,14 @@ Impt notes abt z-scores
 - z-score$^-$ = data point below average.
 - z-score close to \[0\]  data point = average.
 - Data point considered unusual if $-3 > z \space score  > 3$
+
 ### normal  distribution: 
 - Symmetrical around the mean (center).
 - Bell-shaped curve.
 - Most values cluster around the average, with fewer values as you move farther away.
+
 # Rules / therom
+
 ## empirical rule $3\sigma$ 
 **Usage:**
 - you’re plotting a normal distribution
@@ -80,6 +87,7 @@ Essentially we can split our curve into 3 areas, a **68% 95% 99.7%** chance of l
 - 2 assumptions (68% and 95 OR 99% one)
 - Start at the mean, take 3 standard deviations (usually told) -> split into 3 areas then approxa given what area it falls in [khan aca](https://www.khanacademy.org/math/ap-statistics/density-curves-normal-distribution-ap/stats-normal-distributions/v/ck12-org-normal-distribution-problems-empirical-rule)
 - Provides exact distributions  
+
 ### Chebyshev's Theorem:
 extension of emp rule, states that at least $1 - 1/k^2$ of the observations have to be within k standard deviations of the mean
 - **within x standard deviations of the mean**
@@ -87,9 +95,9 @@ extension of emp rule, states that at least $1 - 1/k^2$ of the observations have
 - No assumptions
 - Provides approx
 Formally: $$1-\frac{1}{k^2}$$ of the data values lies within k standard deviations of the mean
-	- eg. k=2 -> $1-\frac{1}{4}=.75$
-		- Hence 75% of values lie within 2 standard deviations
-	- Hence $1-\frac{1}{k^2}$ = % of values that lie within k standard deviations
+    - eg. k=2 -> $1-\frac{1}{4}=.75$
+    	- Hence 75% of values lie within 2 standard deviations
+    - Hence $1-\frac{1}{k^2}$ = % of values that lie within k standard deviations
 
 # Code
 Filtering:
@@ -104,5 +112,6 @@ set difference between two collections:
 ```r
 setdiff(x, y)
 ```
+
 # Other stuff
 See also [[Stat_ch10 Notes (lab3) MSS TSS RSS]]

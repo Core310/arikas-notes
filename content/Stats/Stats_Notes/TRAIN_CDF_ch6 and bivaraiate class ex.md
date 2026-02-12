@@ -5,6 +5,7 @@ Type:
 sch_sem: fa_25
 ---
 (See md for full stuff ltr)
+
 # The Problem
 $$
 \begin{gather}
@@ -14,6 +15,7 @@ f(y) = \begin{cases}
 \end{cases}
 \end{gather}
 $$
+
 # Solution
 Then its as simple as finding the $\int$ for this. We know that over $[-5,5]$, the AUC must be = 1, more formally we have the top part of f(y) equating to 1
 

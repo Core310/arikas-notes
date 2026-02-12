@@ -21,6 +21,7 @@ setdiff(b2$out, b1$out)
 [1] 28 31 33
 #hence 3 elements so 3 outliers
 ```
+
 # 3) How many fish would be classified as outliers with respect to LENGTH using the boxplot method
 ```r
 > bL <- boxplot(ddt$LENGTH, range = 3)

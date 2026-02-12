@@ -7,14 +7,16 @@ sch_sem: fa_25
 a
 [[ToC_chapter_3_slides.pdf]]
 
-	
+    
 # Turming Machine TM
 ![[Pasted image 20251202002241.png|500]]
+
 ### FA vs TM? 
 - r/w can -mv L/R (think FA singly linked list, TM doubly)
-	- TM can write, this is **BIG**. Previous FA/PDA (any automata) couldn't write!
+    - TM can write, this is **BIG**. Previous FA/PDA (any automata) couldn't write!
 - infinite tape length 
 - Special states (eg. accept/reject) take effect immidetly
+
 ### TM Formal Defition
 7 tuple, augmented FA:
 - Q: set of states

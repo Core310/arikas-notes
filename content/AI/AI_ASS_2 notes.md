@@ -4,8 +4,8 @@ class: AI
 ---
 # Notes:
 - Working on dataset given CC.csv data
-	- row = applicant 
-	- col=info
+    - row = applicant 
+    - col=info
 
 For x=row#, y=appApproved?, $w_j$ = $\pm{1}$ unknown @param attempting to find, then:
 $$
@@ -18,6 +18,7 @@ $$
 er(w) := \frac{1}{n} \sum^{340}_{{i=1}}(f(x_{i})-y_{i})^2
 $$
 Where 340 is our row length, then each round for some random combo of w we have: 
+
 ## Dataset changes
 - CreditApprove, 1=approve
 - Gender: M=1

@@ -13,6 +13,7 @@ TAs:
 - 3:00 PM - 4:00 PM Friday on Discord
 
 The lecture slides/notes will be posted on the course webpage (Canvas) after each lecture.
+
 # Grades
 - Attendance: 5%
 - Hw: 30%

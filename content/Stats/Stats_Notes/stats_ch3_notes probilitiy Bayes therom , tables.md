@@ -9,21 +9,23 @@ sch_sem: fa_25
 [[stats_Chapter 3.pdf]]
 
 # Probability
+
 ## Defitions: (p20 for ex)
 - Experiment: 
-	- Process generating outcomes
+    - Process generating outcomes
 - Sampl
 
 e Space: 
-	- Collect of all possible simple events
+    - Collect of all possible simple events
 - Event: 
-	- specific collection of sample points (simple events)
+    - specific collection of sample points (simple events)
 - simple event: 
-	- Most basic event possible to break down
+    - Most basic event possible to break down
 - Probability:
-	- proportion of times that the event is observed for large n sample
-	- $P(A)$
-	- Lies in $0 < x < 1$
+    - proportion of times that the event is observed for large n sample
+    - $P(A)$
+    - Lies in $0 < x < 1$
+
 ## Basics
 [[stats_quiz 4 Tables and Probability]]
 - **ORDER DOES MATTER!!**
@@ -65,15 +67,18 @@ $$
 # 1) Probability of Public OR Detect (Union)
 P_union <- union_prob(A_count = 120, B_count = 70, AB_count = 48, total = 223)
 ```
+
 ### 4. Intersection Rule
 $$
 P(A \cap B) = P(A) \cdot P(B)
 $$
+
 ### 5. Addition Rule (Mutually Exclusive)
 $$
 P(A \cup B) = P(A) + P(B) \quad \text{if } A \cap B = \varnothing
 $$
 `P(A) + P(B)` 
+
 ### 6. Conditional Probability Relative Probility Prob of A Given B ?
 $$
 P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) > 0
@@ -86,6 +91,7 @@ P_cond <- cond_prob(AB_count = 48, B_count = 120)
 ```
 
 ## extra Laws
+
 ### 7. Law of Total Probability
 If $\{B_1, B_2, \dots, B_n\}$ partitions $\Omega$:  
 $$
@@ -97,17 +103,20 @@ $$
 ### 8. Bayes’ Theorem
 Allows to flip the conditionals:
 - We can change $P(A|B)$ to $P(B|A)$
-	$$P(A|B)=\frac{P(A)P(B|A)}{P(B)}$$
+    $$P(A|B)=\frac{P(A)P(B|A)}{P(B)}$$
 > [!NOTE] what each element means in Bayes Therom
-    > - Where the LHS: posterior 
-	>- First P(A) prior
-	>- second top part: likelyhood
-	>- bottom: margin
+> - Where the LHS: posterior 
+> - First P(A) prior
+> - second top part: likelyhood
+> - bottom: margin
+
 #### Ways bays therom:
 1) Derrive bayes therom frm scratch
 2) Expr for marginal 
 3) Know the second expr! (Slide 30)
+
 # Counting Theroms
+
 ## Therom 3.1  Multipliciative rule
 [khan aca](https://www.khanacademy.org/math/ap-statistics/probability-ap/probability-multiplication-rule/a/general-multiplication-rule)
 
@@ -120,12 +129,15 @@ If independent events then:
 $$
 P(B|A)=P(B)
 $$
+
 ## Therom 3.2, Permutation Rule
 Denoted by LHS:
 $$
 P^N_{r}=\frac{N!}{(N-r)!}
 $$
+
 ## Combinations (Binomial Probability Distribution)
+
 ### Formula:
 
 $$
@@ -165,6 +177,7 @@ This means that in order for two people to not share a birthday, ALL 253 compar
 
 Ultimately, the reason the birthday paradox doesn’t makes sense at first glance is because people are assuming you’re only making 22 comparisons but when you really lay it out you realize that there are actually 253 total comparisons.
 [from: reddit](https://www.reddit.com/r/explainlikeimfive/comments/1afwzv6/eli5can_anybody_explain_the_birthday_paradox/)
+
 ## Code
 ```r
 bday_all_different <- function(n, d = 365) {

@@ -12,6 +12,7 @@ ___
 - OH: 915 PHSC,
 
 In-person quizzes + In class activities 
+
 # Grades
 - Quiz: 10% (5x) {dropped loswest quiz, homework % }
 - Hw: 10% (gradescope + online)

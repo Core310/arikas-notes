@@ -11,15 +11,16 @@ Khor Arika<br>
 C S-4213-001 - Fall 2025, <br>
 Assignment 4: Patterns for Maintenance
 ___
+
 # Assignment 4: Patterns for Maintenance
 1. [Design Refactoring: ROS2 Line Follower Robot](#design-refactoring-ros2-line-follower-robot)
-	1. [a. Original Design and Flaws](#a-original-design-and-flaws)
-	1. [b. Refactor for Flexibility and Reuse](#b-refactor-for-flexibility-and-reuse)
-		1. [Refactoring 1: Flexibility (Apply Mediator Pattern)](#refactoring-1-flexibility-apply-mediator-pattern)
-		1. [Refactoring 2: Reuse (Consolidate Logic Behind a Facade)](#refactoring-2-reuse-consolidate-logic-behind-a-facade)
-		1. [Refactoring 3: Optional (Introduce Strategy Pattern)](#refactoring-3-optional-introduce-strategy-pattern)
-	1. [c. Refactor for Testability + Tools](#c-refactor-for-testability--tools)
-	1. [d. Reflection on Refactoring Impact (Short Summary)](#d-reflection-on-refactoring-impact-short-summary)
+    1. [a. Original Design and Flaws](#a-original-design-and-flaws)
+    1. [b. Refactor for Flexibility and Reuse](#b-refactor-for-flexibility-and-reuse)
+    	1. [Refactoring 1: Flexibility (Apply Mediator Pattern)](#refactoring-1-flexibility-apply-mediator-pattern)
+    	1. [Refactoring 2: Reuse (Consolidate Logic Behind a Facade)](#refactoring-2-reuse-consolidate-logic-behind-a-facade)
+    	1. [Refactoring 3: Optional (Introduce Strategy Pattern)](#refactoring-3-optional-introduce-strategy-pattern)
+    1. [c. Refactor for Testability + Tools](#c-refactor-for-testability--tools)
+    1. [d. Reflection on Refactoring Impact (Short Summary)](#d-reflection-on-refactoring-impact-short-summary)
 
 
 
@@ -33,6 +34,7 @@ ___
 - Lacking Areas: Flexibility, reuse, and testability. (The tight coupling between sensor reading, signal processing, and motor control logic is often the root cause of these deficiencies.)
 
 [![](https://img.plantuml.biz/plantuml/svg/RP51IyGm48NlWVo7ERR8_e6ob8KjddILhNYFwTWTI3CbcRgA-jzDIgkuR4x9lE5xZvTT51Da6fnMGk8G7WBrv8s31YFr7efsYXP7ePSa2iE1AMAfbLRMcHZXZZosw2E70tS8drf1EZSGq7H7SswCcA9SXvQ7SHAyP-6mvs4mlYjAg62vQ_Nz1rwMl0Hs3l_HDp1aiGdqXc5buplQn5wnTkX-kUK2liYwsNpLLsqgs6ufnWbZJfm9q550A-wZhZF8io2aeau2_7eDeTMjC-SAdkQTFK-Z8zzhzKpiZ2HkUtnCrSvPu9GCNFOopav99lOfyKNlFlUk5QOisJsdsAN7_7C_)](https://editor.plantuml.com/uml/RP51IyGm48NlWVo7ERR8_e6ob8KjddILhNYFwTWTI3CbcRgA-jzDIgkuR4x9lE5xZvTT51Da6fnMGk8G7WBrv8s31YFr7efsYXP7ePSa2iE1AMAfbLRMcHZXZZosw2E70tS8drf1EZSGq7H7SswCcA9SXvQ7SHAyP-6mvs4mlYjAg62vQ_Nz1rwMl0Hs3l_HDp1aiGdqXc5buplQn5wnTkX-kUK2liYwsNpLLsqgs6ufnWbZJfm9q550A-wZhZF8io2aeau2_7eDeTMjC-SAdkQTFK-Z8zzhzKpiZ2HkUtnCrSvPu9GCNFOopav99lOfyKNlFlUk5QOisJsdsAN7_7C_)
+
 #### b. Refactor for Flexibility and Reuse
 
 There are three key refactorings sections here, given the required patterns (Facade or Mediator)
@@ -121,6 +123,7 @@ public class FollowerContext {
 ```
 
 [![](https://img.plantuml.biz/plantuml/svg/hLPTRzCm57slrFzmtvR2yZ2G-8Z6D5YfL6bCrSPugVRWshUfaMDNjjEj8FuxrscInbqsWI0lTUFxUUuvjprtdbbV5ceuyD8hXDkrO1u5ZD79N4DowwJEuGiAoRonnp1Xd0ayXl5qD1mC1qVmeUS9xp_XYcsaiKp1Z7cFLcTj64YkSSaudKBman6aCBDc8mKwuAWzESaVL0GtHL5goPcNHiFyxTrm83M58b-4QxCmletuSpW0Ubw2Dbukjub3BT1cEwiBKwoDfi37W1lwoE36XzJKmg_GnK7GrdmVrM6RAYdgGnQNCDhRQf7qvk6AEGUNKkF4A6NkqRRrosAji20VzvyQ2qvfIcQb3o1VcbnoMA55UXkLSsMamubK1C6ZAdgGM5l3qRd4ilinyumAsHr6aC4k2ehmlSxHssoQleZIPb0mpN9qpzX_CNIwC4GEkaLxPGHs_GBbRb0xigwk0amEYCiC_CgQCb_H9q8pk-uiTcwLrn_qRv69kkMaT-GD7Xq0EXdIzAoV05dWcEiK-9ouQCebzsKahfqoOscz2j8Yq9nHCkZQWQfuC7ztro0mGyjn7GHM1wWxJKDJBh0yxg2vNLQZoxfpRD38qHDwfVF1Cs3nsNbPKFha2P8ygi4GSm_JzXf5sPz3h8lAak3-YhJv5b99lyresQs3gZJVmbH_HrwjcuHM7CpVH3jdMh5mREK6RRGSlg4od68bc_gGWJ3bGc4i_MjagXkYmxU-qDJWHnepJNd5hBXd95w-Ky2XYFlKqGvIL46pA4LJUuzZqcS_WYCuFQMr3z91wMWvLxia2UIgo4YOjjYDuEmCvZmzkMlIu0FoqYFfYHGh4bw83Eel3K97yHWefwDGMMzheh9qG6CAgewmOmigY5Lr30TzpYPeCCRYRt_8I7z4vtmRg-rrKDiaBFD06BvYEaT6702cShBmgyB1_7r4gFqgQ4EsjE9CyLAnFMgYshUDg8AMwlQgwuWFi-cu3TWXsR-aY-8twoj0Ym--ipJgk5bFhWCox2wVI7EOmCIBSnzoE3WdAbJ_O7u3)](https://editor.plantuml.com/uml/hLPTRzCm57slrFzmtvR2yZ2G-8Z6D5YfL6bCrSPugVRWshUfaMDNjjEj8FuxrscInbqsWI0lTUFxUUuvjprtdbbV5ceuyD8hXDkrO1u5ZD79N4DowwJEuGiAoRonnp1Xd0ayXl5qD1mC1qVmeUS9xp_XYcsaiKp1Z7cFLcTj64YkSSaudKBman6aCBDc8mKwuAWzESaVL0GtHL5goPcNHiFyxTrm83M58b-4QxCmletuSpW0Ubw2Dbukjub3BT1cEwiBKwoDfi37W1lwoE36XzJKmg_GnK7GrdmVrM6RAYdgGnQNCDhRQf7qvk6AEGUNKkF4A6NkqRRrosAji20VzvyQ2qvfIcQb3o1VcbnoMA55UXkLSsMamubK1C6ZAdgGM5l3qRd4ilinyumAsHr6aC4k2ehmlSxHssoQleZIPb0mpN9qpzX_CNIwC4GEkaLxPGHs_GBbRb0xigwk0amEYCiC_CgQCb_H9q8pk-uiTcwLrn_qRv69kkMaT-GD7Xq0EXdIzAoV05dWcEiK-9ouQCebzsKahfqoOscz2j8Yq9nHCkZQWQfuC7ztro0mGyjn7GHM1wWxJKDJBh0yxg2vNLQZoxfpRD38qHDwfVF1Cs3nsNbPKFha2P8ygi4GSm_JzXf5sPz3h8lAak3-YhJv5b99lyresQs3gZJVmbH_HrwjcuHM7CpVH3jdMh5mREK6RRGSlg4od68bc_gGWJ3bGc4i_MjagXkYmxU-qDJWHnepJNd5hBXd95w-Ky2XYFlKqGvIL46pA4LJUuzZqcS_WYCuFQMr3z91wMWvLxia2UIgo4YOjjYDuEmCvZmzkMlIu0FoqYFfYHGh4bw83Eel3K97yHWefwDGMMzheh9qG6CAgewmOmigY5Lr30TzpYPeCCRYRt_8I7z4vtmRg-rrKDiaBFD06BvYEaT6702cShBmgyB1_7r4gFqgQ4EsjE9CyLAnFMgYshUDg8AMwlQgwuWFi-cu3TWXsR-aY-8twoj0Ym--ipJgk5bFhWCox2wVI7EOmCIBSnzoE3WdAbJ_O7u3)
+
 #### c. Refactor for Testability + Tools
 
 Dependency Injection (DI) allows us to remove hard-coded dependencies, making the application loosely-coupled, extendable, and maintainable. It is a suggested refactoring technique to improve testability.

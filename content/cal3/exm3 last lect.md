@@ -14,25 +14,25 @@ only works for V being conserative
 1) Choice of tan vect
 2) surface: voice of normal vector
 3) how apply to 4 thrms?: 
-	1) greens thrm, counterclockwise 
-	2) divergence: normal pts outward
-	3) stokes, $\sum$ and its partial are related by right hand rule
+    1) greens thrm, counterclockwise 
+    2) divergence: normal pts outward
+    3) stokes, $\sum$ and its partial are related by right hand rule
 
 # Loops and Paths
 - concat/reverrsal
 - conserative vector fields:
-	- if conserative 
-	- check conserative
-	- integrate on loops: 0 if V conserative
+    - if conserative 
+    - check conserative
+    - integrate on loops: 0 if V conserative
 
 # Dimensions
 - ?D object in  ?D space
-	- 1D 1D ? func
-	- 1d 2D ? plane curve
-	- 1D 3D ? space curve 
-	- 2D 2D ? region
-	- 2D 3D ? surface
-	- 3D 3D ? volume
+    - 1D 1D ? func
+    - 1d 2D ? plane curve
+    - 1D 3D ? space curve 
+    - 2D 2D ? region
+    - 2D 3D ? surface
+    - 3D 3D ? volume
  # Integrals
 - $\int_C f(x,y) dS$
 - $\int_C V \cdot ds$
@@ -46,6 +46,7 @@ only works for V being conserative
 - polar: r (jacobian)
 - cylindrical: $r
 - spherical  
+
 # Lagrange mult
 - Over single curve
 - multi curves

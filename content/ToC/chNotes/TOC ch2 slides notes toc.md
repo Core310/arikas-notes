@@ -7,6 +7,7 @@ sch_sem: fa_25
 [[ToC_chapter_2_slides.pdf]]
 - See [[ToC Syl CS3823]] site, most important is class 21 nov 6th. 
 - See also [[TM_Remarks_TOC.pdf]]
+
 # Context Free Grammers (CFG)
 **Formal Def** :Can be written as 5 tuple like ch1, but in this case it's a 4 tuple varient: $(V,\Sigma,R,S)$
 1) V: set of vars
@@ -19,6 +20,7 @@ $$
 \{w \in \Sigma^*  | S \to w 
 \}
 $$
+
 ## Language Rules
 Collection of substitution rules, aka productions. Denoted by some $G_1$ for example: for # being terminal (sometimes $ is used instead..)
 $$
@@ -97,9 +99,9 @@ $$
 
 Note how it can't hv the start symbol going to the RHS
 - Each ONLY rule produces:
-	- two non-terminal symbols (Strictly 2!!)
-	- single terminal symbol
-	- ONE instance of start_symbol $\to \lambda$
+    - two non-terminal symbols (Strictly 2!!)
+    - single terminal symbol
+    - ONE instance of start_symbol $\to \lambda$
 
 So if we needed to convert $A \to BCD$ we would need to create an intermediate rule like $A \to BX, \ X \to CD$
 
@@ -113,7 +115,7 @@ When doing CNF, we need to elim rules frm the language. How? We create new rule 
 1) Add start var
 2) elim A -> $\lambda$ (this repeats, going up every level till it doesn't exist, ensure replacement)
 3) elim invalid rules eg. A -> $B$ (loops till finishes, ensure to replace anything as needed)
-	1) If we have A -> B, then replace B with what it's defined as, if its not possible, then its not a CNF
+    1) If we have A -> B, then replace B with what it's defined as, if its not possible, then its not a CNF
 
 For part 2 take following example:
 > [!NOTE] Removing ε-production  
@@ -133,6 +135,7 @@ R \rightarrow u A v w \\
 R \rightarrow u v w
 \end{gather}
 $$
+
 ## Pumping Lemma for CFL
 > [!NOTE] Pumping Lemma for CFL Steps:
 > 1. Assume language is context-free, proceed towards contradiction
@@ -145,6 +148,7 @@ $$
 
 
 Finish off see slide 74...
+
 # Pushdown Automata PDAs 
 Similar to NFA but has stack for memory. Can recognize some non-regular langauges. 
 
@@ -167,7 +171,7 @@ $$
 $$
 
 > [!Question] What if we had $\lambda$ instead of 0?
-    > rule applies regardless of input! (We can always go to this) (confirm this..)
+> rule applies regardless of input! (We can always go to this) (confirm this..)
 
 
 ## PDA Construction
@@ -182,6 +186,7 @@ Formally, we can think of it as a bunch of if else statements;
 3) Generate rules 
 
 ![[toc_PDA_ch2|1500]]
+
 ### Example 18, Construct PDA from CFG
 $$
 \begin{gather}
@@ -194,7 +199,7 @@ $$
 
 
 > [!NOTE] What does $ mean in PDAs?
-    > The dollar sign is basically a tracker for the automata to know when it is done / all symbols have been popped out of the stack. It stays at the bottom of the stack and if the PDA reaches it, it knows it has reached the end of the string and can terminate.
+> The dollar sign is basically a tracker for the automata to know when it is done / all symbols have been popped out of the stack. It stays at the bottom of the stack and if the PDA reaches it, it knows it has reached the end of the string and can terminate.
 
 ## nondeterministically guess vs guess
 see [here](https://cs.stackexchange.com/a/139729) put into ur own words ltr
@@ -243,11 +248,14 @@ $$
 
 # Largest pt for midterm 2?
 - mostly stuff aft midterm 1, but obv shuld know basic stuff (bool func / truth tables)
+
 ## Show langauge is ! CFL
+
 #### Example 23
 ![[Pasted image 20251104124504.png|500]]
 In a way its a lot like how we did for the pumping lemma, having to staisy the premise of the PL for CFL, then move onto the $x^n$ case, then create several cases from there. You MUST cover every possible case, hence there will be multiple cases when proving (see as case 2, todo add case1). 
 ![[Pasted image 20251104130002.png|500]]
+
 #### Example 23
 Again when starting, we consider some example eg.
 $$

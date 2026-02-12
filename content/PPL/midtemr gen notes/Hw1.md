@@ -5,10 +5,11 @@ class: PPL
 Arika Khor
 <br>Spring_CS 3323
 <br>Dr Cheng
+
 # 1.1) 
 Errors in a computer program can be classified according to when they are detected and, if they are detected at compile time, what part of the compiler detects them.
 - a) Lexical Error (Detected by the Scanner). Using your favorite imperative language, give an example of each of the following (In this case I used rust)
-	
+    
 Invalid char in a var name
 ```rust
 fn main() {

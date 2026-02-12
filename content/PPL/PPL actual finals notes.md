@@ -4,6 +4,7 @@ class: PPL
 ---
 # Racket keywords + docs to know
 True given by `#t`, false = `#f` so `if #f (.. ..)` eval second `..`
+
 ### Eval 
 - Esentially used 2 exe dymanic code w/ limited scope (of namespace) to run time
 - accept quoted form with `'(...)`
@@ -20,6 +21,7 @@ Another ex
     (eval 'x))) 
 -> error!!
 ```
+
 ### Car/cdr/cons
 arg = pair eg. 
 ```scheme
@@ -36,6 +38,7 @@ arg = pair eg.
 > (cons 1 '())
 '(1)
 ```
+
 ### Map
 ```scheme
 (map proc lst ...+) → list?
@@ -54,6 +57,7 @@ Eg.
 '(2 3 4 5)
 ```
 applies the lamda func of num++ to e/a element and outp e/a elemen
+
 ### Let and others
 Defined by 
 ```scheme
@@ -72,6 +76,7 @@ OR
       (list y x)))
 '(5 2)
 ```
+
 #### Letrec
 enables mutually recursive definitions
 ```scheme
@@ -85,6 +90,7 @@ enables mutually recursive definitions
 2 phases:
 - Allocation: -m uninitialized vars per id
 - Initialization: eval e/a expr# in an environment whr all ids alrdy bound (culd b uninitialized), then store rslt per var
+
 ### Others
 - Delay and lazy
 ```scheme
@@ -93,23 +99,27 @@ enables mutually recursive definitions
 ```
 - Creates a promise that, when forced, evaluates the bodys to produce its value
 - Main diff is:
-	- `lazy` automatically follows through nested promises
-	- `delay` does !, if delay smtn that rtrn promise? need 2 force all promise manually
+    - `lazy` automatically follows through nested promises
+    - `delay` does !, if delay smtn that rtrn promise? need 2 force all promise manually
 
 Side effect programming and short circut eval? **Todo?>**
 - Example of side effect programming
 ```c
 int a =0,b =5; printf(true || b/a); //Results in printing true because of short circuit eval  
 ```
+
 ### Tail recursion? 
 recursive call = last op (as return)**Todo?>**
+
 # Python keywords 2 kno
+
 ### Lambda
 Standalone function, any # of args, 1 expr
 ```python
 x = lambda a, b : a * b  
 print(x(5, 6))
 ```
+
 ### yield
 ```python
 def count_up_to(n):
@@ -126,19 +136,22 @@ esentially makes the return value return those on each demand call. Can append a
 | **Control flow** | Exits immediately                     | Pauses, can be resumed                                                                            |
 | **Memory usage** | Caller must collect all values itself | Generates values **lazily**, one at a time                                                        |
 | **Use case**     | Compute and deliver final result      | Stream or pipeline large or infinite sequences                                                    |
+
 # Random C/cpp stuff
+
 ## Overflow index positioning
 ![[Pasted image 20250504174358.png|500]]
 - For second print statement: Have following, so for second print. So we start at row `2`, count RIGHTWARD (go down when reach end of row start far left) where current `31` is 0th index and end of whatever is `11th` index. 
 - Third: Another wording for saying `A[3][0]`
-	- A is a pointer to the first row: `A == &A[0]`
-	- A + 3 is a pointer to the 4th row:` A[3]`
-	- `*(A + 3) dereferences it to give A[3] — which is the 4th row: {53, 59, 61, 67, 71}`
+    - A is a pointer to the first row: `A == &A[0]`
+    - A + 3 is a pointer to the 4th row:` A[3]`
+    - `*(A + 3) dereferences it to give A[3] — which is the 4th row: {53, 59, 61, 67, 71}`
 - Fourth: Another word for `A[0][4] = 11` 
-	- A is the pointer to `A[0]`
-	- `*A = A[0] → gives first row: {2, 3, 5, 7, 11}`
-	- `*(A) + 4 = pointer to the 5th element of the first row (A[0][4])`
-	- `*(*(A) + 4) dereferences it`
+    - A is the pointer to `A[0]`
+    - `*A = A[0] → gives first row: {2, 3, 5, 7, 11}`
+    - `*(A) + 4 = pointer to the 5th element of the first row (A[0][4])`
+    - `*(*(A) + 4) dereferences it`
+
 ## 8-bit 2's comp table of ascii chars (quiz 12)
 ```c
   char a=254;
@@ -152,6 +165,7 @@ esentially makes the return value return those on each demand call. Can append a
 # Quizzes
 
 ## Quiz 7 (not rly useful)
+
 ### Q6
 Write a (purely functional) scheme program that computes the squares of  all the elements in a list. Examples of inputs and outputs: 
 ```scheme
@@ -164,6 +178,7 @@ Ans:
          (* x x))
        lst))
 ```
+
 ### The rest (not rly useful)
 
 Output of? 
@@ -188,7 +203,9 @@ Output of?
  6
 )->9
 ```
+
 ## Quiz 8
+
 ### Q1
 Use "delay" to create an infinite (lazy) list of all the cubic numbers such as  `1 (=1*1*1), 8 (= 2*2*2), 27 (=3*3*3), ...`
 ```scheme
@@ -205,6 +222,7 @@ Use "delay" to create an infinite (lazy) list of all the cubic numbers such as  
   (helper (cubic-numbers n)))
 (display-cubic-numbers 3)
 ```
+
 ### Q2
 Write a program in Scheme using "tail recursion" to compute the squares of  all the elements in a list. Examples of inputs and outputs: 
 ```scheme
@@ -238,7 +256,9 @@ Answer:
 numbers = [n**2 + 1 for n in range(1, 200, 2)][:100]
 print(numbers)
 ```
+
 ## Quiz 11
+
 ### Q1
 Use recursion in Python to write a program that given a positive integer n, calculates the sum of the first n integer squares. So
 ```python

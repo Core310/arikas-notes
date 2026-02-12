@@ -11,18 +11,19 @@ $$
 \end{align*}
 
 $$
+
 # EPS FIRST FOLLOW PREDUCT
 - epsilon, $\epsilon$  cant be in first, follow, or predict!
 - EPS(a), if a = $\epsilon$ ? true || false (Boolean operation)
 - First(a) all possible first outcomes for some a. Eg. First(stmt) = until | id
 - Follow: 
-	- What can come after $a$ on the right hand side of the expr? Eg. FOLLOW(a) = ; $ 
-	- If a is in possible child, put $ or $\epsilon$
-	- Set of non terminals
+    - What can come after $a$ on the right hand side of the expr? Eg. FOLLOW(a) = ; $ 
+    - If a is in possible child, put $ or $\epsilon$
+    - Set of non terminals
 - Predict: (requires some $A \rightarrow a$)
-	- if a can result in $\epsilon$  -> $First(a) \cup Follow(A)$
-		- Union means all unique elements in both sets (basically no elements shared but combine both)
-	- if a = $\epsilon$ -> just take FIRST(A)
+    - if a can result in $\epsilon$  -> $First(a) \cup Follow(A)$
+    	- Union means all unique elements in both sets (basically no elements shared but combine both)
+    - if a = $\epsilon$ -> just take FIRST(A)
 - 
 
 p. 121 of textbook

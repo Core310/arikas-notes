@@ -26,6 +26,6 @@ https://cstheory.stackexchange.com/questions/4352/how-is-proving-a-context-free-
 
 ___ 
 - First(A): Set of all tokens that could come after A in some program
-	- If the value could point to NULL, we can count the next value as a FIRST 
+    - If the value could point to NULL, we can count the next value as a FIRST 
 - Follow: Set of all tokens that can come after FIRST (if null)
 - Predict: Set union of First and Follow

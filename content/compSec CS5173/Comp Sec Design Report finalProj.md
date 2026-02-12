@@ -6,26 +6,27 @@ We chose to build a platform similar to the [magic-wormhole protocal](https://ma
 
 # Design Requirements:
 - With a key no less than 56 bits, what cipher you should use?
-	- 
+    - 
 - DO NOT directly use the password as the key, how can you generate the same key between Alice and Bob to encrypt messages?
-	- 
+    - 
 - What will be used for padding?
-	- 
+    - 
 - Example of GUI and it running a simple message between both hosts
-	- 
+    - 
 - How should Alice and Bob set up an initial connection and also maintain the connection with each other on the Internet? (You may refer to socket/network programming in a particular computer language)
-	- 
+    - 
 - If Alice or Bob sends the same message multiple times (e.g., they may say “ok” many times), it is desirable to generate different ciphertext each time. How to implement this?
-	- 
+    - 
 - Design a key management mechanism to periodically update the key used between Alice and Bob. Justify why the design can enhance security.
-	- stub
+    - stub
 
 ## Extra Credit 
 - Think about this scenario: if you can hide the detailed procedure of your encryption algorithm, how would you improve the security by designing a new algorithm? For example, you may do two encryptions using different standard ciphers, then XOR the two outputs together. Please give your new design and justify its security and efficiency. (5 pts)
-	- 
+    - 
 - If Alice and Bob do not have a pre-shared password (or passphrase) and wish to establish a secure connection, they should use a protocol that allows them to authenticate each other and negotiate a shared secret over an insecure channel. Please explain your design and implement it in your project. Note, if you choose to complete this question, you do not need to assume that Alice and Bob share the same password. (5 pts)
-	- 
+    - 
 ___
+
 # Assigned Project: Secure Instant Point-to-Point (P2P) Messaging
 
 In this project, you need to design a secure instant messaging tool for Alice and Bob (like gtalk, skype or icq chat). The system supports the following functions:

@@ -7,6 +7,7 @@ sch_sem: fa_25
 
 
 [docs](https://www.rdocumentation.org/packages/graphics/versions/3.6.2/topics/boxplot)
+
 # Boxplot w/ Ggplot!
 ```r
 plotter = ggplot(data=ddt, aes(x=RIVER, y=LENGTH, fill=SPECIES)) 
@@ -22,6 +23,7 @@ Out: values of any data points which lie beyond the extremes of the whiskers
 ```r
 bp$out
 ```
+
 ## Docs Example
 ```r
 mpg <- read.csv("EPAGAS.csv")

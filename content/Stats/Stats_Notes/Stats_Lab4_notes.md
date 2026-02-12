@@ -9,19 +9,22 @@ sch_sem: fa_25
 Test just tells if data is likely distrubited normall
 - $h_0$ = data normal distreubited
 - $h_1$ =! normal distreubited
+
 ## NULL hypothesis $H_i$
 - $H_0$ $p \leq 0.5$
-	- Closely "false" (more evidence against) aka hypothesis is wrong
+    - Closely "false" (more evidence against) aka hypothesis is wrong
 - $h_1$ $p  > 0.5$
-	- Closely "true" when higher p-value (more for)
-	- higher p value means error is liekly normally distrubited
+    - Closely "true" when higher p-value (more for)
+    - higher p value means error is liekly normally distrubited
 
 > [!warning]
-    > We never say that the null hypothesis is "True", only that we fail to reject the null
-    > 
-    > High p means we don’t have enough evidence to reject the null. Doesn’t mean the null is true, but it means support for Ha isn’t strong enough to reject Ho.
+> We never say that the null hypothesis is "True", only that we fail to reject the null
+> 
+> High p means we don’t have enough evidence to reject the null. Doesn’t mean the null is true, but it means support for Ha isn’t strong enough to reject Ho.
+
 ## p-value 
 A high p value only tells you you had limited evidence against the null. However if you had a very large sample it might be reasonable to conclude the null is either true or the true value differs only a small amount from the null (any true effect is small).
+
 ## Residuals
 Residuals = observed value − predicted value.
 
@@ -43,6 +46,7 @@ summary(spruce.lm)$r.squared
 # lowess smoother?
 
 # fitted values? Fitted()
+
 # anova
 
 # Proof
@@ -64,6 +68,7 @@ normcheck(plot_1,plot_2)
 I(...)
 # AS IS FORMULA, do not interperate a ^ 
 ```
+
 ## Predict the Height of spruce when the Diameter is 15, 18 and 20cm (use predict())
 
 ```r

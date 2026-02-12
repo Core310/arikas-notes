@@ -12,9 +12,11 @@ This is a key lab and one that must be mastered. Please understand the method of
 - Grid
 - Analytical
 ___
+
 # Testing..
 - [[Stats_Lab4_notes#NULL hypothesis $H_i$]] 
 Overall idea: Generate values, generate a line w/ values in it and c if it's in fallen region
+
 ## How to construct a test?
 one sample t.test? 
 ```r
@@ -33,6 +35,7 @@ t,test(x,my=9)
 # One sam test -> 
 
 ```
+
 ## 3 ways to test:
 1) -m conf interval, check conf interval w/ null value. Null val in conf interval? 0? ! rejected
 2) RAR, Tcalc 
@@ -52,4 +55,5 @@ qt(1-0.05 / 2, 40-1)
 
 # Power
 P(reject null hypothesis), formally: $1-\beta$, $\beta=$ prob of type of iterator
+
 ## Example: 
