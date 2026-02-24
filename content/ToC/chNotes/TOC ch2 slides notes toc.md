@@ -58,25 +58,35 @@ A CFG may be *ambiguous*  if its possible to get a different parse tree but same
 > 
 > A regular grammar is always linear,  but **not all linear grammars are regular**.
 
-> [!NOTE]  R/L-linear grammer
+> **R/L-linear grammer**
 > is **right-linear** if all productions are of the form  
-> $$\begin{gather}
-A \to xB \\
-A \to x
-\end{gather}$$  
+> 
+> $$
+> \begin{gather}
+> A \to xB \\
+> A \to x
+> \end{gather}
+> $$  
+> 
 > Then left would be:
-> $$\begin{gather}
-A \to Bx \\
-A \to x
-\end{gather}$$
+> 
+> $$
+> \begin{gather}
+> A \to Bx \\
+> A \to x
+> \end{gather}
+> $$
 
 > [!NOTE] Linear but *not* Regular  
 > Consider the grammar  
-> $$\begin{gather}
-S \to A \\
-A \to aB \mid \lambda \\
-B \to Ab
-\end{gather}$$  
+> 
+> $$
+> \begin{gather}
+> S \to A \\
+> A \to aB \mid \lambda \\
+> B \to Ab
+> \end{gather}
+> $$  
 > This grammar is linear (only one variable per RHS) but it is **not regular**, because variables appear in mixed positions (sometimes left, sometimes right).
 
 ## DFA TO CFG w/ normal lang? TODO..
@@ -185,7 +195,7 @@ Formally, we can think of it as a bunch of if else statements;
 2) $q_1$ into next state, usually push a \$, inp + pop = $\lambda$
 3) Generate rules 
 
-![[toc_PDA_ch2|1500]]
+![[Excalidraw/toc_PDA_ch2.md|1500]]
 
 ### Example 18, Construct PDA from CFG
 $$
@@ -195,7 +205,7 @@ S \to aTb|b \\ T \to Ta\ \lambda
 $$
 1) Create $ to denote end of stack 
 2) We then create some input S, with following loop states seen below
-![[example_18_toc_ch2.excalidraw|1000]]
+![[Excalidraw/example_18_toc_ch2.excalidraw.md|1000]]
 
 
 > [!NOTE] What does $ mean in PDAs?

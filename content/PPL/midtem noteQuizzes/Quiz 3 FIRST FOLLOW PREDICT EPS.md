@@ -27,12 +27,14 @@ $$
 - 
 
 p. 121 of textbook
-$$\begin{align*}
+$$
+\begin{align*}
 \text{EPS}(\alpha) &\equiv \text{if } \alpha \longrightarrow^* e \text{ then true else false} \\
 \text{FIRST}(\alpha) &\equiv \{ c : \alpha \longrightarrow^* c \beta \} \\
 \text{FOLLOW}(A) &\equiv \{ c : S \longrightarrow^+ \alpha A \; c \beta \} \\
 \text{PREDICT}(A \longrightarrow \alpha) &\equiv \text{FIRST}(\alpha) \cup (\text{if EPS}(\alpha) \text{ then FOLLOW}(A) \text{ else } \emptyset)
-\end{align*}$$
+\end{align*}
+$$
 
 
 # parse stack

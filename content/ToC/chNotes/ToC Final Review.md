@@ -144,10 +144,6 @@ $$
 1) Add a new start state pointing to original start state
 2) remove all $\lambda$ states (go upward one level to replace using `|`)
 3) Tidy all leftover forms that don't match the given eg. $A \rightarrow 0X$ becomes $Z \rightarrow 0$ and $A \rightarrow ZX$ 
-     $$
-
-$$
-
 
 ### Regualr Grammer from Language L (DONE)
  $\Sigma = \{0, 1\}$. Find a regular grammar $G$ that generates the language $L$:

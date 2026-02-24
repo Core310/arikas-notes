@@ -1,0 +1,6 @@
+{
+  "workflow": "standard",
+  "math_style": "block_on_separate_lines",
+  "excalidraw_resolution": "image_embed",
+  "scope": "recursive"
+}

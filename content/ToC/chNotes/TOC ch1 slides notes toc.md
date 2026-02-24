@@ -88,16 +88,16 @@ We know our symbols such as +, -, hence we can extend the same operations to our
 - 
 
 ## Converting regex to NFA
-![[TOC_regex_ex21.excalidraw|10000]]
+![[Excalidraw/TOC_regex_ex21.excalidraw.md|10000]]
 
 
 ## Converting DFA to regex: (p75)
-![[tTOC_ch1_ex25.excalidraw|500]]
+![[Excalidraw/tTOC_ch1_ex25.excalidraw.md|500]]
 > [!Warning] Steps for conversion
 > 1) Start by taking out the in node
 > 2) Take out rest of the nodes (in any order), save out node for last
 > 3) Use * to concat expressions, if more than 1 expr for IN, use $\cup$ to denote `,`
-ch## For large example (p80)
+## For large example (p80)
 
 ## Generalized Nondeterministic Finite Automata (GNFA)
 Why care? TODO!
@@ -126,7 +126,7 @@ Why care? TODO!
 ### Converting GNFA down to only 2 states from k > 2 states 
 Sho0uld note that the start state for every empty state always contains some $\epsilon $  
 
-![[TOC_slide65_problem.excalidraw|1000]]
+![[Excalidraw/TOC_slide65_problem.excalidraw.md|1000]]
 
 ## DFA to CFG
 1) Generate the DFA, 
@@ -223,7 +223,7 @@ Show not regular!,
 1) Assuming C is regular, create our random pair string $s$ length $p$=++
 $$
 S=x=\{0001111\},y=\{00..111\},z=\{001..\}
-$$=
+$$
 - Esentially just need to come up with some S that doesn't make the language regular, then because for that length, we realise that the language must not be regular. 
 
 ## Ex3 

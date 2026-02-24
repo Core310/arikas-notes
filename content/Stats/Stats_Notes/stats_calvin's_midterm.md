@@ -5,10 +5,14 @@ Type:
 sch_sem: fa_25
 ---
 # 1.) MTBE
-$$P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{98}{201} = \sim 0.48756$$
+$$
+P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{98}{201} = \sim 0.48756
+$$
 
 # 2.) 
-$$P(A) = \frac{\text{Sum of A}}{\text{Sum of all}} = \frac{120}{223} = \sim .5381$$
+$$
+P(A) = \frac{\text{Sum of A}}{\text{Sum of all}} = \frac{120}{223} = \sim .5381
+$$
 
 # 3.) Given:
 $P(\text{positive} | \text{users}) = .95$
@@ -71,7 +75,9 @@ $+ \text{sd}(\text{epagas} \$ \text{MPG})$
 $= 39.4119$
 
 # 7.)
-$$f(y) = \begin{cases} cy^2 & [0, 2] \\ 0 & \text{elsewhere} \end{cases}$$
+$$
+f(y) = \begin{cases} cy^2 & [0, 2] \\ 0 & \text{elsewhere} \end{cases}
+$$
 $$
 \begin{gather*}
     f(y) = \frac{3}{8}y^2\\

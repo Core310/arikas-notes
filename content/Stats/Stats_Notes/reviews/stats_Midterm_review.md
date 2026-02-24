@@ -233,9 +233,11 @@ P(positive | user) $\cdot$ user + (1-tru neg) $\cdot$ truNeg
 > * $P(\text{Positive}|\text{User}) = 0.95$
 > * $P(\text{Positive}|\text{Non-user}) = 1 - 0.87 = 0.13$
 > 
-> $$\begin{gather}
+> $$
+> \begin{gather}
 > P(\text{User}|\text{Positive}) = \frac{0.95 \cdot 0.05}{0.95 \cdot 0.05 + 0.13 \cdot 0.95}
-> \end{gather}$$
+> \end{gather}
+> $$
 
 | **Event**                            | **Notation**  | **Value**         | **Description from Problem**          |
 | ------------------------------------ | ------------- | ----------------- | ------------------------------------- |
@@ -246,8 +248,10 @@ P(positive | user) $\cdot$ user + (1-tru neg) $\cdot$ truNeg
 | **False Positive Rate**              | $P(\text{P}$  | \text{N})$        | $1 - 0.87 = 0.13$                     |
 
 $$
-\begin{gather} P(\text{U}|\text{P}) = \frac{P(\text{P}|\text{U}) \cdot P(\text{U})}{P(\text{P}|\text{U}) \cdot P(\text{U}) + P(\text{P}|\text{N}) \cdot P(\text{N})} \\[10pt] P(\text{U}|\text{P}) = \frac{0.95 \cdot 0.05}{(0.95 \cdot 0.05) + (0.13 \cdot 0.95)} \end{gather}
-
+\begin{gather}
+P(\text{U}|\text{P}) = \frac{P(\text{P}|\text{U}) \cdot P(\text{U})}{P(\text{P}|\text{U}) \cdot P(\text{U}) + P(\text{P}|\text{N}) \cdot P(\text{N})} \\[10pt]
+P(\text{U}|\text{P}) = \frac{0.95 \cdot 0.05}{(0.95 \cdot 0.05) + (0.13 \cdot 0.95)}
+\end{gather}
 $$
 
 nonUser \* user / { P()}
@@ -256,9 +260,12 @@ nonUser \* user / { P()}
 - See [here](https://math.stackexchange.com/questions/1928734/bayesian-probability-drug-testing-what-happens-if-you-test-again) if we ran again
 
 > [!Important] Drug test problem
-> $$ \begin{gather}
+> 
+> $$
+> \begin{gather}
 > P(A|B) = \frac{P(A)P(B|A)}{\sum P(A)P(B|A)}
-> \end{gather} $$
+> \end{gather}
+> $$
 > 
 > A particular test for whether someone has been using cannabis is 95% sensitive and 87% specific, meaning it leads to 95% true "positive" results (meaning, "Yes he used cannabis") for cannabis users and 87% true negative results for non-users. Assuming 5% of people actually do use cannabis, what is the probability that a random person who tests positive is really a cannabis user?
 

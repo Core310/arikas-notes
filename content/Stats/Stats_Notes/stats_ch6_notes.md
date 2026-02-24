@@ -34,7 +34,9 @@ What I should be able to do given table below":
 
 #### Joint density func example, An easy double integral;\
 Suppose the joint density function for two continuous random variables, $X$ and $Y$, is given by
-$$f(x, y) = \begin{cases} cx & \text{if } 0 \le x \le 1; 0 \le y \le 1 \\ 0 & \text{elsewhere} \end{cases}$$
+$$
+f(x, y) = \begin{cases} cx & \text{if } 0 \le x \le 1; 0 \le y \le 1 \\ 0 & \text{elsewhere} \end{cases}
+$$
 Determine the value of the constant $c$.
 
 ##### Solution:
