@@ -19,4 +19,15 @@ Really just here for archival purposes, you can browse but they likely wont help
 - AI: Mostly homework taken online. Really the only page that may be of use is [[Hill Climbing Search {AI}]]
 - SDP (software design pattern): I wouldn't even look here it's not that useful..
 
+# 📚 Slides & Documents
+Automatically generated indices for slides and textbooks.
+
+- [[Stats/stats_slides/|Statistics Slides]]
+- [[ToC/slides/|Theory of Computation Slides]]
+- [[compSec CS5173/lecture slides/|Computer Security Lecture Slides]]
+- [[cal3/exam 1 stuff/|Calculus 3 Exam 1 Reviews]]
+- [[cal3/exam 2 stuff/|Calculus 3 Exam 2 Reviews]]
+- [[cal3/exam 3/|Calculus 3 Exam 3 Reviews]]
+
 Ignore Excalidraw as its used for image linking. 
+ 
