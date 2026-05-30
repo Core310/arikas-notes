@@ -129,13 +129,13 @@ Then; break one of the requirements above like so:
 Det(a) denoted as $|A|$
 ## det(A), 2x2 matrix
 $$
-\left| {\begin{array}{*{20}{r}}a&c\\b&d\end{array}} \right| = ad - cb
+\begin{vmatrix} a & c \\ b & d \end{vmatrix} = ad - cb
 $$
 
 
 ## |A| 3x3 matrix beyond (aka Cofactor Expansion Theorem)
 $$
-\left| {\begin{array}{*{20}{r}}{{a_{11}}}&{{a_{12}}}&{{a_{13}}}\\{{a_{21}}}&{{a_{22}}}&{{a_{23}}}\\{{a_{31}}}&{{a_{32}}}&{{a_{33}}}\end{array}} \right| = {a_{11}}\left| {\begin{array}{*{20}{r}}{{a_{22}}}&{{a_{23}}}\\{{a_{32}}}&{{a_{33}}}\end{array}} \right| - {a_{12}}\left| {\begin{array}{*{20}{r}}{{a_{21}}}&{{a_{23}}}\\{{a_{31}}}&{{a_{33}}}\end{array}} \right| + {a_{13}}\left| {\begin{array}{*{20}{r}}{{a_{21}}}&{{a_{22}}}\\{{a_{31}}}&{{a_{32}}}\end{array}} \right|
+\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{vmatrix} = a_{11} \begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix} - a_{12} \begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33} \end{vmatrix} + a_{13} \begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix}
 $$
 each $R_0$ element, diagonal without that row. You `-` then `+` each sub matrix. 
 
