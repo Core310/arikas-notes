@@ -29,16 +29,19 @@ $$
 (For better example c p.28)
 ## Matricies
 
-These SoLE can be represnted as a matrix as such:
-$$\left[ \begin{array}{cc|c} a_{11} & a_{12} & b_{1} \\ a_{21} & a_{22} & b_{2} \end{array} \right]$$
+These SoLE can be represented as a matrix as such:
+$$
+\left[ \begin{array}{cc|c} a_{11} & a_{12} & b_{1} \\ a_{21} & a_{22} & b_{2} \end{array} \right]
+$$
 In this case, we have an *augmented matrix*, basically a matrix with coefficients and a constant column. We treat each column as a variable ($x_1$ = col 1, $x_2$ = col2) and the last column as a constant value. So the first row would be  equiv to:
 
 $$x_1 a_{11} + x_2 a_{12} = b_1$$
 and the row after that viceversa. 
 
 *Free varaible* is a varaible which can be assigned if it's column doesn't have a leading 0.
-$$\left[ \begin{array}{cccccc|c} 1 & -2 & 0 & 2 & 0 & 1 & 1 \\ 0 & 0 & 1 & 5 & 0 & -3 & -1 \\ 0 & 0 & 0 & 0 & 1 & 6 & 1 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array} \right]$$
-
+$$
+\left[ \begin{array}{cccccc|c} 1 & -2 & 0 & 2 & 0 & 1 & 1 \\ 0 & 0 & 1 & 5 & 0 & -3 & -1 \\ 0 & 0 & 0 & 0 & 1 & 6 & 1 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array} \right]
+$$
 In this case column 2,4,6 would all be "free" meaning $x_2=r,x_4=s,x_6=t$, whereas $x_1$ would simply be the reduced form as an equation. 
 ### Linear Combos {1.3}  (formally defining the matricies we solve)
 We can represnet each column of a matrix as a vector $\vec{v}=col_{1}$. So combining these we can get a linear combination eg. $$\vec{v_{1}} + \vec{v_{2}}$$

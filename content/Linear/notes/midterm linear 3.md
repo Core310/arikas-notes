@@ -127,19 +127,19 @@ Spanning sets: Collection of vectors used to build given space
 
 ### Example: 
 $$
-A = \left [ \begin{array}{rr} 1 & 0 \\ 0 & 2 \end{array}\right ] ; B = \left [ \begin{array}{rr} 0 & 1 \\ 1 & 0 \end{array}\right ]
+A = \begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix} ; B = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}
 $$
 Then is $A,B \in$
 $$
-\mathrm{span}\left\{ M_1, M_2 \right\} = \mathrm{span} \left\{ \left [ \begin{array}{rr} 1 & 0 \\ 0 & 0 \end{array}\right ], \left [ \begin{array}{rr} 0 & 0 \\ 0 & 1 \end{array}\right ] \right\}\nonumber
+\text{span}\{ M_1, M_2 \} = \text{span} \left\{ \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}, \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix} \right\}
 $$
 Solving is nothing new, just an algorithmic process. We find for first A:
 $$
-\left [ \begin{array}{rr} 1 & 0 \\ 0 & 2 \end{array}\right ] = s \left [ \begin{array}{rr} 1 & 0 \\ 0 & 0 \end{array}\right ] + t \left [ \begin{array}{rr} 0 & 0 \\ 0 & 1 \end{array}\right ]\nonumber
+\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix} = s \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} + t \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix}
 $$
 Which has a solution; then B
 $$
-\left [ \begin{array}{rr} 0 & 1 \\ 1 & 0 \end{array}\right ] = s \left [ \begin{array}{rr} 1 & 0 \\ 0 & 0 \end{array}\right ] + t \left [ \begin{array}{rr} 0 & 0 \\ 0 & 1 \end{array}\right ]\nonumber
+\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix} = s \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} + t \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix}
 $$
 Which doesn't! Therefore A,B isn't in the span.
 
