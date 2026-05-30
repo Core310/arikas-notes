@@ -38,11 +38,11 @@ We can have:
     - Drawing A we simply take the region between both curves
     - Part B: We setup a SoE: 
     $$ 
-    x^2+1=1-\times-x^2 \qquad 2x^2+x=0 \qquad x(2x+1)=0 \qquad x=\{0,.5\} \qquad (x,y)=(0,1)
+    x^2+1=1-x-x^2 \qquad 2x^2+x=0 \qquad x(2x+1)=0 \qquad x=\{0,-0.5\} \qquad (x,y)=(0,1)
     $$
-    Then when xy = .5, we get $-\frac{1}{2},  \frac{5}{4}$ as our POI (so the x,y point 0,1 and the given point here
-    - To find the x max, see its at 0, the min is at $-\frac{1}{2}$ 
-    - y max: $1exm1 exm$
+    Then when $x = -0.5$, we get $(-0.5, 1.25)$ as our POI (so the $(0,1)$ point and the given point here)
+    - To find the $x$ max, see its at 0, the min is at $-0.5$ 
+    - $y$ max: 1.25
 - 2 parabolas 
 - Triangles 
 

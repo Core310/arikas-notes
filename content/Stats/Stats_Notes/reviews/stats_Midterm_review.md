@@ -243,9 +243,9 @@ P(positive | user) $\cdot$ user + (1-tru neg) $\cdot$ truNeg
 | ------------------------------------ | ------------- | ----------------- | ------------------------------------- |
 | **Prior Prob.** (User)               | $P(\text{U})$ | $0.05$            | _5% of people actually use cannabis._ |
 | **Prior Prob.** (Non-user)           | $P(\text{N})$ | $1 - 0.05 = 0.95$ | $1 - P(\text{U})$                     |
-| **Sensitivity** (True Positive Rate) | $P(\text{P}$  | \text{U})$        | $0.95$                                |
-| **Specificity** (True Negative Rate) | $P(\text{N}$  | \text{N})$        | $0.87$                                |
-| **False Positive Rate**              | $P(\text{P}$  | \text{N})$        | $1 - 0.87 = 0.13$                     |
+| **Sensitivity** (True Positive Rate) | $P(\text{P} \mid \text{U})$ | $0.95$ | $P(\text{Positive} \mid \text{User})$ |
+| **Specificity** (True Negative Rate) | $P(\text{N} \mid \text{N})$ | $0.87$ | $P(\text{Negative} \mid \text{Non-user})$ |
+| **False Positive Rate**              | $P(\text{P} \mid \text{N})$ | $1 - 0.87 = 0.13$ | $P(\text{Positive} \mid \text{Non-user})$ |
 
 $$
 \begin{gather}

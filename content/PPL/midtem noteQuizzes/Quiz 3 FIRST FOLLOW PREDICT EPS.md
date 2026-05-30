@@ -17,8 +17,8 @@ $$
 - EPS(a), if a = $\epsilon$ ? true || false (Boolean operation)
 - First(a) all possible first outcomes for some a. Eg. First(stmt) = until | id
 - Follow: 
-    - What can come after $a$ on the right hand side of the expr? Eg. FOLLOW(a) = ; $ 
-    - If a is in possible child, put $ or $\epsilon$
+    - What can come after $a$ on the right hand side of the expr? Eg. FOLLOW(a) = ; \$ 
+    - If a is in possible child, put \$ or $\epsilon$
     - Set of non terminals
 - Predict: (requires some $A \rightarrow a$)
     - if a can result in $\epsilon$  -> $First(a) \cup Follow(A)$

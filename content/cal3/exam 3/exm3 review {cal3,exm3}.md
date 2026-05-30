@@ -7,7 +7,7 @@ class: compSec
 # Integration 
 
 ## Transformations
-- [[{cal 3 exm3} cylindricalr and spherical cords]]
+- [[{cal 3 exm3} cylindrical and spherical coordinates]]
 - [[Jacobian and Rotations! {cal exm3} 1]]
     - [[det 3x3 and 2x2 matrix]]
 - 

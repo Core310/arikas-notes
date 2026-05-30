@@ -51,15 +51,15 @@ Thus birthday(20) = .4114
 ---
 
 # 4.) 
-$\text{epagas} \leftarrow \text{read.csv}(\text{"EFMEHS.csv"})$
-$\text{z\_epagas} \leftarrow (\text{epagas} \$ \text{MPG} - \text{mean}(\text{epagas} \$ \text{MPG}))$
-$/ \text{sd}(\text{epagas} \$ \text{MPG})$
+```r
+epagas <- read.csv("EFMEHS.csv")
+z_epagas <- (epagas$MPG - mean(epagas$MPG)) / sd(epagas$MPG)
 
-$\text{outlier\_epagas} \leftarrow \text{subset}(\text{epagas, abs(z\_epagas)} \ge 2$
-$\& \text{ abs(z\_epagas)} <= 3)$
+outlier_epagas <- subset(epagas, abs(z_epagas) >= 2 & abs(z_epagas) <= 3)
 
-$\min(\text{outlier\_epagas})$
-$= 300$
+min(outlier_epagas)
+# [1] 300
+```
 
 # 5.) Given Standard Deviation is 3.
 [Drawing of a normal distribution bell curve]
