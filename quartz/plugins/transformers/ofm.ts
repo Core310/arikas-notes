@@ -258,10 +258,21 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                       type: "html",
                       value: `<audio src="${url}" controls></audio>`,
                     }
-                  } else if ([".pdf"].includes(ext)) {
+                  } else if ([".pdf", ".pptx"].includes(ext)) {
+                    const githubBase = "https://github.com/Core310/arikas-notes/blob/main/content/"
+                    const githubUrl = githubBase + fp
+                    const isPdf = ext === ".pdf"
                     return {
                       type: "html",
-                      value: `<iframe src="${url}" class="pdf"></iframe>`,
+                      value: `
+                        <div class="file-embed">
+                          ${isPdf ? `<iframe src="${url}" class="pdf" width="100%" height="600px"></iframe>` : ""}
+                          <div class="file-links">
+                            <a href="${url}" target="_blank">Download ${path.basename(fp)}</a> | 
+                            <a href="${githubUrl}" target="_blank">View on GitHub</a>
+                          </div>
+                        </div>
+                      `,
                     }
                   } else {
                     const block = anchor

@@ -6,7 +6,7 @@ class: PPL
 - FT with end tail = end product parent
 - Use the cheat sheet for fig 4,3 to parse thru the tree? 
 
-![[Drawing 2025-02-25 05.46.55.excalidraw]]
+![[Excalidraw/Drawing 2025-02-25 05.46.55.excalidraw.md]]
 
 # AST 
 
@@ -17,7 +17,7 @@ NNN+10−(3∗2.3)−(2−OU)/2
 - left right side of EQ is deepest in tree
 - Rightmost creates the "root" 
 - Order of ops really only matters for same depth
-![[Drawing 2025-02-25 04.36.25.excalidraw]]
+![[Excalidraw/Drawing 2025-02-25 04.36.25.excalidraw.md]]
 If we didn't have parentheses around (2-OU), then `\` instead of  `-` 
 
 If we had $10−((3∗2.3)−(2−OU)/2)$ Instead, then `10` would be on depth 1, `-` on depth 0, `(...)` on depth 1 right side 
