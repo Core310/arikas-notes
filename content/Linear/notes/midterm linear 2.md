@@ -207,7 +207,7 @@ $T:\mathbb{R}^{3}\rightarrow\mathbb{R}^{3}$ is reflection in the $y-z$ plane.
 2) For y-z plane, only the first row is negated, so $-R_1$ applied to ID matrix is our answer. 
 
 ## Q4: Show $T$ is either reflection in a line or rotation through an angle, and find the line or angle.
-for given $2\times2$ matrix (a b \ c d)
+for given $2 \times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$
 - rotation: a=d 
 - reflection: a = -d 
 - neither projection/stretch
@@ -215,7 +215,7 @@ for given $2\times2$ matrix (a b \ c d)
 $$T \begin{bmatrix} x \\ y \end{bmatrix} = \frac{1}{\sqrt{2}} \begin{bmatrix} x + y \\ -x + y \end{bmatrix}$$ 
 Then we can make matrix A as simply the matrix of both rows:
 $$
-A = \frac{1}{\sqrt{2}} \begin{bmatrix} x \ y \\ -x \ y \end{bmatrix}
+A = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}
 $$
 (as we literially take the inp matrix to out)
 
@@ -226,10 +226,10 @@ $$
 
 ## 2.5 Factoring as product of elementary matricies: (HW4 Q9)
 Factor A as product of elementary matrix:
-$$\
+$$
 A = \begin{bmatrix}
-2 \ \ 3 \\
-1 \ \ 2
+2 & 3 \\
+1 & 2
 \end{bmatrix}
 $$
 1) Convert A into an identity matrix (I) using basic matrix operations
@@ -237,15 +237,15 @@ $$
 3) Apply the INVERSE of each step and save the resultant
 4) Then our "answer" is the sum of all inversed matricies
 $$
-B = [E_o][E_1]...[E_i]  
+B = E_0 E_1 \dots E_i
 $$
 as separate matrices (B being arbitrary matrix)
 
 Hence for A: 
 -  $E_1$ uses operation $R_1 \leftarrow R_1 - R_2$. Performing on ID matrix we have:
-    $$E_1 = \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}$$
+$$E_1 = \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}$$
 Then the inverse is: $E_1^{-1}$ would be the operation $R_1=$ $R_1 + R_2$ on an identity matrix as so (so we could just do this step). 
-    $$E_1^{-1} = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$$
+$$E_1^{-1} = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$$
 Go on until the original matrix $A$ is an identity matrix, always start with a new identity matrix for row operations. Each $E_i$ step is done on a fresh identity matrix
 ### Q9 (again): Factor $A$ as a product of elementary matrices.
 $$
@@ -256,7 +256,7 @@ $$
 3. Place them in order: The inverse of your _first_ operation goes on the far left; the inverse of your _last_ operation goes on the far right.
 
  4) step 2: ($R_2 - 2R_1 \to R_2$)
- On the inverse it's $R_{2=}R_{1}+2R_{2}$
+ On the inverse it's $R_2=R_1+2R_2$
  $$E_2 = \begin{bmatrix} 1 & 0 \\ -2 & 1 \end{bmatrix}$$
 
 

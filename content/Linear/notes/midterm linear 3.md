@@ -31,7 +31,7 @@ $$
 Using the eigenvalues $\forall \lambda$, we simply plug them into $(A - \lambda I)v = 0$.
  That gives us a solution for x or y, eg.$x=-3y$, treating that as a function.
 
-Simply put $x=-3y$ thru a 1 \ 1 matrix and get answer.
+Simply put $x=-3y$ thru a $1 \times 1$ matrix and get answer.
 
 ### invertible matricies
 Means must sat following:
@@ -98,7 +98,7 @@ $$
 4y+3z=-z
 \end{gather}
 $$
-Where we could input a 1x3 vector of all 1's and out a 0 \ 1 \ -1 vector.
+Where we could input a $1 \times 3$ vector of all 1's and out a $\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}$ vector.
 
 [mathisfun](https://www.mathsisfun.com/algebra/eigenvalue.html)
 # Chapter 5, Vector Space $\mathbb{R}^n$
@@ -170,7 +170,7 @@ also dim =3
 Finding if a matrix is diagonalizable
 e is pretty hard though, though it just comes down to following several steps:
 
-1) Find eigenvalues via solving for $det(A−\lambda \ I)=0$
+1) Find eigenvalues via solving for $\det(A - \lambda I) = 0$
 2) Eigenvectors
 
 ## Computing Dimension Null Space of Matrix dim(null(A))
@@ -338,7 +338,7 @@ $$
 \end{gather*}
 $$
 3) Eigenvectors:
-Simply plug in the known values we got into our original EQ of $\{x=4,-1\}$
+Simply plug in the known values we got into our original EQ of $x \in \{4, -1\}$
 $$c_A(x) = \det(xI - A)$$
 which when solved would give us: 
 $$\mathbf{\begin{bmatrix} 2 \\ 3 \end{bmatrix}} ,  \mathbf{\begin{bmatrix} -1 \\ 1 \end{bmatrix}}$$

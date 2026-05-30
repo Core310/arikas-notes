@@ -9,7 +9,7 @@ Generally we define a single SoLE like
 $$
 a_{1 } x_{1} + a_{2} x_{2} + \dots + a_{n} x_{n} = b
 $$
-n = unknowns, $a,b$ are known (coefficnets). collection of > 1 linear eq =  *sys of linear eq*. 
+$n$ = unknowns, $a, b$ are known (coefficients). collection of > 1 linear eq =  *sys of linear eq*. 
 
 We know we can solve a SoLE for 1 var by setting 1 to = the other like:
 $$
@@ -39,7 +39,7 @@ and the row after that viceversa.
 *Free varaible* is a varaible which can be assigned if it's column doesn't have a leading 0.
 $$\left[ \begin{array}{cccccc|c} 1 & -2 & 0 & 2 & 0 & 1 & 1 \\ 0 & 0 & 1 & 5 & 0 & -3 & -1 \\ 0 & 0 & 0 & 0 & 1 & 6 & 1 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array} \right]$$
 
-In this case column 2,4,6 would all be "free" meaning $x_2=r,x_{4=}s,x_{6=t}$, whereas $x_1$ would simply be the reduced form as an equation. 
+In this case column 2,4,6 would all be "free" meaning $x_2=r,x_4=s,x_6=t$, whereas $x_1$ would simply be the reduced form as an equation. 
 ### Linear Combos {1.3}  (formally defining the matricies we solve)
 We can represnet each column of a matrix as a vector $\vec{v}=col_{1}$. So combining these we can get a linear combination eg. $$\vec{v_{1}} + \vec{v_{2}}$$
 For example:
