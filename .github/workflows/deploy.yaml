@@ -6,7 +6,7 @@ on:
       - v4
 
 env:
-  THEME_NAME: everforest-spruce
+  THEME_NAME: brutalist
 
 permissions:
   contents: read
