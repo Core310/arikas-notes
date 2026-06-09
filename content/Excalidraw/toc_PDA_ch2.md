@@ -58,7 +58,7 @@ go thru till die
 
 The bottom copy always dies for bottom part,
 - we always reject inp frm PDA 
-- bottom part esentially outputs the a^i b^j c^k
+- bottom part essentially outputs the $a^i b^j c^k$
 
 b/c 1 of 2 branches will accept, eventualyl will accept.  ^sIQ1YdJ8
 
