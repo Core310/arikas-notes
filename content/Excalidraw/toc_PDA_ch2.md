@@ -19,9 +19,9 @@ b,a -> \e ^iifxwaZl
 
 q4 ^82qIH4oC
 
-\e,$->\e ^VVYJIPuK
+\e,\$->\e ^VVYJIPuK
 
-\e,\e->$ ^ttG1izu1
+\e,\e->\$ ^ttG1izu1
 
 \e,\e->\e ^2dopNWtH
 
@@ -43,7 +43,7 @@ c,\e->\e ^xV4QNfP7
 
 q7 ^vLjH47Ca
 
-\e,$->\e ^waxYigXp
+\e,\$->\e ^waxYigXp
 
 top corrospond to i=j
 bottom i=k ^PIDZQaGe
