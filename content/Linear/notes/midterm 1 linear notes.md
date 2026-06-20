@@ -142,7 +142,7 @@ Some basic terms first:
 
 - matrix = 2d array
 - $(i,j)$, i=row, j=col
-- $1 \times n$ matrix = row matrix, vice versa. $m \times n$ = square matrix
+- $1 \times n$ matrix = row matrix, vice versa. $n \times n$ = square matrix
 
 ### +/-
 its **impossible** to add matricies of different sizes
