@@ -91,12 +91,16 @@ Swap row - column
 $$\begin{bmatrix} 6 & 4 & 24 \\ 1 & -9 & 8 \end{bmatrix}^T = \begin{bmatrix} 6 & 1 \\ 4 & -9 \\ 24 & 8 \end{bmatrix}$$
 
 Some theroms:
-$$\begin{gather} 1) \ (A^T)^T = A \\ 2) \ (kA)^T = kA^T \\ 3) \ (A+B)^T = A^T + B^T \end{gather}$$
+$$
+\begin{gather} 1) \ (A^T)^T = A \\ 2) \ (kA)^T = kA^T \\ 3) \ (A+B)^T = A^T + B^T \end{gather}
+$$
 
 - *symmetric matrix* if $A^T = A$ 
 
 Example:
-$$\left( 2A^T - 3 \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \right)^T = \begin{bmatrix} 2 & 3 \\ -1 & 2 \end{bmatrix}$$
+$$
+\left( 2A^T - 3 \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \right)^T = \begin{bmatrix} 2 & 3 \\ -1 & 2 \end{bmatrix}
+$$
 - Then $2(A^T)^T=2A$ and transpose second matrix. Then add RHS matrix to LHS (treating it like a variable) then dividing to get final answer.
 
 
