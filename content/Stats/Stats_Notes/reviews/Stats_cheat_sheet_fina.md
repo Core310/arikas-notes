@@ -32,7 +32,9 @@ t.test(Group\_A, Group\_B, alternative = "\text{less}")
 - 
 
 # SLR:
-$$\hat{E}(Y|x_p) = \hat{Y}_p = \hat{\beta}_0 + \hat{\beta}_1 x_p$$ 
+$$
+\hat{E}(Y|x_p) = \hat{Y}_p = \hat{\beta}_0 + \hat{\beta}_1 x_p
+$$
     - *expected value* of the *response variable* $Y$ for a specific value *p* of the *predictor variable* $x$
     - **mean response** of the population when the predictor variable is fixed at $x_p$
     - 
@@ -55,10 +57,15 @@ confint(my_model, level = 0.95)
 # MGF
 Packages all raw moments of random variable $X$ into an expr. 2 ways to find $\sigma^2$ (vaience) and $\mu$ (mean).
 To find $r$-th raw moment, $E[X^r]$  take derative a@ 0
-$$\text{M}^{(r)}(0) = \frac{d^r}{dt^r} M(t) \bigg|_{t=0} = E[X^r]$$
+$$
+\text{M}^{(r)}(0) = \frac{d^r}{dt^r} M(t) \bigg|_{t=0} = E[X^r]
+$$
 
 * $\mu = E[X] = M'(0)$
-* Find $\sigma ^2$ : calculated using the second and first raw moments:$$Var(X) = E[X^2] - (E[X])^2 = M''(0) - [M'(0)]^2$$
+* Find $\sigma ^2$ : calculated using the second and first raw moments:
+$$
+Var(X) = E[X^2] - (E[X])^2 = M''(0) - [M'(0)]^2
+$$
 - Identify distributions
 
 # Gaps
@@ -69,7 +76,9 @@ $$\text{M}^{(r)}(0) = \frac{d^r}{dt^r} M(t) \bigg|_{t=0} = E[X^r]$$
 
 # Power
 Probability of correctly rejecting $H_0$ when $H_a$ true aka
-$$\text{Power} = 1 - \beta$$
+$$
+\text{Power} = 1 - \beta
+$$
 ```r
 power_result <- power.t.test(
   n = 30,             # Sample size
@@ -143,7 +152,9 @@ t_critical <- qt(1 - alpha/2, df)
 #then if t_calc is 3.0, and t_crit = 2, reject H_0
 ```
 
-$$t_{\text{calc}} = \frac{(\text{Estimate}) - (\text{Null Value})}{\text{Standard Error of the Estimate}}$$
+$$
+t_{\text{calc}} = \frac{(\text{Estimate}) - (\text{Null Value})}{\text{Standard Error of the Estimate}}
+$$
 
 * When use a $var.test$?
     * conduct two-sample independent $t$-test

@@ -49,7 +49,9 @@ Determine the value of the constant $c$.
 - Note we must generate the correct picture! 
 ![[WhatsApp Image 2025-10-20 at 13.35.57_ec0abb03.jpg|600]]
 A graph of $f(x, y)$ traces a three-dimensional, wedge-shaped figure over the unit square ($0 \le x \le 1$ and $0 \le y \le 1$) in the ($x$, $y$)-plane, as shown in Figure 6.1. The value of $c$ is chosen so that $f(x, y)$ satisfies the property
-$$\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(x, y) \,dx \,dy = 1$$
+$$
+\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(x, y) \,dx \,dy = 1
+$$
 Performing this integration yields
 $$
 \begin{gather}

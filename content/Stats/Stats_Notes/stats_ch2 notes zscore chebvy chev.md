@@ -55,7 +55,9 @@ dotplot(mpg,col=mycol)
 
 ## Standard Deviation Formula
 Measures how many standard deviations above/below the mean a data point is in relation to the full dataset:
-$$z_{i}=\frac{x_{i}-\bar{x}}{s_{x}}$$
+$$
+z_{i}=\frac{x_{i}-\bar{x}}{s_{x}}
+$$
 - $x_i$=dataPoint (some list/group)
 - $\bar{x}$=mean
 - $s_x=$standard deviation
@@ -94,7 +96,11 @@ extension of emp rule, states that at least $1 - 1/k^2$ of the observations have
 - Applies to all probability distributions
 - No assumptions
 - Provides approx
-Formally: $$1-\frac{1}{k^2}$$ of the data values lies within k standard deviations of the mean
+Formally: 
+$$
+1-\frac{1}{k^2}
+$$
+ of the data values lies within k standard deviations of the mean
     - eg. k=2 -> $1-\frac{1}{4}=.75$
     	- Hence 75% of values lie within 2 standard deviations
     - Hence $1-\frac{1}{k^2}$ = % of values that lie within k standard deviations

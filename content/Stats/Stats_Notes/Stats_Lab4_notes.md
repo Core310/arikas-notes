@@ -50,7 +50,11 @@ summary(spruce.lm)$r.squared
 # anova
 
 # Proof
-Prove using latex that $$y=\beta_0+\beta_1x+\beta_2\left(x-x_k\right)I(x>x_k)$$ where I() is 1 when $x>x_k$ and 0 else.
+Prove using latex that 
+$$
+y=\beta_0+\beta_1x+\beta_2\left(x-x_k\right)I(x>x_k)
+$$
+ where I() is 1 when $x>x_k$ and 0 else.
 
 # Code
 ```r

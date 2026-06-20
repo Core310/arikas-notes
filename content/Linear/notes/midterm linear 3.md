@@ -16,7 +16,9 @@ So it's some scalar that makes original vector equal to another scalar with valu
 
 ### eigenvalues: 
 Basically trying to find the following:
-$$(A - \lambda I)v = 0$$
+$$
+(A - \lambda I)v = 0
+$$
 s/t A original vector, v eigen vector, gamma is just a variable.
 
 1) Find $A - \lambda I$
@@ -35,16 +37,22 @@ Simply put $x=-3y$ thru a $1 \times 1$ matrix and get answer.
 
 ### invertible matricies
 Means must sat following:
-$$AB = I_n  \ \ \   BA = I_n$$
+$$
+AB = I_n  \ \ \   BA = I_n
+$$
 ### invertible matrix from these:
 
 ### example on 2x2 matrix
-$$A = \begin{bmatrix} -6 & 3 \\ 4 & 5 \end{bmatrix}$$
+$$
+A = \begin{bmatrix} -6 & 3 \\ 4 & 5 \end{bmatrix}
+$$
 #### Eigen value 
 isn't that hard following the same steps:
 
 Finding $A - \lambda I$ isn't hard (note we can skip the minus part and just show the resultant).
-$$\begin{bmatrix} -6 & 3 \\ 4 & 5 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} -6-\lambda & 3 \\ 4 & 5-\lambda \end{bmatrix}$$
+$$
+\begin{bmatrix} -6 & 3 \\ 4 & 5 \end{bmatrix} - \lambda \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} -6-\lambda & 3 \\ 4 & 5-\lambda \end{bmatrix}
+$$
 Finding the det of above with ad-bc:
 $$
 \begin{gather}
@@ -61,13 +69,19 @@ Hence eigenvalues($\lambda$) are -7,6.
 
 #### EigenVector
 Then we simply plug $\lambda$ in for $(A - \lambda I)v = 0$, then $\lambda = 6$ in our case so:
-$$\begin{bmatrix} -6 - 6 & 3 \\ 4 & 5 - 6 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
+$$
+\begin{bmatrix} -6 - 6 & 3 \\ 4 & 5 - 6 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+$$
 - Top row: $-12x + 3y = 0$ 
 - Bottom row: $4x - y = 0$
 
-$$4x - y = 0 \implies y = 4x$$
+$$
+4x - y = 0 \implies y = 4x
+$$
 Knowing the eigenVector is just producing some direction in an infinite place we pick the most simple vector. Aka identity matrix where $y = 4(1)$ given $x=1$
-$$v = \begin{bmatrix} 1 \\ 4 \end{bmatrix}$$
+$$
+v = \begin{bmatrix} 1 \\ 4 \end{bmatrix}
+$$
 
 Same thing for the other eigenVector, this time $\lambda=-7$ 
 
@@ -83,7 +97,9 @@ $$
 $$
 giving both eigen vectors. We have to do for each eigenvalue sadly.. 
 ### ex on 3x3:
-$$\begin{bmatrix} 2 & 0 & 0 \\ 0 & 4 & 5 \\ 0 & 4 & 3 \end{bmatrix}$$
+$$
+\begin{bmatrix} 2 & 0 & 0 \\ 0 & 4 & 5 \\ 0 & 4 & 3 \end{bmatrix}
+$$
 Same stuff, do $A - \lambda I$ then  find det of itset to 0
 
 If we did follow, would find solutions  of the det = 0 to be -1,2,8. 
@@ -117,7 +133,9 @@ $$
 Set of vectors can reach every point in that space through some combination
 
 Formally defined as $\text{span}\{u, w\}$, where $a,b$ are scalars then:
-$$v = a(u) + b(w)$$
+$$
+v = a(u) + b(w)
+$$
 
 
 
@@ -152,16 +170,23 @@ Which doesn't! Therefore A,B isn't in the span.
 Span but no redundent vectors. There can be infinatly many of them. Then col/row space js means col/row that can make up all col/rows in vectorspace.
 
 1) R-REF 
-$$\text{RREF}(A) = \begin{bmatrix} \mathbf{1} & 0 & 0 & -2 \\ 0 & \mathbf{1} & 0 & 1 \\ 0 & 0 & \mathbf{1} & 1 \end{bmatrix}$$
+$$
+\text{RREF}(A) = \begin{bmatrix} \mathbf{1} & 0 & 0 & -2 \\ 0 & \mathbf{1} & 0 & 1 \\ 0 & 0 & \mathbf{1} & 1 \end{bmatrix}
+$$
 1) row basis = non-zero rows 
 
-eg. $$ B= \{ (1, 0, 0, -2), (0, 1, 0, 1), (0, 0, 1, 1) \}$$
+eg. 
+$$
+B= \{ (1, 0, 0, -2), (0, 1, 0, 1), (0, 0, 1, 1) \}
+$$
 with Dimension: 3 (3 vec in it)
 
 3) col basis = pivot cols
 
 eg.
-$$B=\left\{ \begin{bmatrix} 0 \\ 3 \\ 1 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} -1 \\ 10 \\ 3 \end{bmatrix} \right\}$$
+$$
+B=\left\{ \begin{bmatrix} 0 \\ 3 \\ 1 \end{bmatrix}, \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} -1 \\ 10 \\ 3 \end{bmatrix} \right\}
+$$
 also dim =3
 
 ## Diagonalizable Matrix (Impt!)
@@ -177,14 +202,18 @@ e is pretty hard though, though it just comes down to following several steps:
 null space -> all inputs (into transformation) that result in 0
 
 $m \times n$ matrix; $A$
-$$\text{rank}(A) + \dim(\text{null } A) = n$$
+$$
+\text{rank}(A) + \dim(\text{null } A) = n
+$$
 - **$\text{rank}(A)$**: no. pivot cols
 - **$\dim(\text{null } A)$**: no. free vars
 - **$n$**: total no. cols
 
 Then we just need to find what is asked for
 ### Example:
-$$A = \begin{bmatrix} 0 & 2 & -1 & 1 \\ 3 & 1 & 10 & 5 \\ 1 & 0 & 3 & 1 \end{bmatrix}$$
+$$
+A = \begin{bmatrix} 0 & 2 & -1 & 1 \\ 3 & 1 & 10 & 5 \\ 1 & 0 & 3 & 1 \end{bmatrix}
+$$
 - n is simply 4
 - rank is 3 
 
@@ -204,7 +233,9 @@ Hence dim of nullspace is 1 (yay)
 # Chapter 7; Abstract Vector Spaces
 ## Transformations
 We hab:
-$$T: V \to W$$
+$$
+T: V \to W
+$$
 
 - then V (left) = domain
 - W (right) = codomain
@@ -230,23 +261,34 @@ Two matrices represent the same linear transformation
 
 Two square matrices $A$ and $B$ of the same size $n \times n$ are said to be similar if there exists an invertible matrix $P$ such that:
 
-$$A = PBP^{-1}$$
+$$
+A = PBP^{-1}
+$$
 
 Equivalently, this can be written as $B = P^{-1}AP$.
 
 ### Proof: Showing that 2 abstract nxn matricies are similar
-$$A = PBP^{-1}$$
+$$
+A = PBP^{-1}
+$$
 Then take det of both sides, use det prop to show they're equal (since both P cancel e/o out then A=B)
 
 ## Proving A subspace is in a larger space
 Prove $U$ is a vector subspace of $\mathbf{M}_{22}$
-$$J = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$$ 
+$$
+J = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
+$$
  $U = \{A \in \mathbf{M}_{22} \mid AJ = JA\}$.
 
 1) 0 vec: $\mathbf{0}J = J\mathbf{0}$
-2) Addition: $$(A+B)J = AJ + BJ$$
+2) Addition: 
+$$
+(A+B)J = AJ + BJ
+$$
 3) Multi
-$$(cA)J = c(AJ)$$
+$$
+(cA)J = c(AJ)
+$$
 ### Find Basis&Dim of Abstract vector spaces
 1) Take known vector space multi by abstract space of same size
 2) Find AJ = JA (both vector spaces). This then shows us 
@@ -257,15 +299,21 @@ Then: $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ and $J = \begin{bmatrix
 q
 Solving for each simply multiply and check if they're equal 
 
-$$AJ = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} = \begin{bmatrix} b & -a \\ d & -c \end{bmatrix}$$
+$$
+AJ = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} = \begin{bmatrix} b & -a \\ d & -c \end{bmatrix}
+$$
 
-$$JA = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} \begin{bmatrix} a & b \\ c & d \end{bmatrix} = \begin{bmatrix} -c & -d \\ a & b \end{bmatrix}$$
+$$
+JA = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} \begin{bmatrix} a & b \\ c & d \end{bmatrix} = \begin{bmatrix} -c & -d \\ a & b \end{bmatrix}
+$$
 Hence; 
 - $b = -c \implies c = -b$
 - $-a = -d \implies a = d$
 - $d = a$ (matches equation 2)
 - $-c = b$ (matches equation 1)
-$$A = \begin{bmatrix} a & b \\ -b & a \end{bmatrix}$$
+$$
+A = \begin{bmatrix} a & b \\ -b & a \end{bmatrix}
+$$
 
 basis is the set of matrices multiplying our free variables $a$ and $b$:
 
@@ -324,11 +372,17 @@ $$
 1) Characteristic Polynomial
 Recall formula for Char poly:
 for $x=\lambda$ 
-$$c_A(x) = \det(xI - A)$$
+$$
+c_A(x) = \det(xI - A)
+$$
 Which applying to `A` we get:
-$$c_A(x) = \begin{vmatrix} x-1 & -2 \\ -3 & x-2 \end{vmatrix} = (x-1)(x-2) - (-2)(-3)$$
+$$
+c_A(x) = \begin{vmatrix} x-1 & -2 \\ -3 & x-2 \end{vmatrix} = (x-1)(x-2) - (-2)(-3)
+$$
 with a bit of work then our Characteristic Polynomial is:
-$$ \mathbf{x^2 - 3x - 4}$$
+$$
+\mathbf{x^2 - 3x - 4}
+$$
 2) Eigenvalues
 Simply set Characteristic Polynomial = 0, those are our solutions!
 $$
@@ -339,9 +393,13 @@ $$
 $$
 3) Eigenvectors:
 Simply plug in the known values we got into our original EQ of $x \in \{4, -1\}$
-$$c_A(x) = \det(xI - A)$$
+$$
+c_A(x) = \det(xI - A)
+$$
 which when solved would give us: 
-$$\mathbf{\begin{bmatrix} 2 \\ 3 \end{bmatrix}} ,  \mathbf{\begin{bmatrix} -1 \\ 1 \end{bmatrix}}$$
+$$
+\mathbf{\begin{bmatrix} 2 \\ 3 \end{bmatrix}} ,  \mathbf{\begin{bmatrix} -1 \\ 1 \end{bmatrix}}
+$$
 as our two Eigenvectors
 
 4) Diagonalization
@@ -351,7 +409,9 @@ Since eigenvectors must be linearly independent we can define
 - invertible matrix $P$ as combined eigenvectors 
 - diagonal matrix $D$ as corresponding eigenvalues on the main diagonal (rest values are simply 0)
 
-$$P = \begin{bmatrix} 2 & -1 \\ 3 & 1 \end{bmatrix}, \quad D = \begin{bmatrix} 4 & 0 \\ 0 & -1 \end{bmatrix}$$
+$$
+P = \begin{bmatrix} 2 & -1 \\ 3 & 1 \end{bmatrix}, \quad D = \begin{bmatrix} 4 & 0 \\ 0 & -1 \end{bmatrix}
+$$
 Given matrix would **NOT** be diagonal if has one eigenvalue its or if its not a real number
 
 

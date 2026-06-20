@@ -9,7 +9,11 @@ Fixing rendering issues in a Quartz 4 based notes site. The primary issues are r
 3. **Global Cleanup:** Apply these fixes across the entire `content/` directory.
 
 ## Current Issues
-- `$$` blocks followed by `=` or other characters (e.g., `$$=`).
+- `
+$$
+` blocks followed by `=` or other characters (e.g., `
+$$
+=`).
 - `\begin{gather}` blocks inside `$$` but with formatting that Quartz might not like (e.g., on the same line).
 - Excalidraw links like `![[TOC_regex_ex21.excalidraw]]` pointing to `.excalidraw.md` files but not rendering.
 

@@ -6,7 +6,10 @@ https://tutorial.math.lamar.edu/Classes/CalcIII/IteratedIntegrals.aspx
 
 
 # Fubini’s Theorem
-If $f(x,y)$ is continuous on ($R = [a,b] \times [c,d]$ then, $$ \iint_R f(x,y) \, dA = \int_a^b \int_c^d f(x,y) \, dy \, dx = \int_c^d (\int_a^b f(x,y) \, dx) \, dy $$
+If $f(x,y)$ is continuous on ($R = [a,b] \times [c,d]$ then, 
+$$
+\iint_R f(x,y) \, dA = \int_a^b \int_c^d f(x,y) \, dy \, dx = \int_c^d (\int_a^b f(x,y) \, dx) \, dy
+$$
 
 - These integrals are called **iterated integrals**
 - Where [0,1] is the x-bound, and [0,2] y-bound. 
@@ -33,7 +36,10 @@ f(x,y) = x^2+y
 $$
 We can have: 
 - Opposite facing parabolas
-    - Let $R=$ region between $$y=x^2+1, \qquad y=1-x-x^2$$
+    - Let $R=$ region between 
+$$
+y=x^2+1, \qquad y=1-x-x^2
+$$
     - Then, draw R, and find the max/min/fixed x&y slices and intersections 
     - Drawing A we simply take the region between both curves
     - Part B: We setup a SoE: 

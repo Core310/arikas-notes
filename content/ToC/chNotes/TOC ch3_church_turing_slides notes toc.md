@@ -29,7 +29,9 @@ a
 
 ### Levels of descriptions of TMs (tm remarks)
 We have 3 ways of describing TMs. In each we use the following example:
-$$B = \{w\#w \mid w \in \{0,1\}^*\}$$
+$$
+B = \{w\#w \mid w \in \{0,1\}^*\}
+$$
 Where w is treated as a string of 0's and 1's and \# is some seperator symbol (so its string w # string w).
 
 #### Formally: 

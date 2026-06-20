@@ -10,7 +10,11 @@
   \end{gather}
   $$
   ```
-- Remove any trailing characters from math blocks (e.g., `$$=` should be `$$`).
+- Remove any trailing characters from math blocks (e.g., `
+$$
+=` should be `
+$$
+`).
 - Ensure no leading `>` (for callouts) is immediately followed by `$$` without a space or newline if it breaks the block. (Standard Obsidian/Quartz callout math should be handled carefully).
 
 ## Excalidraw Linking

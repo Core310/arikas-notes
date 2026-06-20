@@ -103,7 +103,9 @@ $$
 ### 8. Bayes’ Theorem
 Allows to flip the conditionals:
 - We can change $P(A|B)$ to $P(B|A)$
-    $$P(A|B)=\frac{P(A)P(B|A)}{P(B)}$$
+$$
+P(A|B)=\frac{P(A)P(B|A)}{P(B)}
+$$
 > [!NOTE] what each element means in Bayes Therom
 > - Where the LHS: posterior 
 > - First P(A) prior

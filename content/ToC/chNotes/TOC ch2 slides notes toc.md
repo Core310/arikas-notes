@@ -37,7 +37,9 @@ $$
 L(G_{1})=0^n \# 1^n | n \geq 0
 $$
 We can abbreviate multiple rules with the `|` symbol, so the original $G_1$ would become 
-$$A \rightarrow 0A_{1} \ | B \ |\ \#$$ 
+$$
+A \rightarrow 0A_{1} \ | B \ |\ \#
+$$
 - *yields*: $uAv \Longrightarrow v$
 - *Derives*: $u\Longrightarrow^* V$
 

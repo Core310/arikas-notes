@@ -22,8 +22,14 @@ $$
 
 # Suppose have $V(x,y) = <S(x,y),T(x,y)>$ 
 - VF conserative if 
-    - $$V=\nabla \phi$$
-    - In this sense we have$$\Phi(x,y)=x^2y+y \quad \nabla \Phi=<2xy,x^2+1>$$
+    - 
+$$
+V=\nabla \phi
+$$
+    - In this sense we have
+$$
+\Phi(x,y)=x^2y+y \quad \nabla \Phi=<2xy,x^2+1>
+$$
     	- Which is split apart dependent on what avrs they are split upon
     	- Hence if we have$$$$
 

@@ -197,7 +197,9 @@ We take the same approach we did with [[ToC Final Review#Closure | closure prope
 # From announcement
 
 ## Post Correspondence Problem(Done)
-$$\text{PCP} = \{ \langle P \rangle \mid P \text{ is an instance of the Post correspondence problem with a match} \}$$
+$$
+\text{PCP} = \{ \langle P \rangle \mid P \text{ is an instance of the Post correspondence problem with a match} \}
+$$
 is **undecidable**. We're given a set of fractions, want to find where the string of the concatanated numerators is the same as concat denom.
 
 ## asymptotic complexity: Big-Oh, little-Oh, Big-Omega, little-Omega, Theta.  (Done)

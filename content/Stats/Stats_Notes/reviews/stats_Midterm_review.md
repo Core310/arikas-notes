@@ -294,17 +294,26 @@ birthday <- function(k){
 # MGF & MOM
 
 ## Moment Generating Functions
-Estimating unknown parameters of a probability distribution using sample data. Given $$X \sim \text{Bern}(p)$$ 
+Estimating unknown parameters of a probability distribution using sample data. Given 
+$$
+X \sim \text{Bern}(p)
+$$
 We use the general formula:
-$$\mu'_k = \frac{d^k M_X(t)}{dt^k} \bigg|_{t=0}$$
+$$
+\mu'_k = \frac{d^k M_X(t)}{dt^k} \bigg|_{t=0}
+$$
 to find the k'th moment. taking the $k$-th derivative of the MGF with respect to $t$ and then plugging in $t=0$.
 
 For example if our MGF is 
  $M_X(t) = q + pe^t$
 Then we would take the first derative
-$$\frac{d}{dt} (q + pe^t) = 0 + pe^t$$
+$$
+\frac{d}{dt} (q + pe^t) = 0 + pe^t
+$$
 Eval at t=0
-$$\frac{d M_X(t)}{dt} \bigg|_{t=0} = pe^0 = p(1) = p$$
+$$
+\frac{d M_X(t)}{dt} \bigg|_{t=0} = pe^0 = p(1) = p
+$$
 mean $\mu_X$ is $p$ which is Parameter (Probability of Success)
 
 ![[Pasted image 20251121135041.png]]

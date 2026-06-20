@@ -8,10 +8,16 @@ $$
 S(u,v)=<u+2v,2v-u>
 $$
 1) Jacobian? 
-    1) $$\partial u<1,-1>\qquad \partial v<2,2>$$
+    1) 
+$$
+\partial u<1,-1>\qquad \partial v<2,2>
+$$
     2) Take $ad-bc=4$
 2) What is area of $\sum u,v$? $\pi$ (what is area of unit circle basically)
-3) $$\int \int _{\sum}(1)(1)dS=\int \int _{\sum uv} (1)(4)dA=\int ^{2\pi}_{0}\int_{0}^1  (4r)dr d\theta$$
+3) 
+$$
+\int \int _{\sum}(1)(1)dS=\int \int _{\sum uv} (1)(4)dA=\int ^{2\pi}_{0}\int_{0}^1  (4r)dr d\theta
+$$
 ___
 
 # Introduction to cylindrical cords!
