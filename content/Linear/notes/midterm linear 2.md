@@ -7,27 +7,39 @@ sch_sem: sp_26
 
 # 2.2 More complex algebraic operations
 ### $\times$ (dot product)
-$$(p \times n) \times (n \times q)$$
+$$
+(p \times n) \times (n \times q)
+$$
 inner row/col must match between both matricies (where () denotes a matrix)
 
 ![[Pasted image 20260210232442.png|700]]
 
 
-$$\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} \times \begin{bmatrix} 7 & 8 \\ 9 & 1 \\ 2 & 3 \end{bmatrix} = \begin{bmatrix} 31 & 19 \\ 85 & 55 \end{bmatrix}$$
+$$
+\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} \times \begin{bmatrix} 7 & 8 \\ 9 & 1 \\ 2 & 3 \end{bmatrix} = \begin{bmatrix} 31 & 19 \\ 85 & 55 \end{bmatrix}
+$$
 
 (where ||..|| = sizeOf)
 
 1) **Check form**: Inner numbers (`||columns||` first matrix = `||row||` of second). Formally (row,col) {matrix_1, matrix_2}
-$$(m \times \mathbf{n}) \cdot (\mathbf{n} \times p) = (m \times p)$$
+$$
+(m \times \mathbf{n}) \cdot (\mathbf{n} \times p) = (m \times p)
+$$
 2) multiply matching members based on above per index. So $(0,0)$ (row 0, col 0) yields:
-$$(1, 2, 3) \cdot (7, 9, 11) = 1 \times 7 + 2 \times 9 + 3 \times 11 = 58$$
+$$
+(1, 2, 3) \cdot (7, 9, 11) = 1 \times 7 + 2 \times 9 + 3 \times 11 = 58
+$$
 Then $(1,0)$ (row 1, col 0) would be $m_{1} r_1 \times m_{2} c_{1}=c$ for c=const. And so on..
 - see also [exam 1 gen notes {cal3}](https://core310.github.io/arikas-notes/cal3/exam-1-stuff/lecture-notes/exam-1-gen-notes-%7Bcal3%7D) for more general vector operations (not tested on)
 ### Dividing
 We multiply by inverse instead of dividing (theres no such concept of dividng!).
-$$A / B = A \times (1/B) = A \times B^{-1}$$
+$$
+A / B = A \times (1/B) = A \times B^{-1}
+$$
 for a,b = matrix. **TLDR**: 
-$$A / B \implies A \times B^{-1}$$
+$$
+A / B \implies A \times B^{-1}
+$$
 
 > [!Warning] Conditions:
 > Due division sharing both inverse AND multiplication must meet following conditions:
@@ -38,11 +50,15 @@ $$A / B \implies A \times B^{-1}$$
 For 2d it's not too hard:
 
 
-$$A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
+$$
+A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
+$$
 
 Then inverse is TWO  changes:
 
-$$A^{-1} = \frac{1}{ad-bc} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$$
+$$
+A^{-1} = \frac{1}{ad-bc} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}
+$$
 
 ### Inverse matrix 3d (Gauss-Jordan)
 However for 3d we have to work a little more. Say working on square matrix $A$:
@@ -88,15 +104,21 @@ hence that's our answer! **2 b confirmed??**
 ### Transpose
 Swap row - column
 
-$$\begin{bmatrix} 6 & 4 & 24 \\ 1 & -9 & 8 \end{bmatrix}^T = \begin{bmatrix} 6 & 1 \\ 4 & -9 \\ 24 & 8 \end{bmatrix}$$
+$$
+\begin{bmatrix} 6 & 4 & 24 \\ 1 & -9 & 8 \end{bmatrix}^T = \begin{bmatrix} 6 & 1 \\ 4 & -9 \\ 24 & 8 \end{bmatrix}
+$$
 
 Some theroms:
-$$\begin{gather} 1) \ (A^T)^T = A \\ 2) \ (kA)^T = kA^T \\ 3) \ (A+B)^T = A^T + B^T \end{gather}$$
+$$
+\begin{gather} 1) \ (A^T)^T = A \\ 2) \ (kA)^T = kA^T \\ 3) \ (A+B)^T = A^T + B^T \end{gather}
+$$
 
 - *symmetric matrix* if $A^T = A$ 
 
 Example:
-$$\left( 2A^T - 3 \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \right)^T = \begin{bmatrix} 2 & 3 \\ -1 & 2 \end{bmatrix}$$
+$$
+\left( 2A^T - 3 \begin{bmatrix} 1 & 2 \\ -1 & 1 \end{bmatrix} \right)^T = \begin{bmatrix} 2 & 3 \\ -1 & 2 \end{bmatrix}
+$$
 - Then $2(A^T)^T=2A$ and transpose second matrix. Then add RHS matrix to LHS (treating it like a variable) then dividing to get final answer.
 
 
@@ -115,14 +137,20 @@ TLDR:
 - No exponents or constants (being added) {so no +2 }
 - Only addition allowed
 
-1. Additivity: $$T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$$
+1. Additivity: $$
+T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})
+$$
 2. Scalar Multiplicity:
-$$T(cu)=cT(u)$$
+$$
+T(cu)=cT(u)
+$$
 
 
 ## Showing T is not linear transformation
 In each case show that $T:\mathbb{R}^{2}\rightarrow\mathbb{R}^{2}$ is not a linear transformation.
-$$T \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} xy \\ 0 \end{bmatrix}$$
+$$
+T \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} xy \\ 0 \end{bmatrix}
+$$
 Then; break one of the requirements above like so:
 
 # 3.1 determiants
@@ -143,8 +171,12 @@ each $R_0$ element, diagonal without that row. You `-` then `+` each sub matrix.
 - [mathisfun link](https://www.mathsisfun.com/algebra/matrix-determinant.html)
 
 ## General matrix properties 
-$$C = \begin{bmatrix} 4 & 0 & 7 & 0 \\ 0 & 0 & -3 & 0 \\ 1 & 2 & -2 & -1 \\ 3 & 1 & 4 & 5 \end{bmatrix}$$
-$$\begin{bmatrix} + & - & + & - & + \\ - & + & - & + & - \\ + & - & + & - & + \\ - & + & - & + & - \\ + & - & + & - & + \end{bmatrix}$$
+$$
+C = \begin{bmatrix} 4 & 0 & 7 & 0 \\ 0 & 0 & -3 & 0 \\ 1 & 2 & -2 & -1 \\ 3 & 1 & 4 & 5 \end{bmatrix}
+$$
+$$
+\begin{bmatrix} + & - & + & - & + \\ - & + & - & + & - \\ + & - & + & - & + \\ - & + & - & + & - \\ + & - & + & - & + \end{bmatrix}
+$$
 
 
 
@@ -165,7 +197,9 @@ det = 0
 
 ## Using det() determine when ! invertable
 
-$$A = \begin{bmatrix} c & 1 & 1 \\ 1 & -c & 1 \\ 1 & 1 & 1 \end{bmatrix}$$
+$$
+A = \begin{bmatrix} c & 1 & 1 \\ 1 & -c & 1 \\ 1 & 1 & 1 \end{bmatrix}
+$$
 Square matrix `!` invertible IFF det = zero. So if given mat w/ 1 const \& want 2 know when ! invertable? 
 1) Solve for det like usual
 2) set det = 0
@@ -212,7 +246,9 @@ for given $2 \times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$
 - reflection: a = -d 
 - neither projection/stretch
 
-$$T \begin{bmatrix} x \\ y \end{bmatrix} = \frac{1}{\sqrt{2}} \begin{bmatrix} x + y \\ -x + y \end{bmatrix}$$ 
+$$
+T \begin{bmatrix} x \\ y \end{bmatrix} = \frac{1}{\sqrt{2}} \begin{bmatrix} x + y \\ -x + y \end{bmatrix}
+$$ 
 Then we can make matrix A as simply the matrix of both rows:
 $$
 A = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}
@@ -243,9 +279,13 @@ as separate matrices (B being arbitrary matrix)
 
 Hence for A: 
 -  $E_1$ uses operation $R_1 \leftarrow R_1 - R_2$. Performing on ID matrix we have:
-$$E_1 = \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}$$
+$$
+E_1 = \begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}
+$$
 Then the inverse is: $E_1^{-1}$ would be the operation $R_1=$ $R_1 + R_2$ on an identity matrix as so (so we could just do this step). 
-$$E_1^{-1} = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$$
+$$
+E_1^{-1} = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}
+$$
 Go on until the original matrix $A$ is an identity matrix, always start with a new identity matrix for row operations. Each $E_i$ step is done on a fresh identity matrix
 ### Q9 (again): Factor $A$ as a product of elementary matrices.
 $$
@@ -257,7 +297,9 @@ $$
 
  4) step 2: ($R_2 - 2R_1 \to R_2$)
  On the inverse it's $R_2=R_1+2R_2$
- $$E_2 = \begin{bmatrix} 1 & 0 \\ -2 & 1 \end{bmatrix}$$
+ $$
+E_2 = \begin{bmatrix} 1 & 0 \\ -2 & 1 \end{bmatrix}
+$$
 
 
 ### Applying row inverses during elementary matrix factoring
@@ -297,16 +339,22 @@ in terms of $c$.
 - only factoring in C as some var
 
 ## Q6: Find an elementary matrix $E$ s/t $B = EA$.
-$$A = \begin{bmatrix} -1 & 1 \\ 1 & -1 \end{bmatrix}, B = \begin{bmatrix} -1 & 1 \\ -1 & 1 \end{bmatrix}$$
+$$
+A = \begin{bmatrix} -1 & 1 \\ 1 & -1 \end{bmatrix}, B = \begin{bmatrix} -1 & 1 \\ -1 & 1 \end{bmatrix}
+$$
 
 1) Gather row operations to **make A into B**
 2) Apply each row operation unto an Identity Matrix -> `E`. In this case should just be one operation
 3) $E \times A = B$ to confirm our answer (If E is right)
 
 So first step would be on mat `A`, $R_1 = R_1 - R_0$ (do on I)
-$$-R_1$$
+$$
+-R_1
+$$
 
-$$\implies \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \implies \underbrace{\begin{bmatrix} -1 & 0 \\ 0 & 1 \end{bmatrix}}_{E} \times \underbrace{\begin{bmatrix} -1 & 1 \\ 1 & -1 \end{bmatrix}}_{A} = \begin{bmatrix} -1+0 & 1 \\ -1 & 1 \end{bmatrix} = \underbrace{\begin{bmatrix} -1 & 1 \\ -1 & 1 \end{bmatrix}}_{B}$$
+$$
+\implies \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \implies \underbrace{\begin{bmatrix} -1 & 0 \\ 0 & 1 \end{bmatrix}}_{E} \times \underbrace{\begin{bmatrix} -1 & 1 \\ 1 & -1 \end{bmatrix}}_{A} = \begin{bmatrix} -1+0 & 1 \\ -1 & 1 \end{bmatrix} = \underbrace{\begin{bmatrix} -1 & 1 \\ -1 & 1 \end{bmatrix}}_{B}
+$$
 ### Q7: Find elementary matrices $E_{1}$ and $E_{2}$ such that $C = E_{2}E_{1}A$.
 Same manner here, but instead its 2 steps to make A into B. Then $E_i$ is always performed on a fresh ID matrix
 
@@ -323,10 +371,16 @@ $$
 
 
 So $E_{1}$ would be $R_2 \to R_2 - 5R_1$
-$$E_1 = \begin{bmatrix} 1 & 0 \\ -5 & 1 \end{bmatrix}$$
+$$
+E_1 = \begin{bmatrix} 1 & 0 \\ -5 & 1 \end{bmatrix}
+$$
 and for A we would now have:
-$$\begin{bmatrix} 1 & 2 & 1 \\ 5 - 5(1) & 12 - 5(2) & -1 - 5(1) \end{bmatrix} = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 2 & -6 \end{bmatrix}$$
+$$
+\begin{bmatrix} 1 & 2 & 1 \\ 5 - 5(1) & 12 - 5(2) & -1 - 5(1) \end{bmatrix} = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 2 & -6 \end{bmatrix}
+$$
 Then we would repeat, applying the exact steps to get R-REF and applying said step to a new ID matrix. Then our answer is:
-$$U = E_3 E_2 E_1 A$$
+$$
+U = E_3 E_2 E_1 A
+$$
 (Where A and $E_i$ is filled in)
 
