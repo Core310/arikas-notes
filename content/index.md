@@ -1,4 +1,4 @@
-Heyo! I'm [Arika](https://core310.github.io/arika/). I'm providing my notes for future students to use from the classes I took at [The University of Oklahoma](https://oklahomavoice.com/2026/01/06/professors-demands-answers-safeguards-from-university-of-oklahoma-after-bible-based-essay-debacle/). 
+Heyo! I'm [Arika](https://somethingsomething.fyi/). I'm providing my notes for future students to use from the classes I took at [The University of Oklahoma](https://oklahomavoice.com/2026/01/06/professors-demands-answers-safeguards-from-university-of-oklahoma-after-bible-based-essay-debacle/). 
 There's some really helpful cheats in a few class folders, though others may not have much to offer. 
 I write in a lot of my own abbreviations though they hopefully shouldn't be hard to figure out. 
 Most of the early notes I made were quite bad and never meant for public viewing, but hopefully they can help you out a bit!
