@@ -7,8 +7,8 @@ Most of the early notes I made were quite bad and never meant for public viewing
 I worked a lot on these notes! If you're taking these course have a look!
 
 - cal3, split between 4 exams a lot of the notes are based off [lamr edu](https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx). You can dive in here [[{cal3, exm1} exam 1 calc review]] for some material
-- [[ToC]], awesome course! Lots of nice notes found in the [[chNotes | chapter notes folder]]. 
-- Linear, [[Linear]], a lot of the notes are based off [lamr edu](https://tutorial.math.lamar.edu/classes/linAlg/linAlg.aspx). You can dive in here [[{Linear, exm1} exam 1 linear review]] for some material. Great professor, has their own notes & course material on website.
+- [[ToC]], awesome course! Lots of nice notes found in the [[ToC/chNotes/chNotes | chapter notes folder]]. 
+- Linear, [[Linear]], a lot of the notes are based off [lamr edu](https://tutorial.math.lamar.edu/classes/linAlg/linAlg.aspx). You can dive in here [[midterm 1 linear notes|{Linear, exm1} exam 1 linear review]] for some material. Great professor, has their own notes & course material on website.
 
 # Just some reviews
 Not so great notes, mostly last minute reviews the day before exam type of stuff. Could be helpful when making those exam reviews.
