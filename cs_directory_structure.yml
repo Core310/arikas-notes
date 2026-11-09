@@ -1,0 +1,602 @@
+# ClearSet Codebase Directory Structure & Architectural Layout
+clearset_version: '1.0'
+last_updated: '2026-11-09T07:57:53.917941+00:00Z'
+root: '.'
+
+directories:
+  content:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/index.md"]
+  content/AI:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/AI/AI.md", "content/AI/Hill Climbing Search {AI}.md", "content/AI/AI Syl.md", "content/AI/AI_ASS_2 notes.md", "content/AI/AI_ASS2.md"]
+  content/Excalidraw:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Excalidraw/Drawing 2025-02-25 05.46.55.excalidraw.md", "content/Excalidraw/Drawing 2025-02-25 04.36.25.excalidraw.md", "content/Excalidraw/Drawing 2025-09-04 15.40.23.excalidraw.md", "content/Excalidraw/Drawing 2025-02-25 07.19.43.excalidraw.md", "content/Excalidraw/Drawing 2025-02-13 14.12.58.excalidraw.md"]
+  content/Linear:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Linear/desktop.ini"]
+  content/Linear/materials:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Linear/materials/Linear syllabus.md", "content/Linear/materials/desktop.ini"]
+  content/Linear/materials/handouts:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Linear/materials/handouts/desktop.ini"]
+  content/Linear/notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Linear/notes/midterm linear 3.md", "content/Linear/notes/midterm linear 2.md", "content/Linear/notes/midterm 1 linear notes.md", "content/Linear/notes/desktop.ini"]
+  content/Linear/notes/res:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Linear/notes/res/desktop.ini"]
+  content/PPL:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/PPL/python_hw-1.md", "content/PPL/PPL actual finals notes.md", "content/PPL/PPL final notes.md", "content/PPL/CS 3323 PPL SYLLABUS.md", "content/PPL/yield_hw-2.md"]
+  content/PPL/midtem noteQuizzes:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/PPL/midtem noteQuizzes/Quiz 4 Static vs Dymanic Scopes.md", "content/PPL/midtem noteQuizzes/Quiz 1 lexical rules.md", "content/PPL/midtem noteQuizzes/QUIZ 2 Grammer and ambiguous.md", "content/PPL/midtem noteQuizzes/Quiz 5 Abastract Syntax Tree.md", "content/PPL/midtem noteQuizzes/Quiz 3 FIRST FOLLOW PREDICT EPS.md"]
+  content/PPL/midtemr gen notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/PPL/midtemr gen notes/sch ppl ch3 CallStack.md", "content/PPL/midtemr gen notes/Semantics (attributes).md", "content/PPL/midtemr gen notes/PPL notes.md", "content/PPL/midtemr gen notes/Hw1.md", "content/PPL/midtemr gen notes/Context Left vs Right Trees.md"]
+  content/SDP:
+    layer: 'api'
+    tags: ["api", "database"]
+    primary_files: ["content/SDP/SDP_model_controller_ass3.md", "content/SDP/Design Pattern Review.md", "content/SDP/pt 2  stuff SDP.md", "content/SDP/SDP.md", "content/SDP/SDP M11.md"]
+  content/Stats:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Stats/Stats.md", "content/Stats/stats_Project 1.md", "content/Stats/Stats Syl.md", "content/Stats/Stats Textbook.md"]
+  content/Stats/Stats_Notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Stats/Stats_Notes/stats_ch4_notes Discrete Random Variablrs.md", "content/Stats/Stats_Notes/Stats_Lab4_notes.md", "content/Stats/Stats_Notes/Stat_ch10 Notes (lab3) MSS TSS RSS.md", "content/Stats/Stats_Notes/stats_ch7_notes MLE (part of finals).md", "content/Stats/Stats_Notes/Boxplot in r_stats.md"]
+  content/Stats/Stats_Notes/reviews:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Stats/Stats_Notes/reviews/Stats_cheat_sheet_fina.md", "content/Stats/Stats_Notes/reviews/stats_Midterm_review code.md", "content/Stats/Stats_Notes/reviews/Stats_final_review.md", "content/Stats/Stats_Notes/reviews/stats_Midterm_review.md"]
+  content/Stats/quizzes:
+    layer: 'testing'
+    tags: ["testing"]
+    primary_files: ["content/Stats/quizzes/Stats_linear combo ch6 REVIEW p1.md", "content/Stats/quizzes/Stats_overbooking_quiz TODO.md", "content/Stats/quizzes/stats_quiz 1.5 filtering.md", "content/Stats/quizzes/stats_quiz tables wrangle and dpqr.md", "content/Stats/quizzes/Stats_Quiz 3 boxplot.md"]
+  content/Stats/quizzes/res:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Stats/quizzes/res/In class_ Mix of problems ch 1-6.mhtml"]
+  content/Stats/stats_slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/Stats/stats_slides/stats_Chapter 4.md", "content/Stats/stats_slides/stats_Chapter 8.md", "content/Stats/stats_slides/stats_Chapter 7.md", "content/Stats/stats_slides/stats_Chapter 2.md", "content/Stats/stats_slides/stats_Chapter 10.md"]
+  content/ToC:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/ToC/ToC.md"]
+  content/ToC/chNotes:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/ToC/chNotes/TOC ch3_church_turing_slides notes toc.md", "content/ToC/chNotes/TOC ch1 slides notes toc.md", "content/ToC/chNotes/toc_exam 2 review.md", "content/ToC/chNotes/TM_Remarks_TOC.md", "content/ToC/chNotes/ToC Final Review.md"]
+  content/ToC/res:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/ToC/res/res.md", "content/ToC/res/Proposed questions.md", "content/ToC/res/ToC Syl CS3823.md", "content/ToC/res/Set theory basics.md"]
+  content/ToC/res/img:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/ToC/res/img/img.md"]
+  content/ToC/slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/ToC/slides/ToC_slides_ch1.pdf.annotations.json", "content/ToC/slides/slides.md", "content/ToC/slides/ToC_slides_ch1.md", "content/ToC/slides/ToC_chapter_3_slides.md", "content/ToC/slides/ToC_chapter_4_slides.md"]
+  content/cal3:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/cal3/Cal3 Syllabus Math 2934\u2013006.md", "content/cal3/exm3 last lect.md"]
+  content/cal3/exam 1 stuff:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/cal3/exam 1 stuff/{cal3, exm1} Exam_Actual.md", "content/cal3/exam 1 stuff/{cal3, exm1} exam 1 calc review.md", "content/cal3/exam 1 stuff/Determinants of 2x2 and 3x3 matricies (TODO) {cal3}.md", "content/cal3/exam 1 stuff/hw1 review.md", "content/cal3/exam 1 stuff/{cal3 exm1} review pkt.md"]
+  content/cal3/exam 1 stuff/lecture notes:
+    layer: 'robotics'
+    tags: ["robotics"]
+    primary_files: ["content/cal3/exam 1 stuff/lecture notes/planes {cal3}.md", "content/cal3/exam 1 stuff/lecture notes/Intersctions and Collisions{cal3}.md", "content/cal3/exam 1 stuff/lecture notes/quadraic surface {cal3}.md", "content/cal3/exam 1 stuff/lecture notes/Graph transformation formulas {cal3} {img}.md", "content/cal3/exam 1 stuff/lecture notes/EQ of lines and more vect form {cal3}.md"]
+  content/cal3/exam 2 stuff:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/cal3/exam 2 stuff/Exam2 Formulas.md", "content/cal3/exam 2 stuff/cal notes to sort {exm2 cal3} Polar integrals.md", "content/cal3/exam 2 stuff/exam 2 review {exm2 cal3}.md", "content/cal3/exam 2 stuff/{exm2, cal3} Double Integrals over Rectangle.md", "content/cal3/exam 2 stuff/{cal3 exm2} review pkt.md"]
+  content/cal3/exam 2 stuff/quizzes:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/cal3/exam 2 stuff/quizzes/Tangent plane quiz {cal3, exm2}.md"]
+  content/cal3/exam 3:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/cal3/exam 3/det 3x3 and 2x2 matrix.md", "content/cal3/exam 3/Section 15.1 Change of Variables.md", "content/cal3/exam 3/{cal 3 exm3} cylindrical and spherical coordinates.md", "content/cal3/exam 3/Jacobian and Rotations! {cal exm3} 1.md", "content/cal3/exam 3/exm3 review {cal3,exm3}.md"]
+  content/castle_blotto_game:
+    layer: 'testing'
+    tags: ["testing", "robotics"]
+    primary_files: ["content/castle_blotto_game/submission.md", "content/castle_blotto_game/blotto2.md", "content/castle_blotto_game/qsi_retrospective_notes.md", "content/castle_blotto_game/blotto.md", "content/castle_blotto_game/internal_methodology.md"]
+  content/compSec CS5173:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/compSec CS5173/compSecFinalProj.md", "content/compSec CS5173/Comp Sec Design Report finalProj.md", "content/compSec CS5173/CompSec Project-.md", "content/compSec CS5173/Comp sec Syllabus CS5173.md"]
+  content/compSec CS5173/homewokrs:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/compSec CS5173/homewokrs/Assignment 1 {compsec}.md", "content/compSec CS5173/homewokrs/Assignment 2 {compsec}.md"]
+  content/compSec CS5173/lecture slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/compSec CS5173/lecture slides/Lecture24-FinalReview.md", "content/compSec CS5173/lecture slides/compSec lecture3.md", "content/compSec CS5173/lecture slides/compSec {postMidterm} Lecture17.md", "content/compSec CS5173/lecture slides/compSec {postMidterm} Lecture19.md", "content/compSec CS5173/lecture slides/compSec {postMidterm} Lecture12.md"]
+  content/compSec CS5173/pre-midterm:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/compSec CS5173/pre-midterm/Midterm notes!.md", "content/compSec CS5173/pre-midterm/hw1 compsec.md"]
+  content/hacklahoma_26:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/setup.md", "content/hacklahoma_26/imports.md", "content/hacklahoma_26/mp9.html", "content/hacklahoma_26/iterators.md", "content/hacklahoma_26/index.md"]
+  content/hacklahoma_26/mp9_files/libs/bootstrap:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap-icons.woff", "content/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap.min.js", "content/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css", "content/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap-icons.css"]
+  content/hacklahoma_26/mp9_files/libs/clipboard:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/clipboard/clipboard.min.js"]
+  content/hacklahoma_26/mp9_files/libs/quarto-html:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/quarto-html/tippy.css", "content/hacklahoma_26/mp9_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css", "content/hacklahoma_26/mp9_files/libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css", "content/hacklahoma_26/mp9_files/libs/quarto-html/anchor.min.js", "content/hacklahoma_26/mp9_files/libs/quarto-html/tippy.umd.min.js"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/highlight.esm.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/highlight.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/plugin.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/monokai.css", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/zenburn.css"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown/markdown.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown/plugin.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown/markdown.esm.js"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/math:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/mathjax3.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/math.esm.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/katex.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/plugin.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/mathjax2.js"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/speaker-view.html", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/notes.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/plugin.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/notes.esm.js"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/pdf-export:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/pdf-export/pdfexport.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/pdf-export/plugin.yml"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight/plugin.yml"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support/support.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support/footer.css", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support/plugin.yml"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/menu.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/plugin.yml", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/menu.css"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/search:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/search/search.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/search/search.esm.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/search/plugin.js"]
+  content/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom:
+    layer: 'general'
+    tags: []
+    primary_files: ["content/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom/zoom.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom/plugin.js", "content/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom/zoom.esm.js"]
+  docs:
+    layer: 'config'
+    tags: ["config"]
+    primary_files: ["docs/Canvas.canvas", "docs/layout-components.md", "docs/showcase.md", "docs/layout.md", "docs/community.md"]
+  docs/advanced:
+    layer: 'general'
+    tags: []
+    primary_files: ["docs/advanced/paths.md", "docs/advanced/making plugins.md", "docs/advanced/creating components.md", "docs/advanced/index.md", "docs/advanced/architecture.md"]
+  docs/cli:
+    layer: 'general'
+    tags: []
+    primary_files: ["docs/cli/sync.md", "docs/cli/build.md", "docs/cli/create.md", "docs/cli/plugin.md", "docs/cli/restore.md"]
+  docs/features:
+    layer: 'general'
+    tags: []
+    primary_files: ["docs/features/popover previews.md", "docs/features/graph view.md", "docs/features/SPA Routing.md", "docs/features/comments.md", "docs/features/Docker Support.md"]
+  docs/getting-started:
+    layer: 'auth'
+    tags: ["auth"]
+    primary_files: ["docs/getting-started/whats-new.md", "docs/getting-started/authoring-content.md", "docs/getting-started/migrating.md", "docs/getting-started/installation.md", "docs/getting-started/upgrading.md"]
+  docs/plugins:
+    layer: 'general'
+    tags: []
+    primary_files: ["docs/plugins/Footer.md", "docs/plugins/SyntaxHighlighting.md", "docs/plugins/RemoveDrafts.md", "docs/plugins/CustomOgImages.md", "docs/plugins/HardLineBreaks.md"]
+  docs/tags:
+    layer: 'general'
+    tags: []
+    primary_files: ["docs/tags/component.md", "docs/tags/plugin.md"]
+  public:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/index.html", "public/component-94cb6c84.css", "public/component-34bdfded.css", "public/component-642859cd.css", "public/component-274a3dfe.css"]
+  public/AI:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/AI/index.html", "public/AI/AI_Module-3-nodes.html", "public/AI/AI_ASS2.html", "public/AI/AI_ASS_2-notes.html", "public/AI/AI-Syl.html"]
+  public/Excalidraw:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/Excalidraw/index.html", "public/Excalidraw/Drawing-2025-02-13-14.11.36.excalidraw.html", "public/Excalidraw/Drawing-2025-02-13-14.15.27.excalidraw.html", "public/Excalidraw/TOC_slide65_problem.excalidraw.html", "public/Excalidraw/Drawing-2025-09-04-15.40.23.excalidraw.html"]
+  public/Linear/materials:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/Linear/materials/Linear-syllabus.html"]
+  public/Linear/notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/Linear/notes/midterm-1-linear-notes.html", "public/Linear/notes/midterm-linear-2.html", "public/Linear/notes/midterm-linear-3.html"]
+  public/PPL:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/PPL/PPL-final-notes.html", "public/PPL/pplSyl.html", "public/PPL/CS-3323-PPL-SYLLABUS.html", "public/PPL/python_hw-1.html", "public/PPL/yield_hw-2.html"]
+  public/PPL/midtem-noteQuizzes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/PPL/midtem-noteQuizzes/Quiz-5-Abastract-Syntax-Tree.html", "public/PPL/midtem-noteQuizzes/Quiz-3-FIRST-FOLLOW-PREDICT-EPS.html", "public/PPL/midtem-noteQuizzes/Quiz-1-lexical-rules.html", "public/PPL/midtem-noteQuizzes/QUIZ-2-Grammer-and-ambiguous.html", "public/PPL/midtem-noteQuizzes/Quiz-4-Static-vs-Dymanic-Scopes.html"]
+  public/PPL/midtemr-gen-notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/PPL/midtemr-gen-notes/sch-ppl-ch3-CallStack.html", "public/PPL/midtemr-gen-notes/Context-Left-vs-Right-Trees.html", "public/PPL/midtemr-gen-notes/Semantics-(attributes).html", "public/PPL/midtemr-gen-notes/PPL-notes.html", "public/PPL/midtemr-gen-notes/Hw1.html"]
+  public/SDP:
+    layer: 'api'
+    tags: ["api", "database"]
+    primary_files: ["public/SDP/index.html", "public/SDP/SDP-M11.html", "public/SDP/CS-4213-SDP-syl.html", "public/SDP/pt-2--stuff-SDP.html", "public/SDP/SDP_model_controller_ass3.html"]
+  public/Stats:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/Stats/index.html", "public/Stats/stats_Project-1.html", "public/Stats/Stats-Textbook.html", "public/Stats/Stats-Syl.html"]
+  public/Stats/Stats_Notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/Stats/Stats_Notes/index.html", "public/Stats/Stats_Notes/stats_ch7_notes-MLE-(part-of-finals).html", "public/Stats/Stats_Notes/TRAIN_CDF_ch6-and-bivaraiate-class-ex.html", "public/Stats/Stats_Notes/stats_calvin's_midterm.html", "public/Stats/Stats_Notes/stats_ch6_notes.html"]
+  public/Stats/Stats_Notes/reviews:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/Stats/Stats_Notes/reviews/stats_Midterm_review.html", "public/Stats/Stats_Notes/reviews/stats_Midterm_review-code.html", "public/Stats/Stats_Notes/reviews/Stats_final_review.html", "public/Stats/Stats_Notes/reviews/Stats_cheat_sheet_fina.html"]
+  public/Stats/quizzes:
+    layer: 'testing'
+    tags: ["testing"]
+    primary_files: ["public/Stats/quizzes/index.html", "public/Stats/quizzes/Stats_Quiz_dpqr_cont.html", "public/Stats/quizzes/Stats_mix_problems-ch1-6.html", "public/Stats/quizzes/stats_quiz-1.5-filtering.html", "public/Stats/quizzes/t_test_one_and_two_sample_Stats_Quiz.html"]
+  public/Stats/stats_slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/Stats/stats_slides/stats_Chapter-8.html", "public/Stats/stats_slides/stats_Chapter-6.html", "public/Stats/stats_slides/stats_Chapter-7.html", "public/Stats/stats_slides/stats_Chapter-2.html", "public/Stats/stats_slides/stats_Chapter-4.html"]
+  public/ToC:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ToC/index.html"]
+  public/ToC/chNotes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ToC/chNotes/index.html", "public/ToC/chNotes/Proof-by-induction-steps.html", "public/ToC/chNotes/TOC-ch3_church_turing_slides-notes-toc.html", "public/ToC/chNotes/ToC-Final-Review.html", "public/ToC/chNotes/TOC-ch1-slides-notes-toc.html"]
+  public/ToC/res:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ToC/res/index.html", "public/ToC/res/ToC-Syl-CS3823.html", "public/ToC/res/Proposed-questions.html", "public/ToC/res/Set-theory-basics.html"]
+  public/ToC/res/img:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ToC/res/img/index.html"]
+  public/ToC/slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ToC/slides/index.html", "public/ToC/slides/ToC_slides_ch1.html", "public/ToC/slides/ToC_chapter_3_slides.html", "public/ToC/slides/ToC_chapter_4_slides.html", "public/ToC/slides/ToC_chapter_2_slides.html"]
+  public/ai:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ai/index.html", "public/ai/ai_ass2.html", "public/ai/ai_module-3-nodes.html", "public/ai/hill-climbing-search-{ai}.html", "public/ai/ai-syl.html"]
+  public/cal3:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/cal3/index.html", "public/cal3/cal3-syllabus-math-2934\u2013006.html", "public/cal3/Cal3-Syllabus-Math-2934\u2013006.html", "public/cal3/exm3-last-lect.html"]
+  public/cal3/exam-1-stuff:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/cal3/exam-1-stuff/index.html", "public/cal3/exam-1-stuff/Determinants-of-2x2-and-3x3-matricies-(TODO)-{cal3}.html", "public/cal3/exam-1-stuff/{cal3,-exm1}-exam-1-calc-review.html", "public/cal3/exam-1-stuff/{cal3,-exm1}-Exam_Actual.html", "public/cal3/exam-1-stuff/determinants-of-2x2-and-3x3-matricies-(todo)-{cal3}.html"]
+  public/cal3/exam-1-stuff/lecture-notes:
+    layer: 'robotics'
+    tags: ["robotics"]
+    primary_files: ["public/cal3/exam-1-stuff/lecture-notes/index.html", "public/cal3/exam-1-stuff/lecture-notes/planes-{cal3}.html", "public/cal3/exam-1-stuff/lecture-notes/intersctions-and-collisions{cal3}.html", "public/cal3/exam-1-stuff/lecture-notes/stuff-to-know-for-exam-{cal3}-(others)).html", "public/cal3/exam-1-stuff/lecture-notes/limits!-{cal3}.html"]
+  public/cal3/exam-2-stuff:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/cal3/exam-2-stuff/index.html", "public/cal3/exam-2-stuff/{cal3,-exm2}-Exam_Actual.html", "public/cal3/exam-2-stuff/{exm2,-cal3}-double-integrals-over-rectangle.html", "public/cal3/exam-2-stuff/{cal3-exm2}-review-pkt.html", "public/cal3/exam-2-stuff/partial-Deratives-{cal3,exm2}.html"]
+  public/cal3/exam-2-stuff/quizzes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/cal3/exam-2-stuff/quizzes/index.html", "public/cal3/exam-2-stuff/quizzes/tangent-plane-quiz-{cal3,-exm2}.html", "public/cal3/exam-2-stuff/quizzes/Tangent-plane-quiz-{cal3,-exm2}.html"]
+  public/cal3/exam-3:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/cal3/exam-3/index.html", "public/cal3/exam-3/jacobian-and-rotations!-{cal-exm3}-1.html", "public/cal3/exam-3/exam-3-review.html", "public/cal3/exam-3/dimension-of-spaces.html", "public/cal3/exam-3/{cal3-exam3}-Line-integrals.html"]
+  public/castle_blotto_game:
+    layer: 'testing'
+    tags: ["testing", "robotics"]
+    primary_files: ["public/castle_blotto_game/index.html", "public/castle_blotto_game/submission.html", "public/castle_blotto_game/blotto.html", "public/castle_blotto_game/qsi_retrospective_notes.html", "public/castle_blotto_game/blotto2.html"]
+  public/compSec-CS5173:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compSec-CS5173/CompSec-Project-.html", "public/compSec-CS5173/Comp-sec-Syllabus-CS5173.html", "public/compSec-CS5173/Comp-Sec-Design-Report-finalProj.html", "public/compSec-CS5173/compSecFinalProj.html"]
+  public/compSec-CS5173/homewokrs:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compSec-CS5173/homewokrs/Assignment-2-{compsec}.html", "public/compSec-CS5173/homewokrs/Assignment-1-{compsec}.html"]
+  public/compSec-CS5173/lecture-slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compSec-CS5173/lecture-slides/compSec-lecture2.html", "public/compSec-CS5173/lecture-slides/compSec-{postMidterm}-Lecture14.html", "public/compSec-CS5173/lecture-slides/compSec-{postMidterm}-Lecture15.html", "public/compSec-CS5173/lecture-slides/compSec-lecture3.html", "public/compSec-CS5173/lecture-slides/compSec-{postMidterm}-Lecture19.html"]
+  public/compSec-CS5173/pre-midterm:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compSec-CS5173/pre-midterm/hw1-compsec.html", "public/compSec-CS5173/pre-midterm/Midterm-notes!.html"]
+  public/compsec-cs5173:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compsec-cs5173/index.html", "public/compsec-cs5173/compsec-project-.html", "public/compsec-cs5173/compsecfinalproj.html", "public/compsec-cs5173/comp-sec-syllabus-cs5173.html", "public/compsec-cs5173/comp-sec-design-report-finalproj.html"]
+  public/compsec-cs5173/homewokrs:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compsec-cs5173/homewokrs/index.html", "public/compsec-cs5173/homewokrs/assignment-1-{compsec}.html", "public/compsec-cs5173/homewokrs/assignment-2-{compsec}.html"]
+  public/compsec-cs5173/lecture-slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compsec-cs5173/lecture-slides/compsec-{postmidterm}-lecture18.html", "public/compsec-cs5173/lecture-slides/compsec-{postmidterm}-lecture15.html", "public/compsec-cs5173/lecture-slides/index.html", "public/compsec-cs5173/lecture-slides/compsec-lecture5.html", "public/compsec-cs5173/lecture-slides/compsec-{postmidterm}-lecture13.html"]
+  public/compsec-cs5173/pre-midterm:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/compsec-cs5173/pre-midterm/index.html", "public/compsec-cs5173/pre-midterm/midterm-notes!.html", "public/compsec-cs5173/pre-midterm/hw1-compsec.html"]
+  public/excalidraw:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/excalidraw/drawing-2025-02-27-14.13.12.excalidraw.html", "public/excalidraw/index.html", "public/excalidraw/drawing-2025-02-13-14.15.27.excalidraw.html", "public/excalidraw/drawing-2025-02-13-14.11.36.excalidraw.html", "public/excalidraw/drawing-2025-09-04-15.40.23.excalidraw.html"]
+  public/hacklahoma_26:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/index.html", "public/hacklahoma_26/setup.html", "public/hacklahoma_26/iterators.html", "public/hacklahoma_26/mp9", "public/hacklahoma_26/imports.html"]
+  public/hacklahoma_26/mp9_files/libs/bootstrap:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap-icons.woff", "public/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap.min.js", "public/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css", "public/hacklahoma_26/mp9_files/libs/bootstrap/bootstrap-icons.css"]
+  public/hacklahoma_26/mp9_files/libs/clipboard:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/clipboard/clipboard.min.js"]
+  public/hacklahoma_26/mp9_files/libs/quarto-html:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/quarto-html/tippy.css", "public/hacklahoma_26/mp9_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css", "public/hacklahoma_26/mp9_files/libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css", "public/hacklahoma_26/mp9_files/libs/quarto-html/anchor.min.js", "public/hacklahoma_26/mp9_files/libs/quarto-html/tippy.umd.min.js"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/index.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/highlight.esm.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/plugin.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/monokai.css", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/highlight/zenburn.css"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown/index.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown/plugin.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/markdown/markdown.esm.js"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/math:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/mathjax3.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/index.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/math.esm.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/katex.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/math/plugin.js"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/speaker-view", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/index.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/plugin.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/notes/notes.esm.js"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/pdf-export:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/pdf-export/pdfexport.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/pdf-export/plugin.yml"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-line-highlight/plugin.yml"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support/support.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support/footer.css", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/quarto-support/plugin.yml"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/menu.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/plugin.yml", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/reveal-menu/menu.css"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/search:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/search/index.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/search/search.esm.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/search/plugin.js"]
+  public/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom/index.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom/plugin.js", "public/hacklahoma_26/mp9_files/libs/revealjs/plugin/zoom/zoom.esm.js"]
+  public/linear:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/linear/index.html", "public/linear/desktop.ini"]
+  public/linear/materials:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/linear/materials/index.html", "public/linear/materials/desktop.ini", "public/linear/materials/linear-syllabus.html"]
+  public/linear/materials/handouts:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/linear/materials/handouts/desktop.ini"]
+  public/linear/notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/linear/notes/index.html", "public/linear/notes/midterm-1-linear-notes.html", "public/linear/notes/midterm-linear-2.html", "public/linear/notes/desktop.ini", "public/linear/notes/midterm-linear-3.html"]
+  public/linear/notes/res:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/linear/notes/res/desktop.ini"]
+  public/ppl:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ppl/index.html", "public/ppl/cs-3323-ppl-syllabus.html", "public/ppl/python_hw-1.html", "public/ppl/ppl-actual-finals-notes.html", "public/ppl/ppl-final-notes.html"]
+  public/ppl/midtem-notequizzes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ppl/midtem-notequizzes/index.html", "public/ppl/midtem-notequizzes/quiz-1-lexical-rules.html", "public/ppl/midtem-notequizzes/quiz-4-static-vs-dymanic-scopes.html", "public/ppl/midtem-notequizzes/quiz-2-grammer-and-ambiguous.html", "public/ppl/midtem-notequizzes/quiz-5-abastract-syntax-tree.html"]
+  public/ppl/midtemr-gen-notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/ppl/midtemr-gen-notes/index.html", "public/ppl/midtemr-gen-notes/ppl-notes.html", "public/ppl/midtemr-gen-notes/hw1.html", "public/ppl/midtemr-gen-notes/semantics-(attributes).html", "public/ppl/midtemr-gen-notes/ppl-final-notes.html"]
+  public/sdp:
+    layer: 'api'
+    tags: ["api", "database"]
+    primary_files: ["public/sdp/index.html", "public/sdp/m8-composite.html", "public/sdp/sdp-m11.html", "public/sdp/pt-2--stuff-sdp.html", "public/sdp/sdp_model_controller_ass3.html"]
+  public/static:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/static/resource-after-8b336f9a.js", "public/static/contentIndex.json", "public/static/resource-style-d3a1a224.css", "public/static/resource-style-9857b007.css", "public/static/resource-after-5eb75950.js"]
+  public/static/giscus:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/static/giscus/dark.css", "public/static/giscus/light.css"]
+  public/static/scripts:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/static/scripts/script-9-296b30c3.js", "public/static/scripts/script-12-7ca62114.js", "public/static/scripts/script-5-cc8afa9d.js", "public/static/scripts/script-2-ec880d15.js", "public/static/scripts/script-0-f7c52b6a.js"]
+  public/stats:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/stats/index.html", "public/stats/stats_project-1.html", "public/stats/stats-syl.html", "public/stats/stats-textbook.html"]
+  public/stats/quizzes:
+    layer: 'testing'
+    tags: ["testing"]
+    primary_files: ["public/stats/quizzes/index.html", "public/stats/quizzes/stats_quiz-3-boxplot.html", "public/stats/quizzes/stats_quiz-1.5-filtering.html", "public/stats/quizzes/stats_quiz_dpqr.html", "public/stats/quizzes/stats_quiz-dpqr2.html"]
+  public/stats/quizzes/res:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/stats/quizzes/res/in-class_-mix-of-problems-ch-1-6.mhtml"]
+  public/stats/stats_notes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/stats/stats_notes/index.html", "public/stats/stats_notes/stats_calvin's_midterm.html", "public/stats/stats_notes/stats_ch3_notes-probilitiy-bayes-therom-,-tables.html", "public/stats/stats_notes/boxplot-in-r_stats.html", "public/stats/stats_notes/stats_ch6_notes.html"]
+  public/stats/stats_notes/reviews:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/stats/stats_notes/reviews/index.html", "public/stats/stats_notes/reviews/stats_midterm_review.html", "public/stats/stats_notes/reviews/stats_midterm_review-code.html", "public/stats/stats_notes/reviews/stats_cheat_sheet_fina.html", "public/stats/stats_notes/reviews/stats_final_review.html"]
+  public/stats/stats_slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/stats/stats_slides/index.html", "public/stats/stats_slides/stats_chapter-6.html", "public/stats/stats_slides/stats_chapter-8.html", "public/stats/stats_slides/stats_chapter-3.html", "public/stats/stats_slides/stats_chapter-10.html"]
+  public/tags:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/tags/index.html", "public/tags/w\u03071.html", "public/tags/excalidraw.html", "public/tags/d.html", "public/tags/f.html"]
+  public/toc:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/toc/index.html"]
+  public/toc/chnotes:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/toc/chnotes/index.html", "public/toc/chnotes/toc-final-review.html", "public/toc/chnotes/tm_remarks_toc.html", "public/toc/chnotes/toc-ch2-slides-notes-toc.html", "public/toc/chnotes/proof-by-induction-steps.html"]
+  public/toc/res:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/toc/res/index.html", "public/toc/res/set-theory-basics.html", "public/toc/res/toc-syl-cs3823.html", "public/toc/res/proposed-questions.html"]
+  public/toc/res/img:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/toc/res/img/index.html"]
+  public/toc/slides:
+    layer: 'general'
+    tags: []
+    primary_files: ["public/toc/slides/index.html", "public/toc/slides/toc_chapter_5_slides.html", "public/toc/slides/toc_chapter_2_slides.html", "public/toc/slides/toc_chapter_3_slides.html", "public/toc/slides/toc_chapter_4_slides.html"]
+  quartz:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/bootstrap-cli.mjs", "quartz/build.ts", "quartz/cfg.ts", "quartz/worker.ts", "quartz/bootstrap-worker.mjs"]
+  quartz/cli:
+    layer: 'testing'
+    tags: ["testing"]
+    primary_files: ["quartz/cli/handlers.js", "quartz/cli/args.js", "quartz/cli/helpers.test.js", "quartz/cli/constants.js", "quartz/cli/plugin-git-handlers.js"]
+  quartz/cli/templates:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/cli/templates/blog.yaml", "quartz/cli/templates/ttrpg.yaml", "quartz/cli/templates/obsidian.yaml", "quartz/cli/templates/default.yaml"]
+  quartz/components:
+    layer: 'testing'
+    tags: ["testing"]
+    primary_files: ["quartz/components/DesktopOnly.tsx", "quartz/components/Body.tsx", "quartz/components/ConditionalRender.tsx", "quartz/components/index.ts", "quartz/components/WordCount.test.ts"]
+  quartz/components/frames:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/components/frames/index.ts", "quartz/components/frames/DefaultFrame.tsx", "quartz/components/frames/registry.ts", "quartz/components/frames/types.ts", "quartz/components/frames/MinimalFrame.tsx"]
+  quartz/components/pages:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/components/pages/404.tsx"]
+  quartz/components/scripts:
+    layer: 'testing'
+    tags: ["testing"]
+    primary_files: ["quartz/components/scripts/popover.inline.ts", "quartz/components/scripts/search.test.ts", "quartz/components/scripts/util.ts", "quartz/components/scripts/popover.test.ts", "quartz/components/scripts/spa.inline.ts"]
+  quartz/components/styles:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/components/styles/popover.scss"]
+  quartz/i18n:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/i18n/index.ts"]
+  quartz/i18n/locales:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/i18n/locales/kk-KZ.ts", "quartz/i18n/locales/nb-NO.ts", "quartz/i18n/locales/ca-ES.ts", "quartz/i18n/locales/fi-FI.ts", "quartz/i18n/locales/th-TH.ts"]
+  quartz/plugins:
+    layer: 'database'
+    tags: ["database", "config"]
+    primary_files: ["quartz/plugins/index.ts", "quartz/plugins/types.ts", "quartz/plugins/quartz-plugins.schema.json", "quartz/plugins/config.ts", "quartz/plugins/vfile.ts"]
+  quartz/plugins/emitters:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/plugins/emitters/index.ts", "quartz/plugins/emitters/componentResources.ts", "quartz/plugins/emitters/helpers.ts", "quartz/plugins/emitters/assets.ts", "quartz/plugins/emitters/static.ts"]
+  quartz/plugins/filters:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/plugins/filters/index.ts"]
+  quartz/plugins/loader:
+    layer: 'config'
+    tags: ["config"]
+    primary_files: ["quartz/plugins/loader/conditions.ts", "quartz/plugins/loader/index.ts", "quartz/plugins/loader/componentLoader.ts", "quartz/plugins/loader/frameLoader.ts", "quartz/plugins/loader/types.ts"]
+  quartz/plugins/pageTypes:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/plugins/pageTypes/index.ts", "quartz/plugins/pageTypes/matchers.ts", "quartz/plugins/pageTypes/dispatcher.ts", "quartz/plugins/pageTypes/404.ts"]
+  quartz/plugins/transformers:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/plugins/transformers/index.ts"]
+  quartz/processors:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/processors/filter.ts", "quartz/processors/emit.ts", "quartz/processors/parse.ts"]
+  quartz/static/giscus:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/static/giscus/dark.css", "quartz/static/giscus/light.css"]
+  quartz/styles:
+    layer: 'general'
+    tags: []
+    primary_files: ["quartz/styles/syntax.scss", "quartz/styles/variables.scss", "quartz/styles/base.scss", "quartz/styles/custom.scss", "quartz/styles/callouts.scss"]
+  quartz/util:
+    layer: 'testing'
+    tags: ["testing"]
+    primary_files: ["quartz/util/glob.ts", "quartz/util/sourcemap.ts", "quartz/util/perf.ts", "quartz/util/log.ts", "quartz/util/theme.ts"]

@@ -1,4 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
+import WordCount from "./WordCount"
 
 export interface ComponentManifest {
   name: string
@@ -122,6 +123,22 @@ class ComponentRegistry {
 }
 
 export const componentRegistry = new ComponentRegistry()
+
+// Register internal built-in components
+componentRegistry.register("word-count", WordCount, "internal", {
+  name: "word-count",
+  displayName: "Word Count",
+  description: "Displays word count and reading time for notes",
+  version: "1.0.0",
+})
+componentRegistry.register("word-counter", WordCount, "internal", {
+  name: "word-counter",
+  displayName: "Word Counter",
+  description: "Displays word count and reading time for notes",
+  version: "1.0.0",
+})
+componentRegistry.register("WordCount", WordCount, "internal")
+componentRegistry.register("WordCounter", WordCount, "internal")
 
 export function defineComponent<Options extends object | undefined = undefined>(
   factory: QuartzComponentConstructor<Options>,

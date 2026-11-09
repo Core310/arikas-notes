@@ -257,6 +257,9 @@ export async function loadQuartzConfig(
   // Ensure all plugins are installed and collect native deps
   const allNativeDeps = new Map<string, Map<string, string>>()
   for (const entry of enabledEntries) {
+    if (componentRegistry.get(extractPluginName(entry.source))) {
+      continue
+    }
     try {
       const gitSpec = parsePluginSource(entry.source)
       const result = await installPlugin(gitSpec, { verbose: false })
@@ -278,6 +281,9 @@ export async function loadQuartzConfig(
 
   // Collect manifests (requires native deps to be installed first)
   for (const entry of enabledEntries) {
+    if (componentRegistry.get(extractPluginName(entry.source))) {
+      continue
+    }
     try {
       const manifest = await getManifest(entry.source)
       if (manifest) {
@@ -336,6 +342,9 @@ export async function loadQuartzConfig(
         categoryMap[cat].push({ entry, manifest })
       }
     } else {
+      if (componentRegistry.get(extractPluginName(entry.source))) {
+        continue
+      }
       const gitSpec = parsePluginSource(entry.source)
       const isComponentOnly = categories.length > 0 && categories.every((c) => c === "component")
 

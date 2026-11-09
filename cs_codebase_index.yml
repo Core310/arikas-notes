@@ -1,0 +1,41 @@
+# ClearSet Codebase Map & RAG Query Guide
+clearset_version: '1.0'
+database: '.cs/cs_codebase.db'
+last_updated: '2026-11-09T07:57:53.915861+00:00Z'
+git_commit: '6d9b0b8fb73dd5dc2c9866d863f7644c59320c1c'
+stats:
+  total_indexed_files: 1042
+  total_symbols: 479
+
+domain_tags:
+  api:
+    category: 'layer'
+    matching_entities: 3
+    sample_targets: ["public/SDP/SDP_model_controller_ass3.html", "public/sdp/sdp_model_controller_ass3.html", "content/SDP/SDP_model_controller_ass3.md"]
+  auth:
+    category: 'domain'
+    matching_entities: 1
+    sample_targets: ["docs/getting-started/authoring-content.md"]
+  config:
+    category: 'config'
+    matching_entities: 7
+    sample_targets: ["quartz.config.yaml", "tsconfig.tsbuildinfo", "tsconfig.json", "quartz.config.default.yaml", "docs/configuration.md"]
+  database:
+    category: 'layer'
+    matching_entities: 4
+    sample_targets: ["public/SDP/SDP_model_controller_ass3.html", "public/sdp/sdp_model_controller_ass3.html", "content/SDP/SDP_model_controller_ass3.md", "quartz/plugins/quartz-plugins.schema.json"]
+  robotics:
+    category: 'domain'
+    matching_entities: 5
+    sample_targets: ["public/castle_blotto_game/qsi_retrospective_notes.html", "public/cal3/exam-1-stuff/lecture-notes/Cross-Product-ch-11.4-{cal3}.html", "public/cal3/exam-1-stuff/lecture-notes/cross-product-ch-11.4-{cal3}.html", "content/castle_blotto_game/qsi_retrospective_notes.md", "content/cal3/exam 1 stuff/lecture notes/Cross Product ch 11.4 {cal3}.md"]
+  testing:
+    category: 'layer'
+    matching_entities: 13
+    sample_targets: ["public/stats/quizzes/t_test_one_and_two_sample_stats_quiz.html", "public/Stats/quizzes/t_test_one_and_two_sample_Stats_Quiz.html", "public/castle_blotto_game/qsi_retrospective_notes.html", "content/Stats/quizzes/t_test_one_and_two_sample_Stats_Quiz.md", "content/castle_blotto_game/qsi_retrospective_notes.md"]
+
+query_templates:
+  find_symbol: "SELECT file_path, name, kind, signature, line_start FROM symbols WHERE name LIKE '%{SYMBOL}%';"
+  find_callers: "SELECT source_id, relation_type, details FROM relationships WHERE target_id = '{SYMBOL}' AND relation_type = 'calls';"
+  find_imports: "SELECT target_id, relation_type, details FROM relationships WHERE source_id = '{FILE}' AND relation_type = 'imports';"
+  search_fts: "SELECT file_path, symbol_name, kind, signature FROM codebase_fts WHERE codebase_fts MATCH '{KEYWORD}' LIMIT 20;"
+  find_by_tag: "SELECT target_id, target_type, category FROM tags WHERE tag_name = '{TAG}';"

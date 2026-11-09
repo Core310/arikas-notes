@@ -2,6 +2,9 @@
 
 > You have 100 soldiers to split across 5 castles, worth 1, 2, 3, 4 and 5 points. Whole numbers only, adding up to exactly 100. Same castles, same 100 soldiers, but now you're in a random group of 4 applicants. Each castle goes to whoever sends the most soldiers to it (tied castles split their points). Players are ranked by total castle points, and only your finish counts: 1ST: 9 PTS / 2ND: 4 PTS / 3RD: 2 PTS / 4TH: 0 PTS. Players tied in the rankings split the payouts for those places. We reshuffle the groups thousands of times and average your results.
 
+- **Continuation**: Continued from the 2-player head-to-head empirical tournament in [[blotto]].
+- **Summary**: For executive recommendations and submission trade-offs across opponent regimes, see [[submission]].
+
 In Game 1, tournament points were additive across castles: because every matchup was head-to-head and scored strictly by castle points, linearity of expectation let us optimize each castle marginal independently with dynamic programming.
 
 Game 2 breaks that separability completely. You no longer care about your average score on Castle 3 in a vacuum. Your payoff is determined exclusively by your relative finish within your random 4-player pod after all 5 castles are resolved:

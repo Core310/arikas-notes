@@ -186,6 +186,13 @@ plugins:
       position: beforeBody
       priority: 5
       condition: not-index
+  - source: word-counter
+    enabled: true
+    options:
+      showReadingTime: true
+    layout:
+      position: afterBody
+      priority: 5
   - source: github:quartz-community/comments
     enabled: false
     options:

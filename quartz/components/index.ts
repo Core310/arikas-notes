@@ -5,10 +5,12 @@ import DesktopOnly from "./DesktopOnly"
 import MobileOnly from "./MobileOnly"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import WordCount from "./WordCount"
 
 export { componentRegistry, defineComponent } from "./registry"
 export { External } from "./external"
 export type { ComponentManifest, RegisteredComponent } from "./registry"
 export type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-export { Head, Spacer, DesktopOnly, MobileOnly, NotFound, Flex, ConditionalRender }
+export { Head, Spacer, DesktopOnly, MobileOnly, NotFound, Flex, ConditionalRender, WordCount }
+export { WordCount as WordCounter }
