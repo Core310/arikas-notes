@@ -1,6 +1,7 @@
 # The problem
 > You have 100 soldiers to split across 5 castles, worth 1, 2, 3, 4 and 5 points. Whole numbers only, adding up to exactly 100. Your allocation is matched against every other applicant's. In each matchup, whoever sends more soldiers to a castle wins its points; a tie splits them. Your score is your average across all matchups.
 
+- **Code**: For the empirical benchmark framework, dynamic programming solvers, and simulation code, see [GitHub: Core310/sequoiacap-pokebot](https://github.com/Core310/sequoiacap-pokebot).
 - **Continuation**: For the 4-way pod battle optimization, see [[blotto2]].
 - **Summary**: For executive recommendations and submission trade-offs across opponent regimes, see [[submission]].
 
